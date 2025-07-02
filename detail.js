@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const basePrice = productData.price;
 
     // === Definisi Elemen DOM ===
+    const productNameHeader = document.getElementById('product-name-title-header');
     const detailImage = document.getElementById('product-detail-image');
     const detailName = document.getElementById('product-detail-name');
     const detailDescription = document.getElementById('product-detail-description');
@@ -31,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // === Fungsi-Fungsi Utama ===
 
     function populateProductDetails() {
+        productNameHeader.textContent = productData.name;
         detailImage.src = productData.imageUrl;
         detailImage.alt = productData.name;
         detailName.textContent = productData.name;
@@ -174,7 +176,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // === Panggilan Awal Saat Halaman Dimuat ===
     populateProductDetails();
     calculateTotalPrice();
     setupCheckboxLimits();
