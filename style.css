@@ -1,0 +1,294 @@
+/* =======================================================
+    0. PENGATURAN GLOBAL & ROOT
+    ======================================================= */
+:root {
+    --primary-green: #006442;
+    --light-gray: #f5f5f5;
+    --text-color: #333;
+    --text-light: #757575;
+    --white: #ffffff;
+    --border-color: #eeeeee;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+    width: 100%; height: 100%; font-family: 'Poppins', sans-serif;
+    background-color: var(--white); color: var(--text-color);
+}
+/* Mengatasi 'lompatan' layout akibat scrollbar */
+html {
+  scrollbar-gutter: stable;
+  overflow-y: scroll; 
+}
+
+
+/* =======================================================
+    1. LAYOUT UTAMA (MOBILE CONTAINER)
+    ======================================================= */
+.mobile-container {
+    width: 100%; max-width: 600px; margin: 0 auto;
+    background-color: var(--white); min-height: 100vh;
+    position: relative;
+}
+
+/* =======================================================
+    2. GAYA HALAMAN UTAMA (INDEX.HTML)
+    ======================================================= */
+.app-header { display: flex; justify-content: space-between; align-items: center; padding: 16px; border-bottom: 1px solid var(--border-color); }
+.location-picker { display: flex; align-items: center; gap: 8px; }
+.location-picker .icon { width: 24px; height: 24px; color: var(--primary-green); }
+.location-picker div { display: flex; flex-direction: column; }
+.pickup-label { font-size: 12px; color: var(--text-light); }
+.location-name { font-weight: 600; font-size: 14px; }
+.header-icons .icon { width: 24px; height: 24px; }
+.filter-wrapper { padding: 8px 16px; overflow-x: auto; -ms-overflow-style: none; scrollbar-width: none; }
+.filter-wrapper::-webkit-scrollbar { display: none; }
+.filters { display: flex; gap: 8px; white-space: nowrap; }
+.filter-btn { padding: 8px 16px; border-radius: 20px; border: 1px solid transparent; background-color: #f0f0f0; color: var(--text-light); font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 500; cursor: pointer; transition: all 0.2s ease-in-out; }
+.filter-btn.active { background-color: var(--white); color: var(--primary-green); border: 2px solid var(--primary-green); font-weight: 600; }
+.product-section { padding: 16px; padding-bottom: 100px; }
+.product-list-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.product-list-header h2 { font-size: 18px; font-weight: 600; }
+.product-list-header span { font-size: 14px; color: var(--text-light); }
+.product-card { display: flex; align-items: flex-start; gap: 16px; padding-bottom: 16px; margin-bottom: 16px; border-bottom: 1px solid var(--border-color); }
+.product-card:last-child { border-bottom: none; margin-bottom: 0; }
+.product-image { width: 90px; height: 90px; border-radius: 8px; object-fit: cover; flex-shrink: 0; }
+.product-details { flex-grow: 1; }
+.product-details h3 { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+.product-description { font-size: 12px; color: var(--text-light); line-height: 1.4; margin-bottom: 8px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.product-price { font-size: 14px; font-weight: 600; }
+.product-actions { display: flex; flex-direction: column; justify-content: flex-end; align-items: center; align-self: stretch; }
+.action-btn { background: none; border: none; cursor: pointer; padding: 4px; }
+.add-btn { background-color: var(--primary-green); color: var(--white); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.add-btn svg { width: 24px; height: 24px; }
+.cart-footer { position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); width: calc(100% - 32px); max-width: 568px; background-color: var(--primary-green); color: white; display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); cursor: pointer; z-index: 50; animation: fadeInFooter 0.3s ease-out; }
+@keyframes fadeInFooter { from { opacity: 0; transform: translate(-50%, 20px); } to { opacity: 1; transform: translate(-50%, 0); } }
+.cart-summary span { font-size: 14px; }
+.cart-total span { font-size: 16px; font-weight: 600; }
+.location-picker-link, .location-picker-link:link, .location-picker-link:visited, .location-picker-link:hover, .location-picker-link:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =======================================================
+    3. GAYA HALAMAN DETAIL & CHECKOUT
+    ======================================================= */
+.detail-header { position: relative; display: flex; justify-content: center; align-items: center; padding: 16px; border-bottom: 1px solid var(--border-color); background-color: var(--white); z-index: 10; }
+.detail-header h1 { font-size: 18px; font-weight: 600; text-align: center; }
+.back-btn { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; display: inline-flex; justify-content: center; align-items: center; border-radius: 50%; transition: background-color 0.2s ease; padding: 0; margin: 0; color: var(--text-color); text-decoration: none; }
+.back-btn:link, .back-btn:visited { color: var(--text-color); }
+.back-btn:hover { background-color: #f0f0f0; color: var(--text-color); }
+.back-btn:active { background-color: #e8f5e9; color: var(--primary-green); }
+.back-btn svg { width: 24px; height: 24px; }
+
+.detail-main, .checkout-main { padding: 16px; padding-bottom: 150px; }
+
+/* ---- GAYA LOKASI PENGAMBILAN (KHUSUS CHECKOUT) ---- */
+.pickup-location-section {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 8px solid #f7f7f7;
+}
+.pickup-location-section h3 {
+    font-size: 17px;
+    font-weight: 710; /* PERUBAHAN: Teks menjadi tebal */
+    color: var(--text-color);
+    margin-bottom: 16px;
+}
+.store-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+.store-icon {
+    background-color: var(--white); /* PERUBAHAN: Latar belakang putih */
+    color: var(--primary-green); /* PERUBAHAN: Warna ikon hijau */
+    width: 38px;
+    height: 38px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid var(--border-color); /* PERUBAHAN: Border tipis */
+}
+.store-icon svg {
+    width: 22px;
+    height: 22px;
+}
+.store-name-display {
+    font-size: 16px;
+    font-weight: 600;
+}
+.pickup-estimate {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--text-color);
+}
+.pickup-estimate svg {
+    width: 20px;
+    height: 20px;
+    color: var(--primary-green);
+}
+
+/* ---- GAYA OPSI PRODUK (KHUSUS DETAIL) ---- */
+.product-summary-display { text-align: center; padding-bottom: 24px; border-bottom: 8px solid #f7f7f7; margin-bottom: 24px; }
+.product-summary-display #product-detail-image { width: 100%; max-width: 300px; height: auto; border-radius: 16px; margin: 0 auto 16px; display: block; }
+.product-summary-display #product-detail-name { font-size: 20px; font-weight: 600; margin-bottom: 8px; }
+.product-summary-display #product-detail-description { font-size: 14px; color: var(--text-light); margin-bottom: 12px; }
+.product-summary-display #product-detail-price { font-size: 18px; font-weight: 600; margin-bottom: 24px; }
+.available-options { text-align: left; }
+.available-options h3 { font-size: 14px; font-weight: 600; margin-bottom: 8px; color: var(--text-light); }
+.option-chip { display: inline-block; padding: 6px 16px; border: 1px solid var(--primary-green); background-color: #e8f5e9; color: var(--primary-green); border-radius: 8px; font-weight: 500; }
+.option-group { margin-bottom: 24px; border-bottom: 1px solid var(--border-color); padding-bottom: 24px; }
+.option-group:last-of-type { border-bottom: none; }
+.option-group-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.option-group-header h2 { font-size: 16px; font-weight: 600; }
+.option-group-header p { font-size: 12px; color: var(--text-light); }
+.option-item { margin-bottom: 16px; }
+.option-item:last-child { margin-bottom: 0; }
+.option-item label { display: flex; align-items: center; cursor: pointer; }
+.option-name { flex-grow: 1; font-size: 14px; display: flex; align-items: center; gap: 8px; }
+.badge { background-color: #fff4e5; color: #ff9800; font-size: 10px; font-weight: 500; padding: 2px 8px; border-radius: 4px; }
+.option-price { min-width: 85px; text-align: right; margin-right: 16px; font-size: 14px; }
+.option-item input[type="radio"], .option-item input[type="checkbox"] { display: none; }
+.custom-radio { width: 20px; height: 20px; border: 2px solid var(--border-color); border-radius: 50%; display: inline-block; position: relative; }
+.option-item input[type="radio"]:checked + .custom-radio { border-color: var(--primary-green); }
+.option-item input[type="radio"]:checked + .custom-radio::after { content: ''; width: 10px; height: 10px; background-color: var(--primary-green); border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.custom-checkbox { width: 20px; height: 20px; border: 2px solid var(--border-color); border-radius: 6px; display: grid; place-content: center; position: relative; transition: all 0.2s; }
+.option-item input[type="checkbox"]:checked + .custom-checkbox { border-color: var(--primary-green); background-color: var(--primary-green); }
+.option-item input[type="checkbox"]:checked + .custom-checkbox::after { content: ''; width: 5px; height: 10px; border: solid white; border-width: 0 3px 3px 0; transform: rotate(45deg) translateY(-1px); }
+
+/* ---- GAYA PESANAN (KHUSUS CHECKOUT) ---- */
+.section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.section-header h2 { font-size: 17px; font-weight: 710; }
+.add-more-btn { color: var(--primary-green); text-decoration: none; font-size: 14px; font-weight: 600; padding: 8px 16px; border: 1.5px solid var(--primary-green); border-radius: 20px; background-color: #f0f8f5; transition: background-color 0.2s; }
+.add-more-btn:hover { background-color: #e8f5e9; }
+#cart-items-container { display: flex; flex-direction: column; gap: 16px; }
+.cart-item { display: flex; flex-direction: column; gap: 12px; padding-bottom: 16px; border-bottom: 1px solid var(--border-color); }
+.cart-item:last-child { border-bottom: none; }
+.cart-item-row-1, .cart-item-row-2 { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.cart-item-details { flex-grow: 1; }
+.cart-item-details h3 { font-size: 16px; font-weight: 600; margin-bottom: 2px; }
+.cart-item-details p { font-size: 12px; color: var(--text-light); line-height: 1.4; }
+.cart-item-image { width: 60px; height: 60px; border-radius: 8px; object-fit: cover; flex-shrink: 0; }
+.cart-item-price { font-size: 16px; color: var(--text-color); font-weight: 600; }
+.cart-item-actions { display: flex; align-items: center; gap: 8px; }
+.edit-item-btn { background: transparent; border: 1.5px solid var(--primary-green); color: var(--primary-green); width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; }
+.edit-item-btn svg { width: 20px; height: 20px; }
+.empty-cart-msg { text-align: center; color: var(--text-light); padding: 40px 0; }
+
+/* =======================================================
+    4. GAYA KOMPONEN BERSAMA (MODAL & FOOTER)
+    ======================================================= */
+.sticky-footer { position: fixed; bottom: 0; left: 0; width: 100%; background-color: var(--white); padding: 16px; border-top: 1px solid var(--border-color); display: flex; align-items: center; gap: 16px; z-index: 20; }
+.add-to-cart-btn { flex-grow: 1; padding: 14px; background-color: var(--primary-green); color: var(--white); border: none; border-radius: 24px; font-size: 16px; font-weight: 600; cursor: pointer; display: flex; justify-content: center; gap: 8px;}
+
+/* ---- PERBAIKAN: GAYA QUANTITY SELECTOR DEFAULT & CHECKOUT ---- */
+/* Gaya Default (Untuk detail.html) */
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    padding: 4px;
+}
+.quantity-selector button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--light-gray);
+    font-size: 20px;
+    color: var(--text-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quantity-selector span {
+    font-weight: 600;
+    font-size: 16px;
+    min-width: 12px;
+    text-align: center;
+}
+/* Gaya Spesifik hanya untuk di dalam .cart-item (Checkout) */
+.cart-item .quantity-selector {
+    border: none;
+    gap: 8px;
+    padding: 0;
+}
+.cart-item .quantity-selector button {
+    width: 34px;
+    height: 34px;
+}
+.cart-item .quantity-selector button.decrease-item-qty {
+    border: 1.5px solid var(--text-color);
+    background-color: transparent;
+    color: var(--text-color);
+}
+.cart-item .quantity-selector button.increase-item-qty {
+    border: none;
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+.cart-item .quantity-selector button svg {
+    width: 20px;
+    height: 20px;
+}
+.cart-item .quantity-selector span {
+    min-width: 20px;
+}
+/* ----------------------------------------------------------------- */
+
+.modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); display: flex; justify-content: center; align-items: flex-end; z-index: 1000; }
+.modal-content { background-color: white; padding: 24px; border-radius: 24px 24px 0 0; width: 100%; max-width: 600px; animation: slideUp 0.3s ease-out; text-align: center; }
+@keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+.modal-content h2 { color: var(--primary-green); font-size: 16px; margin-bottom: 20px; }
+.added-item-summary { display: flex; align-items: center; gap: 16px; padding-bottom: 24px; border-bottom: 1px solid var(--border-color); }
+.summary-image { width: 60px; height: 60px; border-radius: 8px; object-fit: cover; }
+.summary-details { flex-grow: 1; }
+.summary-details h3 { font-size: 16px; font-weight: 600; text-align: left }
+.summary-details p { font-size: 12px; color: var(--text-light); text-align: left }
+.summary-details .summary-success-msg { color: var(--primary-green); font-weight: 500; text-align: left }
+.summary-qty { font-size: 14px; padding: 4px 10px; border-radius: 16px; background-color: var(--light-gray); }
+.modal-actions { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
+.modal-btn { padding: 14px; border-radius: 24px; font-size: 16px; font-weight: 600; text-align: center; text-decoration: none; border: none; cursor: pointer; }
+.modal-btn.primary { background-color: var(--primary-green); color: white; }
+.modal-btn.secondary { background-color: white; color: var(--primary-green); border: 1px solid var(--primary-green); }
+.checkout-footer { flex-direction: column; align-items: stretch; gap: 8px; }
+.checkout-total-summary { display: flex; justify-content: space-between; align-items: center; padding: 0 8px; }
+.total-label { font-size: 14px; color: var(--text-light); }
+.total-amount { font-size: 18px; font-weight: 600; color: var(--text-color); }
+
+/* =======================================================
+    5. GAYA UNTUK NOTIFIKASI (TOAST)
+    ======================================================= */
+.toast-notification { position: fixed; top: 20px; left: 16px; right: 16px; margin: 0 auto; max-width: 500px; background-color: var(--primary-green); color: white; padding: 12px 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 2000; display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 500; opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0.3s; }
+.toast-notification.show { opacity: 1; visibility: visible; }
+.toast-notification.error { background-color: #D32F2F; }
+.toast-icon { width: 20px; height: 20px; flex-shrink: 0; }
+
+/* =======================================================
+    6. ATURAN RESPONSIVE (TABLET & DESKTOP)
+    ======================================================= */
+@media (min-width: 768px) {
+    .mobile-container { max-width: 100%; }
+    .app-header, .filter-wrapper, .product-section, .store-list-main { max-width: 1200px; margin-left: auto; margin-right: auto; }
+    .detail-header { max-width: 100%; }
+    .detail-main, .checkout-main { max-width: 960px; margin-left: auto; margin-right: auto;}
+    .product-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+    .product-card { flex-direction: column; border: 1px solid var(--border-color); border-radius: 12px; padding: 16px; transition: box-shadow 0.3s; }
+    .product-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .product-image { width: 100%; height: 180px; margin-bottom: 12px; }
+    .product-details { width: 100%; }
+    .product-description { min-height: 34px; }
+    .product-actions { flex-direction: row; align-self: auto; width: 100%; margin-top: 12px; justify-content: flex-end; }
+    .sticky-footer { max-width: 100%; }
+}
