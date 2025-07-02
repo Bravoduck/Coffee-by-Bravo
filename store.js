@@ -59,12 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // === BAGIAN LAMA: Fungsionalitas Memilih Toko (Tetap dipertahankan) ===
     allStoreCards.forEach(card => {
         card.addEventListener('click', (event) => {
-            // Cek apakah mode pencarian aktif, jika ya jangan lakukan apa-apa
-            // Biarkan event back button yang menanganinya
-            if (header.classList.contains('search-active')) {
-                return;
-            }
-            
             event.preventDefault(); // Mencegah link default berjalan
 
             // Ambil nama toko dari atribut data-*

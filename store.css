@@ -48,10 +48,17 @@ html {
 
 /* Atur gaya untuk judul dan input agar berada di tengah dan tidak menabrak tombol */
 .store-header h1,
-.store-header .search-input {
+.store-header {
     width: 100%;
-    margin: 0 45px; /* Margin agar tidak tertutup tombol absolut */
+    margin: 0; /* Margin agar tidak tertutup tombol absolut */
     text-align: center;
+    box-sizing: border-box;
+}
+
+.search-input {
+    width: 100%;
+    margin: 0 50px; /* Margin agar tidak tertutup tombol absolut */
+    text-align: left;
     box-sizing: border-box;
 }
 

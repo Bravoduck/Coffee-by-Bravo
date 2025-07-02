@@ -17,216 +17,152 @@
   </head>
   <body>
     <div class="mobile-container">
-      <header class="app-header">
-        <a href="store.html" class="location-picker-link">
-          <div class="location-picker">
-            <svg
-              class="icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path
-                d="M15.2929 3.29289C16.0739 2.51184 17.34 2.51184 18.121 3.29289L19.707 4.87868C20.4881 5.65973 20.4881 6.92606 19.707 7.70711L10.4141 17H7V13.5858L15.2929 3.29289ZM16 5.41421L8 13.4142V16H10.5858L18.5858 8.00005L16 5.41421Z"
-              ></path>
-              <path
-                d="M16 5.41421L18.5858 8.00005L17.2929 9.29294L14.7071 6.70716L16 5.41421Z"
-              ></path>
-              <path
-                d="M5 20H19V21C19 21.5523 18.5523 22 18 22H6C5.44772 22 5 21.5523 5 21V20Z"
-              ></path>
-            </svg>
-            <div>
-              <span class="pickup-label">Pick up di store</span>
-              <span class="location-name">Pilih store</span>
+      
+      <div class="sticky-header">
+        <header class="app-header">
+          <a href="store.html" class="location-picker-link">
+            <div class="location-picker">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M15.2929 3.29289C16.0739 2.51184 17.34 2.51184 18.121 3.29289L19.707 4.87868C20.4881 5.65973 20.4881 6.92606 19.707 7.70711L10.4141 17H7V13.5858L15.2929 3.29289ZM16 5.41421L8 13.4142V16H10.5858L18.5858 8.00005L16 5.41421Z"></path>
+                <path d="M16 5.41421L18.5858 8.00005L17.2929 9.29294L14.7071 6.70716L16 5.41421Z"></path>
+                <path d="M5 20H19V21C19 21.5523 18.5523 22 18 22H6C5.44772 22 5 21.5523 5 21V20Z"></path>
+              </svg>
+              <div>
+                <span class="pickup-label">Pick up di store</span>
+                <span class="location-name">Pilih store</span>
+              </div>
             </div>
+          </a>
+          <div class="header-icons">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+              <path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.02944 20 2 15.9706 2 11C2 6.02944 6.02944 2 11 2C15.9706 2 20 6.02944 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.13401 14.866 4 11 4C7.13401 4 4 7.13401 4 11C4 14.866 7.13401 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path>
+            </svg>
           </div>
-        </a>
+        </header>
 
-        <div class="header-icons">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="icon"
-          >
-            <path
-              d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.02944 20 2 15.9706 2 11C2 6.02944 6.02944 2 11 2C15.9706 2 20 6.02944 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.13401 14.866 4 11 4C7.13401 4 4 7.13401 4 11C4 14.866 7.13401 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"
-            ></path>
-          </svg>
-        </div>
-      </header>
-
-      <main>
         <div class="filter-wrapper">
           <div class="filters">
-            <button class="filter-btn">Bundle</button>
-            <button class="filter-btn active">Fore Signature</button>
-            <button class="filter-btn">Coffee</button>
-            <button class="filter-btn">Americano Series</button>
-            <button class="filter-btn">Non-Coffee</button>
+            <button class="filter-btn active" data-filter="fore-junior">Fore Junior</button>
+            <button class="filter-btn" data-filter="fore-signature">Fore Signature</button>
+            <button class="filter-btn" data-filter="bundle">Bundle</button>
+            <button class="filter-btn" data-filter="coffee">Coffee</button>
+            <button class="filter-btn" data-filter="americano-series">Americano Series</button>
           </div>
         </div>
+      </div>
+      
+      <main>
+        <section id="fore-junior" class="product-section">
+          <div class="product-list-header">
+            <h2>Fore Junior</h2>
+            <span>4 items</span>
+          </div>
+          <div class="product-list">
+            <article class="product-card" data-product-name="Choco Cookie Shake" data-base-price="29000">
+              <img src="https://static.fore.coffee/product/Choco%20Cookie%20Shake.jpeg" alt="Choco Cookie Shake" class="product-image" />
+              <div class="product-details">
+                <h3>Choco Cookie Shake</h3>
+                <p class="product-description">Rasa cokelat istimewa untuk momen manis dan penuh petualangan.</p>
+                <p class="product-price">Rp 29.000</p>
+              </div>
+              <div class="product-actions"><button class="action-btn add-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg></button></div>
+            </article>
+            <article class="product-card" data-product-name="Butterscotch Milk Crumble" data-base-price="29000">
+                <img src="https://static.fore.coffee/product/Butterscotch%20Milk%20Crumble.jpeg" alt="Butterscotch Milk Crumble" class="product-image" />
+                <div class="product-details">
+                  <h3>Butterscotch Milk Crumble</h3>
+                  <p class="product-description">Butterscotch dengan paduan caramel, susu dengan sea salt cream dan caramel crumble sebagai toppin...</p>
+                  <p class="product-price">Rp 29.000</p>
+                </div>
+                <div class="product-actions"><button class="action-btn add-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg></button></div>
+            </article>
+            <article class="product-card" data-product-name="Vanilla O' Crumbs" data-base-price="29000">
+                <img src="https://static.fore.coffee/product/Vanilla%20O'%20Crumbs.jpeg" alt="Vanilla O' Crumbs" class="product-image" />
+                <div class="product-details">
+                  <h3>Vanilla O' Crumbs</h3>
+                  <p class="product-description">Perpaduan vanilla, butterscotch dan susu dilengkapi dengan saus karamel juga topping oreo yang gurih ...</p>
+                  <p class="product-price">Rp 29.000</p>
+                </div>
+                <div class="product-actions"><button class="action-btn add-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg></button></div>
+            </article>
+            <article class="product-card" data-product-name="Choco Caramel Cloud" data-base-price="29000">
+                <img src="https://static.fore.coffee/product/Choco%20Caramel%20Cloud.jpeg" alt="Choco Caramel Cloud" class="product-image" />
+                <div class="product-details">
+                  <h3>Choco Caramel Cloud</h3>
+                  <p class="product-description">Nikmatnya cream salted caramel dengan paduan dark chocolate yang cocok untuk ceriakan hari</p>
+                  <p class="product-price">Rp 29.000</p>
+                </div>
+                <div class="product-actions"><button class="action-btn add-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg></button></div>
+            </article>
+          </div>
+        </section>
 
-        <section class="product-section">
+        <section id="fore-signature" class="product-section">
           <div class="product-list-header">
             <h2>Fore Signature</h2>
             <span>5 items</span>
           </div>
-
           <div class="product-list">
-            <article
-              class="product-card"
-              data-product-name="Kopi Dari Tani"
-              data-base-price="24000"
-            >
-              <img
-                src="https://static.fore.coffee/product/Kopi%20dari%20Tani%20w%20Badge.jpg"
-                alt="Kopi Dari Tani"
-                class="product-image"
-              />
+            <article class="product-card" data-product-name="Kopi Dari Tani" data-base-price="24000" >
+              <img src="https://static.fore.coffee/product/Kopi%20dari%20Tani%20w%20Badge.jpg" alt="Kopi Dari Tani" class="product-image" />
               <div class="product-details">
                 <h3>Kopi Dari Tani</h3>
-                <p class="product-description">
-                  Paduan rasa dan aroma kopi Indonesia yang kuat bercampur
-                  dengan gula aren khas nusantara
-                </p>
+                <p class="product-description">Paduan rasa dan aroma kopi Indonesia yang kuat bercampur dengan gula aren khas nusantara</p>
                 <p class="product-price">Rp 24.000</p>
               </div>
-              <div class="product-actions">
-                <button class="action-btn add-btn">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
-                  </svg>
-                </button>
-              </div>
+              <div class="product-actions"><button class="action-btn add-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg></button></div>
             </article>
-            <article
-              class="product-card"
-              data-product-name="Butterscotch Sea Salt Latte"
-              data-base-price="33000"
-            >
-              <img
-                src="https://static.fore.coffee/product/Butterscoth%20Iced.jpg"
-                alt="Butterscotch Sea Salt Latte"
-                class="product-image"
-              />
+            <article class="product-card" data-product-name="Butterscotch Sea Salt Latte" data-base-price="33000" >
+              <img src="https://static.fore.coffee/product/Butterscoth%20Iced.jpg" alt="Butterscotch Sea Salt Latte" class="product-image" />
               <div class="product-details">
                 <h3>Butterscotch Sea Salt Latte</h3>
-                <p class="product-description">
-                  Perpaduan butterscotch dan espresso house blend dengan topping
-                  cream sea salt yang lembut di atas...
-                </p>
+                <p class="product-description">Perpaduan butterscotch dan espresso house blend dengan topping cream sea salt yang lembut di atas...</p>
                 <p class="product-price">Rp 33.000</p>
               </div>
-              <div class="product-actions">
-                <button class="action-btn add-btn">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
-                  </svg>
-                </button>
-              </div>
+              <div class="product-actions"><button class="action-btn add-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg></button></div>
             </article>
-            <article
-              class="product-card"
-              data-product-name="Buttercream Latte"
-              data-base-price="31000"
-            >
-              <img
-                src="https://static.fore.coffee/product/Buttercream%20Latte%20(1).jpg"
-                alt="Buttercream Latte"
-                class="product-image"
-              />
+            <article class="product-card" data-product-name="Buttercream Latte" data-base-price="31000" >
+              <img src="https://static.fore.coffee/product/Buttercream%20Latte%20(1).jpg" alt="Buttercream Latte" class="product-image" />
               <div class="product-details">
                 <h3>Buttercream Latte</h3>
-                <p class="product-description">
-                  Nikmatnya Buttercream Coffee sebagai topping kopi susu karamel
-                </p>
+                <p class="product-description">Nikmatnya Buttercream Coffee sebagai topping kopi susu karamel</p>
                 <p class="product-price">Rp 31.000</p>
               </div>
-              <div class="product-actions">
-                <button class="action-btn add-btn">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
-                  </svg>
-                </button>
-              </div>
+              <div class="product-actions"><button class="action-btn add-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg></button></div>
             </article>
-            <article
-              class="product-card"
-              data-product-name="Aren Latte"
-              data-base-price="29000"
-            >
-              <img
-                src="https://static.fore.coffee/product/Aren%20Latte%20Ice.jpg"
-                alt="Aren Latte"
-                class="product-image"
-              />
+            <article class="product-card" data-product-name="Aren Latte" data-base-price="29000" >
+              <img src="https://static.fore.coffee/product/Aren%20Latte%20Ice.jpg" alt="Aren Latte" class="product-image" />
               <div class="product-details">
                 <h3>Aren Latte</h3>
-                <p class="product-description">
-                  Rasa alami gula aren berpadu sempurna dengan espresso premium.
-                  Menu terlaris Fore Coffee
-                </p>
+                <p class="product-description">Rasa alami gula aren berpadu sempurna dengan espresso premium. Menu terlaris Fore Coffee</p>
                 <p class="product-price">Rp 29.000</p>
               </div>
-              <div class="product-actions">
-                <button class="action-btn add-btn">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
-                  </svg>
-                </button>
-              </div>
+              <div class="product-actions"><button class="action-btn add-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg></button></div>
             </article>
-            <article
-              class="product-card"
-              data-product-name="Pandan Latte"
-              data-base-price="29000"
-            >
-              <img
-                src="https://static.fore.coffee/product/Pandan%20Latte%20Iced.jpg"
-                alt="Pandan Latte"
-                class="product-image"
-              />
+            <article class="product-card" data-product-name="Pandan Latte" data-base-price="29000" >
+              <img src="https://static.fore.coffee/product/Pandan%20Latte%20Iced.jpg" alt="Pandan Latte" class="product-image" />
               <div class="product-details">
                 <h3>Pandan Latte</h3>
-                <p class="product-description">
-                  Latte dengan rasa dan aroma unik dari ekstrak pandan alami
-                  khas Fore Coffee
-                </p>
+                <p class="product-description">Latte dengan rasa dan aroma unik dari ekstrak pandan alami khas Fore Coffee</p>
                 <p class="product-price">Rp 29.000</p>
               </div>
-              <div class="product-actions">
-                <button class="action-btn add-btn">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
-                  </svg>
-                </button>
-              </div>
+              <div class="product-actions"><button class="action-btn add-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg></button></div>
             </article>
           </div>
         </section>
+        
+        <section id="bundle" class="product-section">
+            <div class="product-list-header"><h2>Bundle</h2></div>
+        </section>
+        <section id="coffee" class="product-section">
+            <div class="product-list-header"><h2>Coffee</h2></div>
+        </section>
+        <section id="americano-series" class="product-section">
+            <div class="product-list-header"><h2>Americano Series</h2></div>
+        </section>
+
       </main>
+
     </div>
     <script src="script.js" defer></script>
   </body>
