@@ -1,10 +1,5 @@
-// detail.js
-
 document.addEventListener('DOMContentLoaded', () => {
-    // === Cek Mode Edit & Ambil Data ===
-    const isEditMode = sessionStorage.getItem('editMode') === 'true';
-    const itemToEdit = isEditMode ? JSON.parse(sessionStorage.getItem('itemToEdit')) : null;
-
+    // === Inisialisasi & Pengambilan Data dari sessionStorage ===
     const productData = JSON.parse(sessionStorage.getItem('currentProduct'));
 
     if (!productData) {
@@ -16,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const basePrice = productData.price;
 
     // === Definisi Elemen DOM ===
-    const productNameHeader = document.getElementById('product-name-title-header');
     const detailImage = document.getElementById('product-detail-image');
     const detailName = document.getElementById('product-detail-name');
     const detailDescription = document.getElementById('product-detail-description');
@@ -26,8 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const decreaseQtyBtn = document.getElementById('decrease-qty');
     const increaseQtyBtn = document.getElementById('increase-qty');
     const addToCartBtn = document.getElementById('add-to-cart-btn');
-    const cartBtnText = document.getElementById('cart-btn-text'); // elemen teks tombol baru
-    const cartBtnPrice = document.getElementById('cart-btn-price'); // elemen harga tombol baru
     const successModal = document.getElementById('success-modal');
     const continueShoppingBtn = document.getElementById('continue-shopping-btn');
     const toastNotification = document.getElementById('toast-notification');
@@ -39,36 +31,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // === Fungsi-Fungsi Utama ===
 
     function populateProductDetails() {
-        productNameHeader.textContent = productData.name;
         detailImage.src = productData.imageUrl;
         detailImage.alt = productData.name;
         detailName.textContent = productData.name;
         detailDescription.textContent = productData.description;
-        const formattedBasePrice = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(basePrice);
+        const formattedBasePrice = new Intl.NumberFormat('id-ID', {
+            style: 'currency',
+            currency: 'IDR',
+            minimumFractionDigits: 0
+        }).format(basePrice);
         detailPrice.textContent = formattedBasePrice.replace('Rp', 'Rp ');
-
-        // Jika dalam mode edit, isi form dengan data lama
-        if (isEditMode && itemToEdit) {
-            // Set kuantitas
-            quantityElement.textContent = itemToEdit.quantity;
-
-            // Set pilihan radio dan checkbox
-            itemToEdit.customizations.forEach(customizationName => {
-                const labels = Array.from(form.querySelectorAll('.option-name'));
-                const targetLabel = labels.find(label => label.textContent.trim().includes(customizationName));
-                if (targetLabel) {
-                    const input = targetLabel.closest('.option-item').querySelector('input');
-                    if (input) {
-                        input.checked = true;
-                    }
-                }
-            });
-
-            // Ubah teks tombol
-            cartBtnText.textContent = 'Perbarui';
-        }
     }
-    
+
     function calculateTotalPrice() {
         let optionsPrice = 0;
         const selectedOptions = form.querySelectorAll('input:checked');
@@ -81,16 +55,52 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateButtonPrice(price) {
-        const formattedPrice = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(price);
-        cartBtnPrice.textContent = `• ${formattedPrice.replace('Rp', 'Rp ')}`;
+        const formattedPrice = new Intl.NumberFormat('id-ID', {
+            style: 'currency',
+            currency: 'IDR',
+            minimumFractionDigits: 0
+        }).format(price);
+        addToCartBtn.textContent = `Tambah • ${formattedPrice.replace('Rp', 'Rp ')}`;
     }
 
     function showToast(message, type = 'success') {
-        // ... (fungsi toast tidak berubah)
+        clearTimeout(toastTimer);
+        toastMessage.textContent = message;
+        toastNotification.classList.remove('error');
+        if (type === 'error') {
+            toastNotification.classList.add('error');
+        }
+        toastNotification.classList.add('show');
+        toastTimer = setTimeout(() => {
+            toastNotification.classList.remove('show');
+        }, 3000);
     }
 
     function setupCheckboxLimits() {
-        // ... (fungsi limit checkbox tidak berubah)
+        const syrupCheckboxes = document.querySelectorAll('#syrup-group input[type="checkbox"]');
+        syrupCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', (e) => {
+                if (e.target.checked) {
+                    syrupCheckboxes.forEach(cb => {
+                        if (cb !== e.target) {
+                            cb.checked = false;
+                        }
+                    });
+                }
+            });
+        });
+
+        const toppingCheckboxes = document.querySelectorAll('#topping-group input[type="checkbox"]');
+        toppingCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', (e) => {
+                const checkedCount = document.querySelectorAll('#topping-group input[type="checkbox"]:checked').length;
+                if (checkedCount > 2) {
+                    showToast('Additional untuk kategori yang dipilih tidak bisa lebih dari 2 additional', 'error');
+                    e.target.checked = false;
+                    calculateTotalPrice();
+                }
+            });
+        });
     }
 
     function handleAddToCart() {
@@ -102,7 +112,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const nameSpan = opt.closest('.option-item').querySelector('.option-name');
             const clone = nameSpan.cloneNode(true);
             const badge = clone.querySelector('.badge');
-            if (badge) { badge.remove(); }
+            if (badge) {
+                badge.remove();
+            }
             return clone.textContent.trim().replace(/👍/g, '').trim();
         });
 
@@ -116,56 +128,49 @@ document.addEventListener('DOMContentLoaded', () => {
             image: productData.imageUrl
         };
 
-        if (isEditMode && itemToEdit) {
-            // --- LOGIKA UPDATE ---
-            // Hapus item lama dulu
-            cart = cart.filter(item => item.id !== itemToEdit.id);
-        }
-
         const existingItemIndex = cart.findIndex(item => item.id === newItem.id);
         if (existingItemIndex > -1) {
-            if(isEditMode) {
-                 cart[existingItemIndex].quantity = newItem.quantity; // Set kuantitas baru jika id sama
-            } else {
-                 cart[existingItemIndex].quantity += newItem.quantity; // Tambah kuantitas jika tidak edit
-            }
+            cart[existingItemIndex].quantity += newItem.quantity;
         } else {
             cart.push(newItem);
         }
-        
         localStorage.setItem('cart', JSON.stringify(cart));
-        
-        if (isEditMode) {
-            // Hapus status mode edit dan kembali ke checkout
-            sessionStorage.removeItem('editMode');
-            sessionStorage.removeItem('itemToEdit');
-            window.location.href = 'checkout.html';
-        } else {
-            // Tampilkan modal sukses seperti biasa
-            showSuccessModal(newItem);
-        }
+        showSuccessModal(newItem);
     }
 
     function showSuccessModal(item) {
-        // ... (fungsi modal tidak berubah)
+        const defaultOptions = ['Regular Ice', 'Normal Sweet', 'Normal Ice', 'Normal Shot', 'Milk'];
+        const displayedCustomizations = item.customizations.filter(c => !defaultOptions.includes(c));
+
+        document.getElementById('modal-product-image').src = item.image;
+        document.getElementById('modal-product-name').textContent = `Iced ${item.name}`;
+        document.getElementById('modal-product-customizations').textContent = displayedCustomizations.length > 0 ? displayedCustomizations.join(', ') : (item.customizations.find(c => c.includes('Large')) || 'Regular Ice');
+        document.getElementById('modal-product-quantity').textContent = item.quantity;
+        successModal.style.display = 'flex';
     }
 
     // === Event Listeners ===
     form.addEventListener('input', calculateTotalPrice);
-    increaseQtyBtn.addEventListener('click', () => { /* ... (tidak berubah) ... */ });
-    decreaseQtyBtn.addEventListener('click', () => { /* ... (tidak berubah) ... */ });
-    addToCartBtn.addEventListener('click', handleAddToCart);
-    continueShoppingBtn.addEventListener('click', () => { 
-        // Hapus status edit jika pengguna lanjut belanja
-        sessionStorage.removeItem('editMode');
-        sessionStorage.removeItem('itemToEdit');
-        window.location.href = 'index.html'; 
+    increaseQtyBtn.addEventListener('click', () => {
+        quantityElement.textContent = parseInt(quantityElement.textContent, 10) + 1;
+        calculateTotalPrice();
     });
+    decreaseQtyBtn.addEventListener('click', () => {
+        let quantity = parseInt(quantityElement.textContent, 10);
+        if (quantity > 1) {
+            quantityElement.textContent = quantity - 1;
+            calculateTotalPrice();
+        }
+    });
+    addToCartBtn.addEventListener('click', handleAddToCart);
+    if (continueShoppingBtn) {
+        continueShoppingBtn.addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
+    }
     successModal.addEventListener('click', (e) => {
-        if (e.target === successModal) { 
-            sessionStorage.removeItem('editMode');
-            sessionStorage.removeItem('itemToEdit');
-            window.location.href = 'index.html'; 
+        if (e.target === successModal) {
+            window.location.href = 'index.html';
         }
     });
 
