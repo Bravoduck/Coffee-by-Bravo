@@ -139,52 +139,35 @@ document.addEventListener('DOMContentLoaded', () => {
     // BAGIAN BARU: EVENT LISTENER UNTUK TOMBOL LANJUTKAN (WA)
     // =======================================================
     lanjutkanButton.addEventListener('click', () => {
-        const cart = JSON.parse(localStorage.getItem('cart')) || [];
-        const selectedStore = localStorage.getItem('selectedStore') || 'Belum Dipilih';
-        
-        if (cart.length === 0) {
-            alert('Keranjang Anda kosong. Silakan pesan terlebih dahulu.');
-            return;
-        }
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const selectedStore = localStorage.getItem('selectedStore');
 
-        // --- GANTI DENGAN NOMOR WA ANDA ---
-        const yourWhatsAppNumber = '6281290493785'; 
+    // Validasi 1: Pastikan keranjang tidak kosong
+    if (cart.length === 0) {
+        alert('Keranjang Anda kosong. Silakan pesan terlebih dahulu.');
+        return;
+    }
 
-        // --- Membuat format pesan ---
-        let message = `Halo, saya mau pesan Fore Coffee.\n\n`;
-        message += `*Lokasi Pengambilan:*\n${selectedStore}\n\n`;
-        message += `*Detail Pesanan:*\n`;
-        message += `---------------------------\n`;
+    // Validasi 2: Pastikan lokasi store sudah dipilih
+    if (!selectedStore) {
+        alert('Anda harus memilih lokasi pick up terlebih dahulu.');
+        // Arahkan pengguna ke halaman pemilihan store
+        window.location.href = 'store.html';
+        return;
+    }
 
-        let grandTotal = 0;
-        cart.forEach(item => {
-            const itemTotal = item.price * item.quantity;
-            grandTotal += itemTotal;
-            const formattedItemTotal = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(itemTotal).replace('Rp', 'Rp ');
-
-            const defaultOptions = ['Regular Ice', 'Normal Sweet', 'Normal Ice', 'Normal Shot', 'Milk'];
-            const customizations = item.customizations.filter(c => !defaultOptions.includes(c)).join(', ');
-
-            message += `- ${item.quantity}x ${item.name}\n`;
-            if (customizations) {
-                message += `  (${customizations})\n`;
-            }
-            message += `  Subtotal: ${formattedItemTotal}\n\n`;
-        });
-        
-        const formattedGrandTotal = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(grandTotal).replace('Rp', 'Rp ');
-
-        message += `---------------------------\n`;
-        message += `*Total Pembayaran: ${formattedGrandTotal}*\n\n`;
-        message += `Terima kasih.`;
-
-        // Encode pesan dan buat link WhatsApp
-        const encodedMessage = encodeURIComponent(message);
-        const whatsappURL = `https://wa.me/${yourWhatsAppNumber}?text=${encodedMessage}`;
-
-        // Arahkan pengguna ke WhatsApp
-        window.open(whatsappURL, '_blank');
+    // Hitung total harga final dari keranjang
+    let grandTotal = 0;
+    cart.forEach(item => {
+        grandTotal += item.price * item.quantity;
     });
+
+    // Buat URL untuk halaman pembayaran dengan parameter total
+    const paymentUrl = `payment.html?total=${grandTotal}`;
+    
+    // Arahkan pengguna ke halaman pembayaran
+    window.location.href = paymentUrl;
+});
 
     // --- PANGGIL FUNGSI-FUNGSI SAAT HALAMAN DIMUAT ---
     displayPickupLocation();

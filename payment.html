@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Pembayaran - Coffee by Bravo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.0/qrcode.min.js"></script>
+    <style>
+      /* Style tambahan khusus untuk halaman pembayaran */
+      body {
+        background-color: #f7f7f7;
+      }
+      .payment-main {
+        padding: 16px;
+        padding-bottom: 120px;
+      }
+      #qrcode-container {
+        width: 256px;
+        height: 256px;
+        margin: 24px auto;
+        padding: 16px;
+        border-radius: 12px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
+      .payment-timer {
+        text-align: center;
+        color: #d32f2f;
+        margin-bottom: 16px;
+        font-weight: 500;
+      }
+      .total-display {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 16px;
+        border-radius: 12px;
+        margin-bottom: 24px;
+      }
+      .payment-instructions {
+        background-color: white;
+        padding: 16px;
+        border-radius: 12px;
+      }
+      .payment-instructions h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+      .payment-instructions ol {
+        list-style-position: inside;
+        padding-left: 4px;
+        font-size: 14px;
+        color: var(--text-light);
+        line-height: 1.6;
+      }
+      .payment-footer {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+      }
+      .modal-overlay-custom {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 999;
+      }
+
+      .modal-content-custom {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 24px;
+        border-radius: 16px;
+        width: calc(100% - 48px);
+        max-width: 320px;
+        z-index: 1000;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .modal-content-custom h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+
+      .modal-content-custom p {
+        font-size: 14px;
+        color: var(--text-light);
+        line-height: 1.5;
+        margin-bottom: 24px;
+      }
+
+      .modal-actions-custom {
+        display: flex;
+        gap: 12px;
+      }
+
+      .modal-actions-custom button {
+        flex-grow: 1;
+        padding: 12px;
+        border-radius: 24px;
+        font-size: 14px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.2s;
+      }
+
+      .modal-btn-primary {
+        background-color: var(--primary-green);
+        color: white;
+      }
+      .modal-btn-primary:hover {
+        background-color: #004d33;
+      }
+
+      .modal-btn-secondary {
+        background-color: #f0f0f0;
+        color: var(--text-color);
+      }
+      .modal-btn-secondary:hover {
+        background-color: #e0e0e0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mobile-container">
+      <header class="detail-header">
+        <a href="checkout.html" class="back-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"
+            ></path>
+          </svg>
+        </a>
+        <h1>Pembayaran QRIS</h1>
+      </header>
+
+      <main class="payment-main">
+        <div id="payment-timer" class="payment-timer">
+          Selesaikan pembayaran dalam 14:59
+        </div>
+        <div id="qrcode-container">Memuat QR Code...</div>
+        <div class="total-display">
+          <span class="total-label">Total Pembayaran</span>
+          <span class="total-amount" id="payment-total">Rp 0</span>
+        </div>
+        <div class="payment-instructions">
+          <h3>Cara Pembayaran</h3>
+          <ol>
+            <li>Screenshot atau simpan gambar QR Code ini.</li>
+            <li>Buka aplikasi m-Banking atau e-Wallet Anda.</li>
+            <li>Pilih menu bayar dengan QRIS, lalu unggah gambar QR.</li>
+            <li>Pastikan nominal pembayaran sudah sesuai.</li>
+            <li>Selesaikan pembayaran dan kembali ke halaman ini.</li>
+          </ol>
+        </div>
+      </main>
+
+      <footer class="sticky-footer payment-footer">
+        <button class="add-to-cart-btn" id="confirm-payment-btn">
+          Konfirmasi Pesanan
+        </button>
+      </footer>
+    </div>
+    <div id="confirmation-modal" style="display: none">
+      <div class="modal-overlay-custom"></div>
+      <div class="modal-content-custom">
+        <h3>Konfirmasi Pesanan</h3>
+        <p>
+          Anda akan diarahkan ke WhatsApp untuk mengirim detail pesanan kepada
+          penjual. Pastikan Anda sudah menyelesaikan pembayaran.
+        </p>
+        <div class="modal-actions-custom">
+          <button id="cancel-wa-btn" class="modal-btn-secondary">Batal</button>
+          <button id="confirm-wa-btn" class="modal-btn-primary">
+            Lanjutkan ke WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="payment.js" defer></script>
+  </body>
+</html>

@@ -1,21 +1,78 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // ▼▼▼ KODE BARU: FUNGSI PENCARIAN PRODUK ▼▼▼
+    const appHeader = document.querySelector('.app-header');
+    const searchIconBtn = document.getElementById('search-icon-btn');
+    const backFromSearchBtn = document.getElementById('back-from-search');
+    const searchInput = document.getElementById('product-search-input');
+    const filterWrapper = document.querySelector('.filter-wrapper');
+    const allProductSections = document.querySelectorAll('.product-section');
+    const allProductCards = document.querySelectorAll('.product-card');
+    const noResultsMessage = document.getElementById('no-results-message');
+
+    // Fungsi untuk menjalankan filter pencarian
+    const handleSearch = () => {
+        const query = searchInput.value.toLowerCase().trim();
+        let itemsFound = 0;
+
+        // 1. Filter kartu produk
+        allProductCards.forEach(card => {
+            const productName = card.dataset.productName.toLowerCase();
+            const matches = productName.includes(query);
+            card.classList.toggle('hidden', !matches);
+            if(matches) itemsFound++;
+        });
+
+        // 2. Sembunyikan/tampilkan header kategori berdasarkan produk yang terlihat
+        allProductSections.forEach(section => {
+            const visibleCards = section.querySelectorAll('.product-card:not(.hidden)');
+            section.classList.toggle('hidden', visibleCards.length === 0);
+        });
+        
+        // 3. Tampilkan pesan "tidak ditemukan" jika tidak ada hasil dan query tidak kosong
+        noResultsMessage.style.display = (itemsFound === 0 && query !== '') ? 'block' : 'none';
+    };
+
+    // Saat ikon search di klik
+    searchIconBtn.addEventListener('click', () => {
+        appHeader.classList.add('search-active');
+        filterWrapper.classList.add('hidden'); // Sembunyikan filter kategori
+        noResultsMessage.style.display = 'none'; // Pastikan pesan tersembunyi saat mulai
+        searchInput.focus();
+    });
+
+    // Saat tombol kembali dari mode search di klik
+    backFromSearchBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        appHeader.classList.remove('search-active');
+        filterWrapper.classList.remove('hidden'); // Tampilkan lagi filter kategori
+        searchInput.value = ''; // Kosongkan input
+        
+        // Tampilkan kembali semua elemen yang mungkin tersembunyi
+        allProductCards.forEach(card => card.classList.remove('hidden'));
+        allProductSections.forEach(section => section.classList.remove('hidden'));
+        noResultsMessage.style.display = 'none';
+    });
+
+    // Saat pengguna mengetik di kolom pencarian
+    searchInput.addEventListener('input', handleSearch);
+    // ▲▲▲ AKHIR DARI KODE PENCARIAN ▲▲▲
+
+
     // -----------------------------------------------------------------
-    // ▼▼▼ KODE FILTER DIGANTI MENJADI LOGIKA SCROLL ▼▼▼
+    // ▼▼▼ KODE ASLI ANDA (Sedikit modifikasi) ▼▼▼
     // -----------------------------------------------------------------
     const filterButtons = document.querySelectorAll('.filter-btn');
     
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // 1. Atur status tombol 'active'
+            // Jangan jalankan fungsi scroll jika sedang dalam mode pencarian
+            if (appHeader.classList.contains('search-active')) return;
+
             filterButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
-
-            // 2. Ambil ID target dari data-filter
             const filterValue = button.dataset.filter;
             const targetSection = document.getElementById(filterValue);
-
-            // 3. Jika section target ada, scroll ke sana dengan mulus
             if (targetSection) {
                 targetSection.scrollIntoView({
                     behavior: 'smooth',
@@ -24,9 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-    // -----------------------------------------------------------------
-    // ▲▲▲ AKHIR DARI LOGIKA SCROLL ▲▲▲
-    // -----------------------------------------------------------------
 
     function loadSelectedStore() {
         const selectedStore = localStorage.getItem('selectedStore');
@@ -36,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     loadSelectedStore();
     
-    // === Bagian 1: Logika untuk tombol '+' di setiap produk (TETAP SAMA) ===
+    // === Logika untuk tombol '+' di setiap produk ===
     const addButtons = document.querySelectorAll('.add-btn');
     addButtons.forEach(button => {
         button.addEventListener('click', (event) => {
@@ -61,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // === Bagian 2: Logika untuk menampilkan footer keranjang (TETAP SAMA) ===
+    // === Logika untuk menampilkan footer keranjang ===
     function displayCartFooter() {
         const cart = JSON.parse(localStorage.getItem('cart')) || [];
         if (cart.length === 0) { return; }
