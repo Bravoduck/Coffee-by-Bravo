@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function generateDynamicQRIS(nominal) {
-    // GANTI DENGAN KODE QRIS STATIS DANA ANDA
     const staticQris =
       "00020101021126570011ID.DANA.WWW011893600915321626938702092162693870303UMI51440014ID.CO.QRIS.WWW0215ID10221466636310303UMI5204481453033605802ID5909BRAVODUCK6014Kab. Tangerang6105155206304778D";
 
@@ -70,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
 
-  // Tampilkan Total Pembayaran
   const paymentTotalEl = document.getElementById("payment-total");
   paymentTotalEl.textContent = new Intl.NumberFormat("id-ID", {
     style: "currency",
@@ -78,12 +76,10 @@ document.addEventListener("DOMContentLoaded", function () {
     minimumFractionDigits: 0,
   }).format(total);
 
-  // Generate QRIS
   generateDynamicQRIS(total);
 
-  // Jalankan Timer
   const timerEl = document.getElementById("payment-timer");
-  let timeLeft = 15 * 60; // 15 menit
+  let timeLeft = 15 * 60;
   const timerInterval = setInterval(() => {
     timeLeft--;
     const minutes = Math.floor(timeLeft / 60);
@@ -97,11 +93,29 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("qrcode-container").innerHTML =
         '<p class="text-center" style="color: red;">Waktu habis, silakan buat pesanan baru.</p>';
       document.getElementById("confirm-payment-btn").disabled = true;
-      document.getElementById("confirm-payment-btn").style.backgroundColor =
-        "#cccccc";
     }
   }, 1000);
 
+  // -------------------------------------------------------------
+  // LOGIKA TOMBOL UNDUH QR
+  // -------------------------------------------------------------
+  const downloadButton = document.getElementById("download-qr-btn");
+  downloadButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    const canvas = document.querySelector("#qrcode-container canvas");
+    if (!canvas) {
+      alert("QR Code belum siap atau gagal dimuat.");
+      return;
+    }
+    const imageUrl = canvas.toDataURL("image/png");
+    const link = document.createElement("a");
+    link.href = imageUrl;
+    link.download = "QRIS_Pembayaran_CoffeeByBravo.png";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+  
   // -------------------------------------------------------------
   // LOGIKA MODAL KONFIRMASI KUSTOM
   // -------------------------------------------------------------
@@ -110,82 +124,68 @@ document.addEventListener("DOMContentLoaded", function () {
   const cancelWaBtn = document.getElementById("cancel-wa-btn");
   const confirmWaBtn = document.getElementById("confirm-wa-btn");
 
-  // 1. Saat tombol utama "Konfirmasi Pesanan" diklik, TAMPILKAN modal
-  confirmButton.addEventListener("click", function () {
-    confirmationModal.style.display = "block";
-  });
+  if (confirmButton && confirmationModal) {
+    confirmButton.addEventListener("click", function () {
+      confirmationModal.style.display = "block";
+    });
 
-  // 2. Saat tombol "Batal" di dalam modal diklik, SEMBUNYIKAN modal
-  cancelWaBtn.addEventListener("click", function () {
-    confirmationModal.style.display = "none";
-  });
+    cancelWaBtn.addEventListener("click", function () {
+      confirmationModal.style.display = "none";
+    });
 
-  // 3. Saat tombol "Lanjutkan ke WhatsApp" di dalam modal diklik, jalankan aksi
-  confirmWaBtn.addEventListener("click", function () {
-    // Ambil data keranjang dan lokasi dari localStorage
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    const selectedStore =
-      localStorage.getItem("selectedStore") || "Belum Dipilih";
+    confirmWaBtn.addEventListener("click", function () {
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+      const selectedStore =
+        localStorage.getItem("selectedStore") || "Belum Dipilih";
 
-    // Nomor WhatsApp Anda
-    const yourWhatsAppNumber = "6281290493785";
+      const yourWhatsAppNumber = "6281290493785";
 
-    // Membuat format pesan
-    let message = `Halo, saya sudah melakukan pembayaran via QRIS dan ingin mengonfirmasi pesanan berikut:\n\n`;
-    message += `*Lokasi Pengambilan:*\n${selectedStore}\n\n`;
-    message += `*Detail Pesanan:*\n`;
-    message += `---------------------------\n`;
+      let message = `Halo, saya sudah melakukan pembayaran via QRIS dan ingin mengonfirmasi pesanan berikut:\n\n`;
+      message += `*Lokasi Pengambilan:*\n${selectedStore}\n\n`;
+      message += `*Detail Pesanan:*\n`;
+      message += `---------------------------\n`;
 
-    let grandTotal = 0;
-    cart.forEach((item) => {
-      const itemTotal = item.price * item.quantity;
-      grandTotal += itemTotal;
-      const formattedItemTotal = new Intl.NumberFormat("id-ID", {
+      let grandTotal = 0;
+      cart.forEach((item) => {
+        grandTotal += item.price * item.quantity;
+        
+        // ▼▼▼ BAGIAN YANG DIPERBAIKI ADA DI SINI ▼▼▼
+        // Logika untuk menampilkan kustomisasi/topping
+        const defaultOptions = [
+          "Regular Ice", "Normal Sweet", "Normal Ice", "Normal Shot", "Milk",
+        ];
+        const customizations = item.customizations
+          .filter((c) => !defaultOptions.includes(c))
+          .join(", ");
+
+        message += `• ${item.quantity}x *${item.name}*\n`;
+        // Jika ada kustomisasi, tampilkan di bawah nama produk
+        if (customizations) {
+          message += `  (_${customizations}_)\n`;
+        }
+        // ▲▲▲ AKHIR BAGIAN YANG DIPERBAIKI ▲▲▲
+      });
+      
+      const formattedGrandTotal = new Intl.NumberFormat("id-ID", {
         style: "currency",
         currency: "IDR",
         minimumFractionDigits: 0,
-      }).format(itemTotal);
+      }).format(grandTotal);
+      
+      message += `---------------------------\n`;
+      message += `*Total Dibayar: ${formattedGrandTotal}*\n\n`;
+      message += `Mohon segera diproses. Terima kasih.`;
 
-      const defaultOptions = [
-        "Regular Ice",
-        "Normal Sweet",
-        "Normal Ice",
-        "Normal Shot",
-        "Milk",
-      ];
-      const customizations = item.customizations
-        .filter((c) => !defaultOptions.includes(c))
-        .join(", ");
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappURL = `https://wa.me/${yourWhatsAppNumber}?text=${encodedMessage}`;
 
-      message += `• ${item.quantity}x *${item.name}*\n`;
-      if (customizations) {
-        message += `  (_${customizations}_)\n`;
-      }
-      message += `  Subtotal: ${formattedItemTotal}\n\n`;
+      localStorage.removeItem("cart");
+      confirmationModal.style.display = "none";
+      window.open(whatsappURL, "_blank");
+      
+      setTimeout(() => {
+        window.location.href = "index.html";
+      }, 500);
     });
-
-    const formattedGrandTotal = new Intl.NumberFormat("id-ID", {
-      style: "currency",
-      currency: "IDR",
-      minimumFractionDigits: 0,
-    }).format(grandTotal);
-
-    message += `---------------------------\n`;
-    message += `*Total Dibayar: ${formattedGrandTotal}*\n\n`;
-    message += `Mohon segera diproses. Terima kasih.`;
-
-    // Encode pesan dan buat link WhatsApp
-    const encodedMessage = encodeURIComponent(message);
-    const whatsappURL = `https://wa.me/${yourWhatsAppNumber}?text=${encodedMessage}`;
-
-    // Kosongkan keranjang setelah konfirmasi
-    localStorage.removeItem("cart");
-
-    // Sembunyikan modal sebelum beralih halaman
-    confirmationModal.style.display = "none";
-
-    // Arahkan pengguna ke WhatsApp, lalu kembali ke halaman utama
-    window.open(whatsappURL, "_blank");
-    window.location.href = "index.html";
-  });
+  }
 });
