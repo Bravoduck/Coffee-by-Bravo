@@ -1,188 +1,67 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Store - Coffee by Bravo</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="store.css"> 
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="mobile-container">
-        <header class="detail-header store-header">
-            <a href="index.html" class="back-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path></svg>
-            </a>
-            <h1>Fore Store</h1>
-            <input type="search" id="search-input" placeholder=" " class="search-input">
-            <a href="#" class="header-search-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.02944 20 2 15.9706 2 11C2 6.02944 6.02944 2 11 2C15.9706 2 20 6.02944 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.13401 14.866 4 11 4C7.13401 4 4 7.13401 4 11C4 14.866 7.13401 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path></svg>
-            </a>
-        </header>
-        <main class="store-list-main">
-            <section class="pickup-info-card">
-                <div class="pickup-icon-bg">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21 20H3V11H2V20.5C2 21.3284 2.67157 22 3.5 22H20.5C21.3284 22 22 21.3284 22 20.5V11H21V20ZM12 2C15.3137 2 18 4.68629 18 8C18 12.4183 12 19 12 19C12 19 6 12.4183 6 8C6 4.68629 8.68629 2 12 2ZM12 10.5C13.3807 10.5 14.5 9.38071 14.5 8C14.5 6.61929 13.3807 5.5 12 5.5C10.6193 5.5 9.5 6.61929 9.5 8C9.5 9.38071 10.6193 10.5 12 10.5Z"></path></svg>
-                </div>
-                <div>
-                    <h3>Pick Up</h3>
-                    <p>Ambil ke store tanpa antri</p>
-                </div>
-            </section>
-            
-            <p class="store-count">277 Store</p>
 
-            <div class="store-list">
-                <a href="#" class="store-card" data-store-name="A.H Nasution">
-                    <div class="store-details">
-                        <h3 class="store-name">A.H Nasution</h3>
-                        <p class="store-address">Fore Coffee A.H Nasution - JL. AH.Nasution komp.griya milala mas ruko a4-a6, Pangkalan Masyhur, Kec. Medan Johor, Kota Medan, Sumatera Utara 20146</p>
-                        <div class="store-services">
-                            <span>Pick Up</span>
-                        </div>
-                        <div class="store-hours open">Buka 08:00 - 22:00</div>
-                    </div>
-                    <div class="store-amenities">
-                        <svg class="go-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
-                    </div>
-                </a>
-                <a href="#" class="store-card" data-store-name="AEON Tanjung Barat">
-                    <div class="store-details">
-                        <h3 class="store-name">AEON Tanjung Barat</h3>
-                        <p class="store-address">Fore Coffee - AEON Mall Tanjung Barat G Floor Unit 058, Jl. Raya Tj. Barat No.163, RT.12/RW.4, West Tanjung, Jagakarsa, South Jakarta City, Jakarta 12530</p>
-                        <div class="store-services">
-                            <span>Pick Up</span>
-                        </div>
-                        <div class="store-hours open">Buka 10:00 - 22:00</div>
-                    </div>
-                    <div class="store-amenities">
-                        <svg class="go-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
-                    </div>
-                </a>
-                <a href="#" class="store-card" data-store-name="Adam Malik">
-                    <div class="store-details">
-                        <h3 class="store-name">Adam Malik</h3>
-                        <p class="store-address">Fore Coffee - Jl. H Adam Malik, Kel. Silalas, Kec. Medan Barat, Kota Medan, Sumatera Utara</p>
-                        <div class="store-services">
-                            <span>Pick Up</span>
-                        </div>
-                        <div class="store-hours open">Buka 07:00 - 22:00</div>
-                    </div>
-                    <div class="store-amenities">
-                        <svg class="go-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
-                    </div>
-                </a>
-                <a href="#" class="store-card" data-store-name="AEON Mall Deltamas">
-                    <div class="store-details">
-                        <h3 class="store-name">AEON Mall Deltamas</h3>
-                        <p class="store-address">Fore Coffee Aeon Mall Deltamas - Hegarmukti, Central Cikarang, Bekasi, Jawa Barat 17530</p>
-                        <div class="store-services">
-                            <span>Pick Up</span>
-                        </div>
-                        <div class="store-hours open">Buka 10:00 - 22:00</div>
-                    </div>
-                    <div class="store-amenities">
-                        <svg class="go-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
-                    </div>
-                </a>
-                <a href="#" class="store-card" data-store-name="AEON Mall Sentul">
-                    <div class="store-details">
-                        <h3 class="store-name">AEON Mall Sentul</h3>
-                        <p class="store-address">Fore Coffee Aeon Mall Deltamas - Hegarmukti, Central Cikarang, Bekasi, Jawa Barat 17530</p>
-                        <div class="store-services">
-                            <span>Pick Up</span>
-                        </div>
-                        <div class="store-hours open">Buka 10:00 - 22:00</div>
-                    </div>
-                    <div class="store-amenities">
-                        <svg class="go-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
-                    </div>
-                </a>
-                <a href="#" class="store-card" data-store-name="Ahmad Yani Banjarmasin">
-                    <div class="store-details">
-                        <h3 class="store-name">Ahmad Yani Banjarmasin</h3>
-                        <p class="store-address">Fore Coffee Aeon Mall Deltamas - Hegarmukti, Central Cikarang, Bekasi, Jawa Barat 17530</p>
-                        <div class="store-services">
-                            <span>Pick Up</span>
-                        </div>
-                        <div class="store-hours open">Buka 07:00 - 23:00</div>
-                    </div>
-                    <div class="store-amenities">
-                        <svg class="go-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
-                    </div>
-                </a>
-                <a href="#" class="store-card" data-store-name="Ahmad Yani Lampung">
-                    <div class="store-details">
-                        <h3 class="store-name">Ahmad Yani Lampung</h3>
-                        <p class="store-address">Fore Coffee Aeon Mall Deltamas - Hegarmukti, Central Cikarang, Bekasi, Jawa Barat 17530</p>
-                        <div class="store-services">
-                            <span>Pick Up</span>
-                        </div>
-                        <div class="store-hours open">Buka 07:00 - 23:00</div>
-                    </div>
-                    <div class="store-amenities">
-                        <svg class="go-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
-                    </div>
-                </a>
-                <a href="#" class="store-card" data-store-name="Ahmad Yani Surabaya">
-                    <div class="store-details">
-                        <h3 class="store-name">Ahmad Yani Surabaya</h3>
-                        <p class="store-address">Fore Coffee Aeon Mall Deltamas - Hegarmukti, Central Cikarang, Bekasi, Jawa Barat 17530</p>
-                        <div class="store-services">
-                            <span>Pick Up</span>
-                        </div>
-                        <div class="store-hours open">Buka 07:00 - 22:00</div>
-                    </div>
-                    <div class="store-amenities">
-                        <svg class="go-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
-                    </div>
-                </a>
-                <a href="#" class="store-card" data-store-name="Alauddin Makassar">
-                    <div class="store-details">
-                        <h3 class="store-name">Alauddin Makassar</h3>
-                        <p class="store-address">Fore Coffee Aeon Mall Deltamas - Hegarmukti, Central Cikarang, Bekasi, Jawa Barat 17530</p>
-                        <div class="store-services">
-                            <span>Pick Up</span>
-                        </div>
-                        <div class="store-hours open">Buka 07:00 - 23:00</div>
-                    </div>
-                    <div class="store-amenities">
-                        <svg class="go-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
-                    </div>
-                </a>
-                <a href="#" class="store-card" data-store-name="Alternative Cibubur">
-                    <div class="store-details">
-                        <h3 class="store-name">Alternative Cibubur</h3>
-                        <p class="store-address">Fore Coffee Aeon Mall Deltamas - Hegarmukti, Central Cikarang, Bekasi, Jawa Barat 17530</p>
-                        <div class="store-services">
-                            <span>Pick Up</span>
-                        </div>
-                        <div class="store-hours open">Buka 10:00 - 22:00</div>
-                    </div>
-                    <div class="store-amenities">
-                        <svg class="go-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
-                    </div>
-                </a>
-                <a href="#" class="store-card" data-store-name="Anggrek Cakra">
-                    <div class="store-details">
-                        <h3 class="store-name">Anggrek Cakra</h3>
-                        <p class="store-address">Fore Coffee Aeon Mall Deltamas - Hegarmukti, Central Cikarang, Bekasi, Jawa Barat 17530</p>
-                        <div class="store-services">
-                            <span>Pick Up</span>
-                        </div>
-                        <div class="store-hours open">Buka 10:00 - 22:00</div>
-                    </div>
-                    <div class="store-amenities">
-                        <svg class="go-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
-                    </div>
-                </a>
-            </div>
-        </main>
-    </div>
-    <script src="store.js" defer></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Store - Coffee by Bravo</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="mobile-container">
+    <header class="detail-header store-header">
+      <div class="header-col left">
+        <a href="index.html" class="back-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z">
+            </path>
+          </svg>
+        </a>
+      </div>
+
+      <div class="header-col center">
+        <h1>Fore Store</h1>
+        <input type="search" id="search-input" placeholder="" class="search-input" />
+      </div>
+
+      <div class="header-col right">
+        <a href="#" class="header-search-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.02944 20 2 15.9706 2 11C2 6.02944 6.02944 2 11 2C15.9706 2 20 6.02944 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.13401 14.866 4 11 4C7.13401 4 4 7.13401 4 11C4 14.866 7.13401 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z">
+            </path>
+          </svg>
+        </a>
+      </div>
+    </header>
+    <main class="store-list-main">
+      <section class="pickup-info-card">
+        <div class="pickup-icon-bg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M21 20H3V11H2V20.5C2 21.3284 2.67157 22 3.5 22H20.5C21.3284 22 22 21.3284 22 20.5V11H21V20ZM12 2C15.3137 2 18 4.68629 18 8C18 12.4183 12 19 12 19C12 19 6 12.4183 6 8C6 4.68629 8.68629 2 12 2ZM12 10.5C13.3807 10.5 14.5 9.38071 14.5 8C14.5 6.61929 13.3807 5.5 12 5.5C10.6193 5.5 9.5 6.61929 9.5 8C9.5 9.38071 10.6193 10.5 12 10.5Z">
+            </path>
+          </svg>
+        </div>
+        <div>
+          <h3>Pick Up</h3>
+          <p>Ambil ke store tanpa antri</p>
+        </div>
+      </section>
+      <p class="store-count"></p>
+      <div class="store-list">
+      </div>
+    </main>
+  </div>
+  <script src="store.js" type="module" defer></script>
 </body>
+
 </html>

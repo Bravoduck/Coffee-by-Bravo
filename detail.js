@@ -1,16 +1,30 @@
+/**
+ * @file detail.js
+ * Mengelola semua logika untuk halaman detail produk.
+ * Mampu menangani dua mode:
+ * 1. Menambah item baru ke keranjang (default).
+ * 2. Mengedit (update) item yang sudah ada di keranjang.
+ */
 document.addEventListener('DOMContentLoaded', () => {
-    // === Inisialisasi & Pengambilan Data dari sessionStorage ===
+    const isEditMode = sessionStorage.getItem('editMode') === 'true';
+    const itemToEdit = isEditMode ? JSON.parse(sessionStorage.getItem('itemToEdit')) : null;
     const productData = JSON.parse(sessionStorage.getItem('currentProduct'));
 
-    if (!productData) {
+    if (!itemToEdit && !productData) {
         alert('Data produk tidak ditemukan, kembali ke halaman utama.');
         window.location.href = 'index.html';
         return;
     }
 
-    const basePrice = productData.price;
+    const productBaseData = {
+        name: isEditMode ? itemToEdit.name : productData.name,
+        description: isEditMode ? 'Ubah kustomisasi dan jumlah pesanan di bawah ini.' : productData.description,
+        imageUrl: isEditMode ? itemToEdit.image : productData.imageUrl,
+    };
+    const basePrice = productData ? productData.price : (itemToEdit.price || 0);
 
-    // === Definisi Elemen DOM ===
+    let currentPrice = 0;
+    let toastTimer;
     const productNameHeader = document.getElementById('product-name-title-header');
     const detailImage = document.getElementById('product-detail-image');
     const detailName = document.getElementById('product-detail-name');
@@ -26,29 +40,42 @@ document.addEventListener('DOMContentLoaded', () => {
     const toastNotification = document.getElementById('toast-notification');
     const toastMessage = document.getElementById('toast-message');
 
-    let currentPrice = 0;
-    let toastTimer;
-
-    // === Fungsi-Fungsi Utama ===
-
     function populateProductDetails() {
-        productNameHeader.textContent = productData.name;
-        detailImage.src = productData.imageUrl;
-        detailImage.alt = productData.name;
-        detailName.textContent = productData.name;
-        detailDescription.textContent = productData.description;
-        const formattedBasePrice = new Intl.NumberFormat('id-ID', {
+        productNameHeader.textContent = productBaseData.name;
+        detailImage.src = productBaseData.imageUrl;
+        detailImage.alt = productBaseData.name;
+        detailName.textContent = productBaseData.name;
+        detailDescription.textContent = productBaseData.description;
+        detailPrice.textContent = new Intl.NumberFormat('id-ID', {
             style: 'currency',
             currency: 'IDR',
             minimumFractionDigits: 0
-        }).format(basePrice);
-        detailPrice.textContent = formattedBasePrice.replace('Rp', 'Rp ');
+        }).format(basePrice).replace('Rp', 'Rp ');
+    }
+
+    function populateFormForEdit() {
+        if (!itemToEdit) return;
+        quantityElement.textContent = itemToEdit.quantity;
+
+        const allInputs = form.querySelectorAll('input[type="radio"], input[type="checkbox"]');
+        allInputs.forEach(input => {
+            const label = input.closest('.option-item');
+            const nameSpan = label.querySelector('.option-name');
+            if (!nameSpan) return;
+
+            const clone = nameSpan.cloneNode(true);
+            if (clone.querySelector('.badge')) clone.querySelector('.badge').remove();
+            const optionText = clone.textContent.trim().replace(/👍/g, '').trim();
+
+            if (itemToEdit.customizations.includes(optionText)) {
+                input.checked = true;
+            }
+        });
     }
 
     function calculateTotalPrice() {
         let optionsPrice = 0;
-        const selectedOptions = form.querySelectorAll('input:checked');
-        selectedOptions.forEach(option => {
+        form.querySelectorAll('input:checked').forEach(option => {
             optionsPrice += parseInt(option.dataset.price, 10) || 0;
         });
         const quantity = parseInt(quantityElement.textContent, 10);
@@ -62,13 +89,57 @@ document.addEventListener('DOMContentLoaded', () => {
             currency: 'IDR',
             minimumFractionDigits: 0
         }).format(price);
-        addToCartBtn.textContent = `Tambah • ${formattedPrice.replace('Rp', 'Rp ')}`;
+        const buttonText = isEditMode ? 'Update' : 'Tambah';
+        addToCartBtn.textContent = `${buttonText} • ${formattedPrice.replace('Rp', 'Rp ')}`;
+    }
+
+    function handleSubmit() {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const quantity = parseInt(quantityElement.textContent, 10);
+
+        const customizations = Array.from(form.querySelectorAll('input:checked')).map(opt => {
+            const nameSpan = opt.closest('.option-item').querySelector('.option-name');
+            const clone = nameSpan.cloneNode(true);
+            if (clone.querySelector('.badge')) clone.querySelector('.badge').remove();
+            return clone.textContent.trim().replace(/👍/g, '').trim();
+        });
+
+        const singleItemPrice = currentPrice / quantity;
+        const newItemData = {
+            id: `${productBaseData.name}-${customizations.join('-')}`.replace(/\s/g, ''),
+            name: productBaseData.name,
+            customizations,
+            price: singleItemPrice,
+            quantity,
+            image: productBaseData.imageUrl,
+        };
+
+        if (isEditMode) {
+            const itemIndex = cart.findIndex(item => item.id === itemToEdit.id);
+            if (itemIndex > -1) {
+                cart[itemIndex] = newItemData;
+            } else {
+                cart.push(newItemData);
+            }
+            sessionStorage.removeItem('editMode');
+            sessionStorage.removeItem('itemToEdit');
+            window.location.href = 'checkout.html';
+        } else {
+            const existingItemIndex = cart.findIndex(item => item.id === newItemData.id);
+            if (existingItemIndex > -1) {
+                cart[existingItemIndex].quantity += newItemData.quantity;
+            } else {
+                cart.push(newItemData);
+            }
+            showSuccessModal(newItemData);
+        }
+        localStorage.setItem('cart', JSON.stringify(cart));
     }
 
     function showToast(message, type = 'success') {
         clearTimeout(toastTimer);
         toastMessage.textContent = message;
-        toastNotification.classList.remove('error');
+        toastNotification.className = 'toast-notification';
         if (type === 'error') {
             toastNotification.classList.add('error');
         }
@@ -84,9 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
             checkbox.addEventListener('change', (e) => {
                 if (e.target.checked) {
                     syrupCheckboxes.forEach(cb => {
-                        if (cb !== e.target) {
-                            cb.checked = false;
-                        }
+                        if (cb !== e.target) cb.checked = false;
                     });
                 }
             });
@@ -97,47 +166,12 @@ document.addEventListener('DOMContentLoaded', () => {
             checkbox.addEventListener('change', (e) => {
                 const checkedCount = document.querySelectorAll('#topping-group input[type="checkbox"]:checked').length;
                 if (checkedCount > 2) {
-                    showToast('Additional untuk kategori yang dipilih tidak bisa lebih dari 2 additional', 'error');
+                    showToast('Maksimal 2 additional untuk kategori ini.', 'error');
                     e.target.checked = false;
                     calculateTotalPrice();
                 }
             });
         });
-    }
-
-    function handleAddToCart() {
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
-        const quantity = parseInt(quantityElement.textContent, 10);
-        const selectedOptions = Array.from(form.querySelectorAll('input:checked'));
-
-        const customizations = selectedOptions.map(opt => {
-            const nameSpan = opt.closest('.option-item').querySelector('.option-name');
-            const clone = nameSpan.cloneNode(true);
-            const badge = clone.querySelector('.badge');
-            if (badge) {
-                badge.remove();
-            }
-            return clone.textContent.trim().replace(/👍/g, '').trim();
-        });
-
-        const singleItemPrice = currentPrice / quantity;
-        const newItem = {
-            id: `${productData.name}-${customizations.join('-')}`.replace(/\s/g, ''),
-            name: productData.name,
-            customizations: customizations,
-            price: singleItemPrice,
-            quantity: quantity,
-            image: productData.imageUrl
-        };
-
-        const existingItemIndex = cart.findIndex(item => item.id === newItem.id);
-        if (existingItemIndex > -1) {
-            cart[existingItemIndex].quantity += newItem.quantity;
-        } else {
-            cart.push(newItem);
-        }
-        localStorage.setItem('cart', JSON.stringify(cart));
-        showSuccessModal(newItem);
     }
 
     function showSuccessModal(item) {
@@ -151,32 +185,44 @@ document.addEventListener('DOMContentLoaded', () => {
         successModal.style.display = 'flex';
     }
 
-    // === Event Listeners ===
-    form.addEventListener('input', calculateTotalPrice);
-    increaseQtyBtn.addEventListener('click', () => {
-        quantityElement.textContent = parseInt(quantityElement.textContent, 10) + 1;
-        calculateTotalPrice();
-    });
-    decreaseQtyBtn.addEventListener('click', () => {
-        let quantity = parseInt(quantityElement.textContent, 10);
-        if (quantity > 1) {
-            quantityElement.textContent = quantity - 1;
+    function initializeEventListeners() {
+        form.addEventListener('input', calculateTotalPrice);
+        addToCartBtn.addEventListener('click', handleSubmit);
+
+        increaseQtyBtn.addEventListener('click', () => {
+            quantityElement.textContent = parseInt(quantityElement.textContent, 10) + 1;
             calculateTotalPrice();
+        });
+
+        decreaseQtyBtn.addEventListener('click', () => {
+            let quantity = parseInt(quantityElement.textContent, 10);
+            if (quantity > 1) {
+                quantityElement.textContent = quantity - 1;
+                calculateTotalPrice();
+            }
+        });
+
+        if (continueShoppingBtn) {
+            continueShoppingBtn.addEventListener('click', () => {
+                window.location.href = 'index.html';
+            });
         }
-    });
-    addToCartBtn.addEventListener('click', handleAddToCart);
-    if (continueShoppingBtn) {
-        continueShoppingBtn.addEventListener('click', () => {
-            window.location.href = 'index.html';
+        successModal.addEventListener('click', (e) => {
+            if (e.target === successModal) {
+                window.location.href = 'index.html';
+            }
         });
     }
-    successModal.addEventListener('click', (e) => {
-        if (e.target === successModal) {
-            window.location.href = 'index.html';
-        }
-    });
 
-    populateProductDetails();
-    calculateTotalPrice();
-    setupCheckboxLimits();
+    function init() {
+        populateProductDetails();
+        if (isEditMode) {
+            populateFormForEdit();
+        }
+        calculateTotalPrice();
+        setupCheckboxLimits();
+        initializeEventListeners();
+    }
+
+    init();
 });

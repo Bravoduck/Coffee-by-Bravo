@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Checkout - Coffee by Bravo</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkout.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="mobile-container">
-         <header class="detail-header">
+        <header class="detail-header">
             <a href="index.html" class="back-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z">
+                    </path>
+                </svg>
             </a>
             <h1>Checkout</h1>
         </header>
@@ -22,12 +32,20 @@
                 <h3>Ambil pesananmu di</h3>
                 <div class="store-info">
                     <div class="store-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21 20H3V11L11 3.05495V7H13V3.05495L21 11V20ZM21 8.61803L12 1.5L3 8.61803V9H21V8.61803ZM7 18H9V14H15V18H17V12H7V18Z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M21 20H3V11L11 3.05495V7H13V3.05495L21 11V20ZM21 8.61803L12 1.5L3 8.61803V9H21V8.61803ZM7 18H9V14H15V18H17V12H7V18Z">
+                            </path>
+                        </svg>
                     </div>
                     <div class="store-name-display" id="pickup-store-name">Memuat lokasi...</div>
                 </div>
                 <div class="pickup-estimate">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20C16.42 20 20 16.42 20 12C20 7.58 16.42 4 12 4ZM12.5 7V12.25L16.5 14.33L15.74 15.45L11 13V7H12.5Z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20C16.42 20 20 16.42 20 12C20 7.58 16.42 4 12 4ZM12.5 7V12.25L16.5 14.33L15.74 15.45L11 13V7H12.5Z">
+                        </path>
+                    </svg>
                     <span>Estimasi pesanan siap diambil 8 - 15 menit</span>
                 </div>
             </section>
@@ -41,15 +59,28 @@
                 </div>
             </section>
         </main>
-        
+
         <footer class="sticky-footer checkout-footer">
             <div class="checkout-total-summary">
                 <span class="total-label">Total Pembayaran</span>
                 <span class="total-amount" id="total-payment">Rp 0</span>
             </div>
-             <button class="add-to-cart-btn" id="lanjutkan-btn">Lanjutkan</button>
+            <button class="add-to-cart-btn" id="lanjutkan-btn">Lanjutkan</button>
         </footer>
     </div>
     <script src="checkout.js" defer></script>
+    <div id="location-alert-modal" class="custom-modal-overlay">
+        <div class="custom-modal-content">
+            <svg class="custom-modal-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M12 2C16.9706 2 21 6.02944 21 11C21 17.5 12 23 12 23C12 23 3 17.5 3 11C3 6.02944 7.02944 2 12 2ZM12 14C13.6569 14 15 12.6569 15 11C15 9.34315 13.6569 8 12 8C10.3431 8 9 9.34315 9 11C9 12.6569 10.3431 14 12 14Z">
+                </path>
+            </svg>
+            <h3>Pilih Lokasi Dulu, Yuk!</h3>
+            <p>Sepertinya kamu lupa memilih mau ambil pesanan di mana.</p>
+            <button id="go-to-stores-btn" class="modal-btn primary">Pilih Toko Sekarang</button>
+        </div>
+    </div>
 </body>
+
 </html>

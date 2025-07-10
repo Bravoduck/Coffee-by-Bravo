@@ -1,0 +1,392 @@
+[
+  {
+    "category": "Fore Junior",
+    "slug": "fore-junior",
+    "enabled": true,
+    "items": [
+      {
+        "name": "Choco Cookie Shake",
+        "price": 18500,
+        "description": "Rasa cokelat istimewa untuk momen manis dan penuh petualangan.",
+        "image": "https://static.fore.coffee/product/Choco%20Cookie%20Shake.jpg"
+      },
+      {
+        "name": "Butterscotch Milk Crumble",
+        "price": 18500,
+        "description": "Butterscotch dengan paduan caramel, susu dengan sea salt cream dan caramel crumble sebagai topping.",
+        "image": "https://static.fore.coffee/product/Butterscotch%20Milk%20Crumble.jpg"
+      },
+      {
+        "name": "Vanilla O' Crumbs",
+        "price": 18500,
+        "description": "Perpaduan vanilla, butterscotch dan susu dilengkapi dengan saus karamel juga topping oreo yang gurih.",
+        "image": "https://static.fore.coffee/product/Vanilla%20O%20Crumbs.jpg"
+      },
+      {
+        "name": "Choco Caramel Cloud",
+        "price": 18500,
+        "description": "Nikmatnya cream salted caramel dengan paduan dark chocolate yang cocok untuk ceriakan hari.",
+        "image": "https://static.fore.coffee/product/Choco%20Caramel%20Cloud.jpg"
+      }
+    ]
+  },
+  {
+    "category": "Fore Signature",
+    "slug": "fore-signature",
+    "enabled": true,
+    "items": [
+      {
+        "name": "Kopi Dari Tani",
+        "price": 15500,
+        "description": "Paduan rasa dan aroma kopi Indonesia yang kuat bercampur dengan gula aren khas nusantara.",
+        "image": "https://static.fore.coffee/product/Kopi%20dari%20Tani.jpg"
+      },
+      {
+        "name": "Butterscotch Sea Salt Latte",
+        "price": 20500,
+        "description": "Perpaduan butterscotch dan espresso house blend dengan topping cream sea salt yang lembut di atasnya.",
+        "image": "https://static.fore.coffee/product/Butterscoth%20Iced.jpg"
+      },
+      {
+        "name": "Buttercream Latte",
+        "price": 19500,
+        "description": "Nikmatnya Buttercream Coffee sebagai topping kopi susu karamel.",
+        "image": "https://static.fore.coffee/product/Buttercream%20Latte%20(1).jpg"
+      },
+      {
+        "name": "Aren Latte",
+        "price": 18500,
+        "description": "Rasa alami gula aren berpadu sempurna dengan espresso premium. Menu terlaris Fore Coffee.",
+        "image": "https://static.fore.coffee/product/Aren%20Latte%20Ice.jpg"
+      },
+      {
+        "name": "Pandan Latte",
+        "price": 18500,
+        "description": "Latte dengan rasa dan aroma unik dari ekstrak pandan alami khas Fore Coffee.",
+        "image": "https://static.fore.coffee/product/Pandan%20Latte%20Iced.jpg"
+      }
+    ]
+  },
+  {
+    "category": "Coffee",
+    "slug": "coffee",
+    "enabled": true,
+    "items": [
+      {
+        "name": "Malty Latte",
+        "price": 17000,
+        "description": "Sang legenda Traditional Latte berpadu dengan manisnya karamel, menambah pengalaman rasa creamy dan nutty, yang berkesan di hati.",
+        "image": "https://static.fore.coffee/product/Malty%20Latte%20(1).jpg"
+      },
+      {
+        "name": "Bumi Latte",
+        "price": 15000,
+        "description": "Sensasi lembut dan legit dari saus karamel dan butterscotch yang khas berpadu dengan kopi autentik Indonesia.",
+        "image": "https://static.fore.coffee/product/Bumi%20Latte.jpg"
+      },
+      {
+        "name": "Cappuccino",
+        "price": 18000,
+        "description": "Paduan Espresso, susu hangat, dan lapisan foam tebal di atasnya tanpa gula tambahan.",
+        "image": "https://static.fore.coffee/product/Capucino%20Iced%20(1).jpg"
+      },
+      {
+        "name": "Double Ice Shaken Latte",
+        "price": 20500,
+        "description": "Paduan klasik 2 shot espresso dengan susu dan krim.",
+        "image": "https://static.fore.coffee/product/Double%20Iced%20Shaken%20Latte%20(1).jpg"
+      },
+      {
+        "name": "Café Latte",
+        "price": 18000,
+        "description": "Paduan espresso dengan susu sapi pilihan dan sedikit foam tanpa gula tambahan.",
+        "image": "https://static.fore.coffee/product/Capucino%20Iced%20(1).jpg"
+      },
+      {
+        "name": "Nutty Oat Latte",
+        "price": 24000,
+        "description": "Espresso dari biji kopi khas nusantara dipadukan susu oat gluten-free dan sensasi nutty dari hazelnut.",
+        "image": "https://static.fore.coffee/product/Nutty%20Oat%20Latte%20Iced.jpg"
+      },
+      {
+        "name": "Buttercream Tiramisu Latte",
+        "price": 20000,
+        "description": "Lembutnya Buttercream Tiramisu sebagai topping kopi susu praline.",
+        "image": "https://static.fore.coffee/product/Buttercream%20Tiramisu%20Latte.jpg"
+      },
+      {
+        "name": "Espresso",
+        "price": 12000,
+        "description": "Ekstrak biji kopi Arabika murni tanpa campuran.",
+        "image": "https://static.fore.coffee/product/espresso173.jpg"
+      },
+      {
+        "name": "Caramel Praline Machchiato",
+        "price": 20000,
+        "description": "Latte dengan saus Praline dan karamel dengan rasa dan aroma manis.",
+        "image": "https://static.fore.coffee/product/Caramel%20Praline%20Macchiato%20Iced%20(1).jpg"
+      }
+
+    ]
+  },
+  {
+    "category": "Americano Series",
+    "slug": "americano-series",
+    "enabled": true,
+    "items": [
+        {
+        "name": "Americano",
+        "price": 14000,
+        "description": "Espresso shoot yang dicampur dengan segelas air menghadirkan karakter, aroma, dan rasa yang ideal.",
+        "image": "https://static.fore.coffee/product/Americano%20Iced.jpg"
+        },
+        {
+        "name": "Manuka Americano",
+        "price": 18000,
+        "description": "Americano dengan madu Manuka yang pas untuk jadi energy booster.",
+        "image": "https://static.fore.coffee/product/Manuka%20Americano%20Iced.jpg"
+        },
+        {
+        "name": "Berry Manuka Americano",
+        "price": 19000,
+        "description": "Perpaduan rasa Stroberi dan Manuka dengan Classic Blend Fore yang menyegarkan.",
+        "image": "https://static.fore.coffee/product/Berry%20Manuka%20Americano%20(3).jpg"
+        },
+        {
+        "name": "Triple Peach Americano",
+        "price": 19000,
+        "description": "Peach coffee perpaduan rasa kopi, tiga jenis buah peach dan aroma elderflower yang menciptakan sensasi kopi yang segar dan harmonis.",
+        "image": "https://static.fore.coffee/product/Triple%20Peach%20Americano%20(1).jpg",
+        "soldOut": true
+        }
+    ]
+  },
+  {
+    "category": "Non Coffee",
+    "slug": "non-coffee",
+    "enabled": true,
+    "items": [
+      {
+        "name": "Dark Chocolate",
+        "price": 21000,
+        "description": "Made from 100% dark chocolate and milk.",
+        "image": "https://static.fore.coffee/product/darkchocolate-01.jpg"
+      },
+      {
+        "name": "Almond Choco",
+        "price": 24000,
+        "description": "Cokelat klasik dari Fore Coffee yang dipadu dengan susu almond. Sebuah definisi comfort drink yang sesungguhnya.",
+        "image": "https://static.fore.coffee/product/almondchocoiced173.jpg"
+      },
+      {
+        "name": "Matcha Green Tea",
+        "price": 21000,
+        "description": "Bubuk matcha spesial Fore yang lembut dan creamy berpadu dengan susu segar.",
+        "image": "https://static.fore.coffee/product/matchagreentealatte173.jpg"
+      },
+      {
+        "name": "Classic Milo",
+        "price": 21000,
+        "description": "Minuman klasik cokelat dengan rasa malt dengan saus creamy dan susu creamy.",
+        "image": "https://static.fore.coffee/product/classicmiloiced173.jpg"
+      }
+    ]
+  },
+  {
+    "category": "FOREveryone 1L",
+    "slug": "foreveryone1l",
+    "enabled": false,
+    "items": [
+      {
+        "name": "Coco Peach Fusion 1L",
+        "price": 60000,
+        "description": "Rasa segar dari peach, lychee, orange citrus, dan air kelapa.",
+        "image": "https://static.fore.coffee/product/cocopeach.jpeg"
+      },
+      {
+        "name": "Kopi Dari Tani 1L",
+        "price": 54000,
+        "description": "Paduan rasa dan aroma kopi autentik Indonesia yang kuat dalan ukuran 1L.",
+        "image": "https://static.fore.coffee/product/Kopi%20dari%20Tani%20-%20RTD.jpg"
+      },
+      {
+        "name": "Bumi Latte 1L",
+        "price": 54000,
+        "description": "Sensasi lembut dan legit Bumi Latte hadir dalam ukuran 1L untuk sempurnakan kebersamaan!",
+        "image": "https://static.fore.coffee/product/Bumi%20Latte%20-%20RTD.jpg"
+      },
+      {
+        "name": "Dark Chocolate 1L",
+        "price": 65000,
+        "description": "Dibuat dari 100% dark chocolate dan paduan susu yang nikmat",
+        "image": "https://static.fore.coffee/product/WhatsApp%20Image%202025-02-01%20at%2000.48.06.jpeg"
+      },
+      {
+        "name": "Butterscotch Sea Salt Latte 1L",
+        "price": 94000,
+        "description": "Butterscotch Sea Salt Latte Fore Coffee yang disukai banyak orang hadir dalam botol 1L.",
+        "image": "https://static.fore.coffee/product/butterscotchssl1l1402.jpg"
+      },
+      {
+        "name": "Aren Latte 1L",
+        "price": 60000,
+        "description": "Nikmatnya latte dengan gula aren khas Indonesia hadir dalam ukuran 1L.",
+        "image": "https://static.fore.coffee/product/ArenLatte1L3006.jpg"
+      },
+      {
+        "name": "Caramel Praline Machchiato 1L",
+        "price": 65000,
+        "description": "Latte praline bercampur karamel dalam ukuran 1L.",
+        "image": "https://static.fore.coffee/product/CaramelPralineMacchiato1L3006.jpg"
+      },
+      {
+        "name": "Pandan Latte 1L",
+        "price": 60000,
+        "description": "Latte dengan aroma dan rasa pandan yang istimewa dari Fore Coffee dalam ukuran 1L.",
+        "image": "https://static.fore.coffee/product/pandanlatte1L3006.jpg"
+      },
+      {
+        "name": "Café Latte 1L",
+        "price": 60000,
+        "description": "Latte tanpa gula dalam ukuran 1L yang pas untuk menemani momen kumpul bersama.",
+        "image": "https://static.fore.coffee/product/latte1L3006.jpg"
+      },
+      {
+        "name": "Nutty Oat Latte 1L",
+        "price": 94000,
+        "description": "Latte dengan susu oat yang nikmat dalam ukuran 1L.",
+        "image": "https://static.fore.coffee/product/1L-nutty-oat.jpeg"
+      },
+      {
+        "name": "Almond Choco 1L",
+        "price": 94000,
+        "description": "Cokelat klasik dengan susu almond dalam ukuran 1L yang pas untuk dinikmati bersama keluarga!",
+        "image": "https://static.fore.coffee/product/RTD.jpg"
+      },
+      {
+        "name": "Matcha Green Tea 1L",
+        "price": 65000,
+        "description": "Nikmatnya teh hijau berkualitas yang dipadukan dengan susu creamy untuk persediaan di rumah!",
+        "image": "https://static.fore.coffee/product/matcha1L3006.jpg"
+      }
+    ]
+  },
+  {
+    "category": "Fore Deli",
+    "slug": "fore-deli",
+    "enabled": false,
+    "items": [
+      {
+        "name": "Chocolate Croissant",
+        "price": 15000,
+        "description": "Croissant dengan dark chocolate yang meleleh di dalamnya, sempurna untuk menemani kopi Anda.",
+        "image": "https://static.fore.coffee/product/Chocolate%20Croissant.jpg"
+      },
+      {
+        "name": "Almond Croissant",
+        "price": 15000,
+        "description": "Croissant yang renyah dengan taburan almond di atasnya, memberikan rasa gurih yang sempurna.",
+        "image": "https://static.fore.coffee/product/Almond%20Croissant.jpg"
+      },
+      {
+        "name": "Cheese Croissant",
+        "price": 15000,
+        "description": "Croissant lembut dengan isian keju yang meleleh, cocok untuk sarapan atau camilan.",
+        "image": "https://static.fore.coffee/product/Cheese%20Croissant.jpg"
+      },
+      {
+        "name": "Blueberry Muffin",
+        "price": 12000,
+        "description": "Muffin lembut dengan isian blueberry segar, sempurna untuk menemani teh atau kopi Anda.",
+        "image": "https://static.fore.coffee/product/Blueberry%20Muffin.jpg"
+      }
+    ]
+  },
+  {
+    "category": "Refresher",
+    "slug": "refresher",
+    "enabled": true,
+    "items": [
+      {
+        "name": "Hibiscus Lychee Peach Yakult",
+        "price": 18000,
+        "description": "Kebaikan buah berry, hibiscus, dan yakult yang memberi kesegaran sepanjang hari.",
+        "image": "https://static.fore.coffee/product/hibiscuslychee173.jpg"
+      },
+      {
+        "name": "Sunny Citrus Jasmine",
+        "price": 19000,
+        "description": "Campuran spesial dari rasa buah tropikal, madu Manuka, dan teh jasmine yang menyegarkan sekaligus beraroma.",
+        "image": "https://static.fore.coffee/product/sunnycitrus173.jpg"
+      },
+      {
+        "name": "Coco Peach Fusion",
+        "price": 18000,
+        "description": "Rasa segar dari peach, lychee, orange citrus, dan air kelapa.",
+        "image": "https://static.fore.coffee/product/Coco%20Peach%20Fusion%20(3).jpg"
+      }
+    ]
+  },
+  {
+    "category": "Ice Blended",
+    "slug": "ice-blended",
+    "enabled": true,
+    "items": [
+      {
+        "name": "Caramel Praline Coffee Ice Blended",
+        "price": 20000,
+        "description": "Ice blended latte dengan saus Praline dan karamel.",
+        "image": "https://static.fore.coffee/product/caramelpralinecoffee173.jpg"
+      },
+      {
+        "name": "Matcha Ice Blended",
+        "price": 20000,
+        "description": "Paduan Creamy Matcha khas Fore Coffee, susu segar, dengan es, pas untuk menyejukkan harimu!",
+        "image": "https://static.fore.coffee/product/matchablended173.jpg"
+      },
+      {
+        "name": "Strawberry Ice Blended",
+        "price": 20000,
+        "description": "Manisnya strawberry bertemu dengan susu dan es dilapisi dengan strawberry puree.",
+        "image": "https://static.fore.coffee/product/strawberryblend173.jpg"
+      },
+      {
+        "name": "Chocolate Ice Blended",
+        "price": 22000,
+        "description": "Ice blended cokelat spesial dengan susu pilihan.",
+        "image": "https://static.fore.coffee/product/chocolateblend173.jpg"
+      }
+    ]
+  },
+  {
+    "category": "Tea",
+    "slug": "tea",
+    "enabled": true,
+    "items": [
+      {
+        "name": "English Breakfast",
+        "price": 18000,
+        "description": "Teh hitam klasik harum yang legendaris.",
+        "image": "https://static.fore.coffee/product/englishbreakfasticed173.jpg"
+      },
+      {
+        "name": "Green Tea Jasmine",
+        "price": 18000,
+        "description": "Teh hijau dengan sentuhan rasa melati.",
+        "image": "https://static.fore.coffee/product/greenteajasmineiced173.jpg"
+      },
+      {
+        "name": "Pure Chamomile",
+        "price": 18000,
+        "description": "Teh bunga chamomile memiliki aroma madu yang kaya dan menghasilkan warna emas.",
+        "image": "https://static.fore.coffee/product/purechamomileiced173.jpg"
+      },
+      {
+        "name": "Green Tea Mint",
+        "price": 18000,
+        "description": "Teh merah halus dari Afrika Selatan dengan campuran rempah-rempah Perancis yang manis.",
+        "image": "https://static.fore.coffee/product/greenteaminticed173.jpg"
+      }
+    ]
+  }
+]
