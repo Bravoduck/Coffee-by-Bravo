@@ -245,7 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
             init() {
                 if (!App.ui.allProductSections || App.ui.allProductSections.length === 0) return;
                 const options = {
-                    rootMargin: '-40% 0px -60% 0px',
+                    rootMargin: '-115px 0px -85% 0px',
                     threshold: 0
                 };
                 this.observer = new IntersectionObserver(this.handleIntersect.bind(this), options);
