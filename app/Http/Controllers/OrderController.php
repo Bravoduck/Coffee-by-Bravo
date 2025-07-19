@@ -3,13 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Models\Order;
-use App\Models\Store; // PENTING: Tambahkan ini untuk mengakses data toko
+use App\Models\Store;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\NewOrderNotification;
 use Midtrans\Config;
 use Midtrans\Snap;
 use Midtrans\Notification;
+use App\Models\Option; // <-- 1. PASTIKAN MODEL OPTION DI-IMPORT
 
 class OrderController extends Controller
 {
@@ -18,10 +19,9 @@ class OrderController extends Controller
      */
     public function process(Request $request)
     {
-        // 1. Validasi data
+        // Validasi data
         $request->validate([
             'customer_name' => 'required|string|max:255',
-            'selected_store' => 'required|array', // Validasi untuk selected_store
         ]);
         $cart = session()->get('cart', []);
         $selectedStore = session()->get('selected_store');
@@ -31,20 +31,35 @@ class OrderController extends Controller
             return response()->json(['error' => 'Data tidak lengkap.'], 400);
         }
 
-        // 2. Hitung total harga di server dan siapkan detail item untuk Midtrans
+        // ▼▼▼ TAMBAHKAN KODE INI ▼▼▼
+        // 2. Ambil semua nama opsi yang harganya 0 (opsi default)
+        $defaultOptions = Option::where('price', 0)->pluck('name')->toArray();
+        // ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
+
+        // Hitung total harga di server dan siapkan detail item untuk Midtrans
         $totalPrice = 0;
-        $item_details = []; // Siapkan array untuk item detail
+        $item_details = [];
         foreach ($cart as $id => $details) {
             $totalPrice += $details['price'] * $details['quantity'];
 
-            // Gabungkan nama produk dengan kustomisasinya untuk ditampilkan di Midtrans
+            // ▼▼▼ UBAH LOGIKA PEMBUATAN NAMA ITEM ▼▼▼
             $itemName = $details['name'];
+            
+            // 3. Saring kustomisasi untuk membuang opsi default
+            $nonDefaultCustomizations = [];
             if (!empty($details['customizations'])) {
-                $customText = implode(', ', $details['customizations']);
+                $nonDefaultCustomizations = array_diff($details['customizations'], $defaultOptions);
+            }
+            
+            // Tambahkan hanya kustomisasi non-default ke nama item
+            if (!empty($nonDefaultCustomizations)) {
+                $customText = implode(', ', $nonDefaultCustomizations);
                 $itemName .= ' (' . $customText . ')';
             }
-            $itemName = substr($itemName, 0, 50); // Batas Midtrans
 
+            // Batasi panjang nama item sesuai aturan Midtrans
+            $itemName = substr($itemName, 0, 50);
+            // ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
 
             $item_details[] = [
                 'id'       => $id,
@@ -54,7 +69,7 @@ class OrderController extends Controller
             ];
         }
 
-        // 3. Simpan pesanan ke database dengan status 'pending'
+        // Simpan pesanan ke database dengan status 'pending'
         $order = Order::create([
             'order_id'      => 'CBB-' . uniqid(),
             'store_id'      => $selectedStore['id'],
@@ -63,7 +78,7 @@ class OrderController extends Controller
             'status'        => 'pending',
         ]);
 
-        // 4. Simpan setiap item di keranjang ke tabel 'order_items'
+        // Simpan setiap item di keranjang ke tabel 'order_items'
         foreach ($cart as $id => $details) {
             $order->items()->create([
                 'product_id'    => $details['product_id'],
@@ -73,27 +88,27 @@ class OrderController extends Controller
             ]);
         }
 
-        // 5. Konfigurasi Midtrans
+        // Konfigurasi Midtrans
         Config::$serverKey = config('services.midtrans.server_key');
         Config::$isProduction = config('services.midtrans.is_production');
         Config::$isSanitized = true;
         Config::$is3ds = true;
 
-        // 6. Siapkan semua parameter untuk dikirim ke Midtrans
+        // Siapkan semua parameter untuk dikirim ke Midtrans
         $params = [
             'transaction_details' => [
                 'order_id' => $order->order_id,
                 'gross_amount' => $order->total_price,
             ],
             'customer_details' => [
-                'first_name' => $order->customer_name,
+                'first_name' => $order->customer_name . ' (' . $selectedStore['name'] . ')',
                 'address' => $selectedStore['name'],
             ],
             'item_details' => $item_details,
         ];
 
         try {
-            // 7. Dapatkan Snap Token dan kirim ke frontend
+            // Dapatkan Snap Token dan kirim ke frontend
             $snapToken = Snap::getSnapToken($params);
             return response()->json(['snap_token' => $snapToken]);
         } catch (\Exception $e) {
@@ -124,7 +139,7 @@ class OrderController extends Controller
                 $order->update(['status' => 'success']);
 
                 // Kirim email notifikasi dengan data pesanan yang lengkap
-                Mail::to('admin@bravoduck.store')->send(new NewOrderNotification($order));
+                Mail::to('ezhar.hannafhan05@gmail.com')->send(new NewOrderNotification($order));
 
                 // Kosongkan keranjang setelah pembayaran berhasil
                 session()->forget('cart');

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
-use App\Models\Option;
+use App\Models\Option; // Pastikan ini ada
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 
@@ -13,6 +13,11 @@ class CartController extends Controller
     {
         $cart = session()->get('cart', []);
         $selectedStore = session()->get('selected_store', null);
+
+        // ▼▼▼ TAMBAHKAN LOGIKA INI ▼▼▼
+        // Ambil semua nama opsi yang harganya 0 (opsi default)
+        $defaultOptions = Option::where('price', 0)->pluck('name')->toArray();
+        // ▲▲▲ TAMBAHKAN LOGIKA INI ▲▲▲
 
         $productIds = array_column($cart, 'product_id');
         $products = Product::with('parent')->find($productIds);
@@ -37,10 +42,12 @@ class CartController extends Controller
         return view('checkout', [
             'cart' => $cart,
             'cartItemsData' => $cartItemsData,
-            'selectedStore' => $selectedStore
+            'selectedStore' => $selectedStore,
+            'defaultOptions' => $defaultOptions // <-- Kirim data ke view
         ]);
     }
 
+    // ... sisa method lainnya tidak perlu diubah ...
     public function add(Request $request)
     {
         $request->validate([

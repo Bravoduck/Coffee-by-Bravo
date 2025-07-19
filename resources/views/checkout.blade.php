@@ -54,10 +54,24 @@
                             <div class="cart-item" data-id="{{ $id }}">
                                 <div class="cart-item-details-column">
                                     <h3>{{ $details['name'] }}</h3>
+                                    {{-- ▼▼▼ UBAH BAGIAN INI ▼▼▼ --}}
                                     @php
+                                        // Ambil kustomisasi dari item
                                         $customizations = $details['customizations'] ?? [];
+                                        
+                                        // Saring kustomisasi untuk membuang opsi default
+                                        $nonDefaultCustomizations = array_diff($customizations, $defaultOptions);
                                     @endphp
-                                    <p>{{ !empty($customizations) ? implode(', ', $customizations) : 'Regular' }}</p>
+                                    
+                                    {{-- Tampilkan hanya jika ada kustomisasi non-default --}}
+                                    @if(!empty($nonDefaultCustomizations))
+                                        <p>{{ implode(', ', $nonDefaultCustomizations) }}</p>
+                                    @else
+                                        {{-- Jika semua adalah default, tampilkan "Regular" --}}
+                                        <p>Regular</p>
+                                    @endif
+                                    {{-- ▲▲▲ UBAH BAGIAN INI ▲▲▲ --}}
+
                                     <span class="cart-item-price-main">Rp {{ number_format($details['price'] * $details['quantity'], 0, ',', '.') }}</span>
                                 </div>
                                 <div class="cart-item-media-column">

@@ -40,15 +40,6 @@
     "enabled": true,
     "items": [
       {
-        "name": "Kopi Dari Tano",
-        "price": 1,
-        "description": "Paduan rasa dan aroma kopi Indonesia yang kuat bercampur dengan gula aren khas nusantara.",
-        "image": "https://static.fore.coffee/product/Kopi%20dari%20Tani.jpg",
-        "variants": [
-          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
-        ]
-      },
-      {
         "name": "Kopi Dari Tani",
         "price": 15500,
         "description": "Paduan rasa dan aroma kopi Indonesia yang kuat bercampur dengan gula aren khas nusantara.",
@@ -62,14 +53,18 @@
         "price": 20500,
         "description": "Perpaduan butterscotch dan espresso house blend dengan topping cream sea salt yang lembut di atasnya.",
         "image": "https://static.fore.coffee/product/Butterscoth%20Iced.jpg",
-        "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"]
+        "variants": [
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
+        ]
       },
       {
         "name": "Buttercream Latte",
         "price": 19500,
         "description": "Nikmatnya Buttercream Coffee sebagai topping kopi susu karamel.",
         "image": "https://static.fore.coffee/product/Buttercream%20Latte%20(1).jpg",
-        "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"]
+        "variants": [
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
+        ]
       },
       {
         "name": "Aren Latte",
@@ -77,8 +72,7 @@
         "description": "Rasa alami gula aren berpadu sempurna dengan espresso premium. Menu terlaris Fore Coffee.",
         "image": "https://static.fore.coffee/product/Aren%20Latte%20Ice.jpg",
         "variants": [
-          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] },
-          { "name": "Hot", "option_groups": ["Ukuran Cup", "Sweetness", "Temperatur", "Espresso", "Dairy", "Syrup"] }
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
         ]
       },
       {
@@ -87,8 +81,7 @@
         "description": "Latte dengan rasa dan aroma unik dari ekstrak pandan alami khas Fore Coffee.",
         "image": "https://static.fore.coffee/product/Pandan%20Latte%20Iced.jpg",
         "variants": [
-          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] },
-          { "name": "Hot", "option_groups": ["Ukuran Cup", "Sweetness", "Temperatur", "Espresso", "Dairy", "Syrup"] }
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
         ]
       }
     ]
@@ -104,8 +97,7 @@
         "description": "Sang legenda Traditional Latte berpadu dengan manisnya karamel, menambah pengalaman rasa creamy dan nutty.",
         "image": "https://static.fore.coffee/product/Malty%20Latte%20(1).jpg",
         "variants": [
-          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] },
-          { "name": "Hot", "option_groups": ["Ukuran Cup", "Sweetness", "Temperatur", "Espresso", "Dairy", "Syrup"] }
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
         ]
       },
       {
@@ -113,7 +105,9 @@
         "price": 15000,
         "description": "Sensasi lembut dan legit dari saus karamel dan butterscotch yang khas berpadu dengan kopi autentik Indonesia.",
         "image": "https://static.fore.coffee/product/Bumi%20Latte.jpg",
-        "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"]
+        "variants": [
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
+        ]
       },
       {
         "name": "Cappuccino",
@@ -121,8 +115,7 @@
         "description": "Paduan Espresso, susu hangat, dan lapisan foam tebal di atasnya tanpa gula tambahan.",
         "image": "https://static.fore.coffee/product/Capucino%20Iced%20(1).jpg",
         "variants": [
-          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup"] },
-          { "name": "Hot", "option_groups": ["Ukuran Cup", "Sweetness", "Temperatur", "Espresso", "Dairy", "Syrup"] }
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
         ]
       },
       {
@@ -130,7 +123,9 @@
         "price": 20500,
         "description": "Paduan klasik 2 shot espresso dengan susu dan krim.",
         "image": "https://static.fore.coffee/product/Double%20Iced%20Shaken%20Latte%20(1).jpg",
-        "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy"]
+        "variants": [
+          { "name": "Iced", "option_groups": ["Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
+        ]
       },
       {
         "name": "Café Latte",
@@ -138,8 +133,7 @@
         "description": "Paduan espresso dengan susu sapi pilihan dan sedikit foam tanpa gula tambahan.",
         "image": "https://static.fore.coffee/product/Capucino%20Iced%20(1).jpg",
         "variants": [
-          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] },
-          { "name": "Hot", "option_groups": ["Ukuran Cup", "Sweetness", "Temperatur", "Espresso", "Dairy", "Syrup"] }
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
         ]
       },
       {
@@ -147,28 +141,36 @@
         "price": 24000,
         "description": "Espresso dari biji kopi khas nusantara dipadukan susu oat gluten-free dan sensasi nutty dari hazelnut.",
         "image": "https://static.fore.coffee/product/Nutty%20Oat%20Latte%20Iced.jpg",
-        "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"]
+        "variants": [
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
+        ]
       },
       {
         "name": "Buttercream Tiramisu Latte",
         "price": 20000,
         "description": "Lembutnya Buttercream Tiramisu sebagai topping kopi susu praline.",
         "image": "https://static.fore.coffee/product/Buttercream%20Tiramisu%20Latte.jpg",
-        "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"]
+        "variants": [
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
+        ]
       },
       {
         "name": "Espresso",
         "price": 12000,
         "description": "Ekstrak biji kopi Arabika murni tanpa campuran.",
         "image": "https://static.fore.coffee/product/espresso173.jpg",
-        "option_groups": []
+        "variants": [
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
+        ]
       },
       {
         "name": "Caramel Praline Machchiato",
         "price": 20000,
         "description": "Latte dengan saus Praline dan karamel dengan rasa dan aroma manis.",
         "image": "https://static.fore.coffee/product/Caramel%20Praline%20Macchiato%20Iced%20(1).jpg",
-        "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"]
+        "variants": [
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
+        ]
       }
     ]
   },
@@ -183,23 +185,26 @@
             "description": "Espresso shoot yang dicampur dengan segelas air.",
             "image": "https://static.fore.coffee/product/Americano%20Iced.jpg",
             "variants": [
-                { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso"] },
-                { "name": "Hot", "option_groups": ["Ukuran Cup", "Sweetness", "Temperatur", "Espresso"] }
-            ]
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
+        ]
         },
         {
             "name": "Manuka Americano",
             "price": 18000,
             "description": "Americano dengan madu Manuka yang pas untuk jadi energy booster.",
             "image": "https://static.fore.coffee/product/Manuka%20Americano%20Iced.jpg",
-            "option_groups": ["Ukuran Cup", "Ice Cube", "Espresso"]
+            "variants": [
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
+        ]
         },
         {
             "name": "Berry Manuka Americano",
             "price": 19000,
             "description": "Perpaduan rasa Stroberi dan Manuka dengan Classic Blend Fore yang menyegarkan.",
             "image": "https://static.fore.coffee/product/Berry%20Manuka%20Americano%20(3).jpg",
-            "option_groups": ["Ukuran Cup", "Ice Cube", "Espresso"]
+            "variants": [
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
+        ]
         },
         {
             "name": "Triple Peach Americano",
@@ -207,7 +212,9 @@
             "description": "Peach coffee perpaduan rasa kopi, tiga jenis buah peach dan aroma elderflower.",
             "image": "https://static.fore.coffee/product/Triple%20Peach%20Americano%20(1).jpg",
             "soldOut": true,
-            "option_groups": ["Ukuran Cup", "Ice Cube", "Espresso"]
+            "variants": [
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
+        ]
         }
     ]
   },
@@ -222,8 +229,7 @@
         "description": "Made from 100% dark chocolate and milk.",
         "image": "https://static.fore.coffee/product/darkchocolate-01.jpg",
         "variants": [
-            { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Dairy", "Topping"] },
-            { "name": "Hot", "option_groups": ["Ukuran Cup", "Sweetness", "Temperatur", "Dairy"] }
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
         ]
       },
       {
@@ -231,7 +237,9 @@
         "price": 24000,
         "description": "Cokelat klasik dari Fore Coffee yang dipadu dengan susu almond.",
         "image": "https://static.fore.coffee/product/almondchocoiced173.jpg",
-        "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Topping"]
+        "variants": [
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
+        ]
       },
       {
         "name": "Matcha Green Tea",
@@ -239,8 +247,7 @@
         "description": "Bubuk matcha spesial Fore yang lembut dan creamy berpadu dengan susu segar.",
         "image": "https://static.fore.coffee/product/matchagreentealatte173.jpg",
         "variants": [
-            { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Dairy", "Topping"] },
-            { "name": "Hot", "option_groups": ["Ukuran Cup", "Sweetness", "Temperatur", "Dairy"] }
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
         ]
       },
       {
@@ -248,7 +255,9 @@
         "price": 21000,
         "description": "Minuman klasik cokelat dengan rasa malt dengan saus creamy dan susu creamy.",
         "image": "https://static.fore.coffee/product/classicmiloiced173.jpg",
-        "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Dairy", "Topping"]
+        "variants": [
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
+        ]
       }
     ]
   },
@@ -262,21 +271,27 @@
         "price": 18000,
         "description": "Kebaikan buah berry, hibiscus, dan yakult yang memberi kesegaran sepanjang hari.",
         "image": "https://static.fore.coffee/product/hibiscuslychee173.jpg",
-        "option_groups": ["Ukuran Cup", "Ice Cube"]
+        "variants": [
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
+        ]
       },
       {
         "name": "Sunny Citrus Jasmine",
         "price": 19000,
         "description": "Campuran spesial dari rasa buah tropikal, madu Manuka, dan teh jasmine.",
         "image": "https://static.fore.coffee/product/sunnycitrus173.jpg",
-        "option_groups": ["Ukuran Cup", "Ice Cube"]
+        "variants": [
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
+        ]
       },
       {
         "name": "Coco Peach Fusion",
         "price": 18000,
         "description": "Rasa segar dari peach, lychee, orange citrus, dan air kelapa.",
         "image": "https://static.fore.coffee/product/Coco%20Peach%20Fusion%20(3).jpg",
-        "option_groups": ["Ukuran Cup", "Ice Cube"]
+        "variants": [
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
+        ]
       }
     ]
   },
@@ -290,28 +305,36 @@
         "price": 20000,
         "description": "Ice blended latte dengan saus Praline dan karamel.",
         "image": "https://static.fore.coffee/product/caramelpralinecoffee173.jpg",
-        "option_groups": ["Ukuran Cup", "Espresso", "Dairy", "Topping"]
+        "variants": [
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Espresso", "Dairy", "Syrup", "Topping"] }
+        ]
       },
       {
         "name": "Matcha Ice Blended",
         "price": 20000,
         "description": "Paduan Creamy Matcha khas Fore Coffee, susu segar, dengan es.",
         "image": "https://static.fore.coffee/product/matchablended173.jpg",
-        "option_groups": ["Ukuran Cup", "Dairy", "Topping"]
+        "variants": [
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Dairy", "Syrup", "Topping"] }
+        ]
       },
       {
         "name": "Strawberry Ice Blended",
         "price": 20000,
         "description": "Manisnya strawberry bertemu dengan susu dan es dilapisi dengan strawberry puree.",
         "image": "https://static.fore.coffee/product/strawberryblend173.jpg",
-        "option_groups": ["Ukuran Cup", "Dairy", "Topping"]
+        "variants": [
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Dairy", "Syrup", "Topping"] }
+        ]
       },
       {
         "name": "Chocolate Ice Blended",
         "price": 22000,
         "description": "Ice blended cokelat spesial dengan susu pilihan.",
         "image": "https://static.fore.coffee/product/chocolateblend173.jpg",
-        "option_groups": ["Ukuran Cup", "Dairy", "Topping"]
+        "variants": [
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Dairy", "Syrup", "Topping"] }
+        ]
       }
     ]
   },
@@ -326,8 +349,7 @@
         "description": "Teh hitam klasik harum yang legendaris.",
         "image": "https://static.fore.coffee/product/englishbreakfasticed173.jpg",
         "variants": [
-            { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube"] },
-            { "name": "Hot", "option_groups": ["Ukuran Cup", "Sweetness", "Temperatur"] }
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Dairy", "Syrup", "Topping"] }
         ]
       },
       {
@@ -336,8 +358,7 @@
         "description": "Teh hijau dengan sentuhan rasa melati.",
         "image": "https://static.fore.coffee/product/greenteajasmineiced173.jpg",
         "variants": [
-            { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube"] },
-            { "name": "Hot", "option_groups": ["Ukuran Cup", "Sweetness", "Temperatur"] }
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Dairy", "Syrup", "Topping"] }
         ]
       },
       {
@@ -346,8 +367,7 @@
         "description": "Teh bunga chamomile memiliki aroma madu yang kaya dan menghasilkan warna emas.",
         "image": "https://static.fore.coffee/product/purechamomileiced173.jpg",
         "variants": [
-            { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube"] },
-            { "name": "Hot", "option_groups": ["Ukuran Cup", "Sweetness", "Temperatur"] }
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Dairy", "Syrup", "Topping"] }
         ]
       },
       {
@@ -356,8 +376,7 @@
         "description": "Teh merah halus dari Afrika Selatan dengan campuran rempah-rempah Perancis yang manis.",
         "image": "https://static.fore.coffee/product/greenteaminticed173.jpg",
         "variants": [
-            { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube"] },
-            { "name": "Hot", "option_groups": ["Ukuran Cup", "Sweetness", "Temperatur"] }
+          { "name": "Iced", "option_groups": ["Ukuran Cup", "Sweetness", "Ice Cube", "Dairy", "Syrup", "Topping"] }
         ]
       }
     ]
