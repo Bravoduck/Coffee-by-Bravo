@@ -69,7 +69,7 @@ jobs:
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'coffee-by-bravo'
+          app-name: 'coffee-by-bravo-server'
           slot-name: 'Production'
           package: .
           
