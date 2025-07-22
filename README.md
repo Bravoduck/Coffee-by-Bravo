@@ -1,6 +1,6 @@
 # ☕ Coffee by Bravo
 
-**Kualitas Premium, Harga yang Membumi.**
+**Kualitas Premium, Harga yang Terjangkau.**
 
 Selamat datang di Coffee by Bravo, sebuah aplikasi web pemesanan kopi modern yang dirancang untuk memberikan pengalaman kafe premium dengan kemudahan dan harga yang terjangkau. Proyek ini merupakan hasil migrasi dan pengembangan ulang dari aplikasi berbasis Vanilla JavaScript menjadi sebuah sistem yang kokoh dan aman menggunakan **Laravel 12**.
 
@@ -44,7 +44,7 @@ Untuk menjalankan proyek ini di lingkungan lokal Anda, ikuti langkah-langkah ber
 
 1.  **Clone repositori ini:**
     ```bash
-    git clone [https://github.com/bravoduck/coffee-by-bravo-laravel.git](https://github.com/bravoduck/coffee-by-bravo-laravel.git)
+    git clone [https://github.com/bravoduck/coffee-by-bravo.git](https://github.com/bravoduck/coffee-by-bravo.git)
     cd coffee-by-bravo-laravel
     ```
 
