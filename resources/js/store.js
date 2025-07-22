@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('.store-header');
     const searchInput = document.getElementById('store-search-input');
-    const searchIconBtn = document.getElementById('header-search-btn'); // Pastikan ID ini benar
+    const searchIconBtn = document.getElementById('header-search-btn');
     const title = header.querySelector('h1.header-title');
     
     const storeListContainer = document.querySelector('.store-list');
@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!header || !searchInput || !searchIconBtn || !title) return;
 
-    // Event listener untuk ikon pencarian
     searchIconBtn.addEventListener('click', () => {
         header.classList.add('search-active');
         title.style.display = 'none';
@@ -20,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
         searchIconBtn.style.display = 'none';
     });
 
-    // Event listener untuk input pencarian
     searchInput.addEventListener('input', () => {
         const query = searchInput.value.toLowerCase().trim();
         let storesFound = 0;
@@ -42,16 +40,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Event listener untuk tombol ESC atau klik di luar untuk menutup search
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && header.classList.contains('search-active')) {
             closeSearch();
         }
     });
 
-    // Event listener untuk blur pada search input
     searchInput.addEventListener('blur', (e) => {
-        // Delay untuk mencegah penutupan langsung saat klik
         setTimeout(() => {
             if (!searchInput.value.trim()) {
                 closeSearch();
@@ -59,7 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 150);
     });
 
-    // Fungsi untuk menutup search
     function closeSearch() {
         header.classList.remove('search-active');
         title.style.display = 'block';
@@ -67,7 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
         searchInput.value = '';
         searchIconBtn.style.display = 'block';
         
-        // Reset tampilan semua store
         allStoreCards.forEach(card => {
             card.style.display = 'flex';
         });

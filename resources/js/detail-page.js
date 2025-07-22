@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const detailMain = document.querySelector('.detail-main');
     if (!detailMain) return;
 
-    // === Variabel dan Elemen UI ===
     const isEditMode = sessionStorage.getItem('editMode') === 'true';
     const itemToEdit = isEditMode ? JSON.parse(sessionStorage.getItem('itemToEdit')) : null;
     const backBtn = document.querySelector('.detail-header .back-btn');
@@ -15,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const productId = document.getElementById('product-detail-name').dataset.productId;
     let toastTimer;
 
-    // === Logika Tombol Kembali ===
     if (backBtn) {
         backBtn.href = isEditMode ? '/checkout' : '/';
         backBtn.addEventListener('click', (e) => {
@@ -27,8 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
-    // === FUNGSI-FUNGSI ===
 
     function showToast(message) {
         clearTimeout(toastTimer);
@@ -123,13 +119,10 @@ document.addEventListener('DOMContentLoaded', () => {
         formElement.submit();
     }
 
-    // === Inisialisasi Halaman & Event Listeners ===
-
     if (isEditMode) {
         populateFormForEdit();
     }
 
-    // Hitung harga SETELAH form mungkin diisi oleh mode edit
     calculateTotalPrice();
     setupCheckboxLimits();
     

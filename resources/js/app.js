@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const App = {
         state: {
-            cart: [], // Kita hanya butuh state keranjang untuk footer
+            cart: [],
             isClickScrolling: false,
         },
         ui: {
@@ -25,15 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
         init() {
-            // Kita tidak lagi mengambil cart dari localStorage
             this.loadSelectedStore();
-
-            // Perbarui "peta" elemen yang dibuat oleh Blade
             this.ui.filterButtons = this.ui.filterContainer.querySelectorAll('.filter-btn');
             this.ui.allProductSections = this.ui.productListContainer.querySelectorAll('.product-section');
             this.ui.allProductCards = this.ui.productListContainer.querySelectorAll('.product-card');
-
-            // Daftarkan semua event handler
             this.registerHandlers();
         },
 
@@ -74,8 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 App.ui.appHeader.classList.add('search-active');
                 App.ui.filterWrapper.classList.add('hidden');
                 App.ui.noResultsMessage.style.display = 'none';
-                App.ui.searchInput.style.display = 'block'; // Tampilkan input
-                App.ui.backFromSearchBtn.style.display = 'inline-flex'; // Tampilkan tombol kembali
+                App.ui.searchInput.style.display = 'block';
+                App.ui.backFromSearchBtn.style.display = 'inline-flex';
                 App.ui.searchInput.focus();
             },
             exit(event) {
@@ -83,8 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 App.ui.appHeader.classList.remove('search-active');
                 App.ui.filterWrapper.classList.remove('hidden');
                 App.ui.searchInput.value = '';
-                App.ui.searchInput.style.display = 'none'; // Sembunyikan lagi
-                App.ui.backFromSearchBtn.style.display = 'none'; // Sembunyikan lagi
+                App.ui.searchInput.style.display = 'none';
+                App.ui.backFromSearchBtn.style.display = 'none';
                 this.filter();
             },
             filter() {
@@ -105,7 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
         CategoryFilter: {
-            // ... (kode CategoryFilter Anda tetap sama)
              handle(event) {
                 if (App.ui.appHeader.classList.contains('search-active')) return;
                 const clickedButton = event.target;
@@ -135,7 +129,6 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
         ScrollSpy: {
-            // ... (kode ScrollSpy Anda tetap sama)
             observer: null,
             init() {
                 if (!App.ui.allProductSections || App.ui.allProductSections.length === 0) return;
