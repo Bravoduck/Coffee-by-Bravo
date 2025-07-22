@@ -45,7 +45,7 @@ Untuk menjalankan proyek ini di lingkungan lokal Anda, ikuti langkah-langkah ber
 1.  **Clone repositori ini:**
     ```bash
     git clone [https://github.com/bravoduck/coffee-by-bravo.git](https://github.com/bravoduck/coffee-by-bravo.git)
-    cd coffee-by-bravo-laravel
+    cd coffee-by-bravo
     ```
 
 2.  **Instal dependensi Composer:**
@@ -58,21 +58,11 @@ Untuk menjalankan proyek ini di lingkungan lokal Anda, ikuti langkah-langkah ber
     npm install
     ```
 
-4.  **Siapkan file `.env`:**
-    * Salin file `.env.example` menjadi `.env`.
-        ```bash
-        cp .env.example .env
-        ```
-    * Buat kunci aplikasi baru:
-        ```bash
-        php artisan key:generate
-        ```
-
-5.  **Konfigurasi Database & Layanan:**
+4.  **Konfigurasi Database & Layanan:**
     * Buka file `.env` dan atur koneksi database Anda (DB_DATABASE, DB_USERNAME, DB_PASSWORD).
     * Isi kunci API dari Midtrans (Sandbox) dan kredensial Mailtrap Anda.
 
-6.  **Jalankan Migrasi & Seeding:**
+5.  **Jalankan Migrasi & Seeding:**
     * Perintah ini akan membuat semua tabel dan mengisinya dengan data produk, toko, dan opsi.
         ```bash
         php artisan migrate:fresh --seed
@@ -90,7 +80,7 @@ Untuk menjalankan proyek ini di lingkungan lokal Anda, ikuti langkah-langkah ber
         ```
 
 8.  **Buka Aplikasi:**
-    * Akses `http://127.0.0.1:8000` di browser Anda.
+    * Akses `http://127.0.0.1:8000` di browser Anda. Enjoy!
 
 ---
 
