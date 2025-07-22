@@ -61,9 +61,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.__clientidsecretname__ }}
-          tenant-id: ${{ secrets.__tenantidsecretname__ }}
-          subscription-id: ${{ secrets.__subscriptionidsecretname__ }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_26E5073AC301462DB3C5B92B878A59A8 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_7D2961A317314B85841007D1229E0120 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_F559D24BFADA409E8B89417C25F6DA8D }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
@@ -72,3 +72,4 @@ jobs:
           app-name: 'coffee-by-bravo'
           slot-name: 'Production'
           package: .
+          
