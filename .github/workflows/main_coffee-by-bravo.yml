@@ -21,7 +21,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.4'
+          php-version: '8.3'
 
       - name: Check if composer.json exists
         id: check_files
@@ -33,14 +33,12 @@ jobs:
         if: steps.check_files.outputs.files_exists == 'true'
         run: composer validate --no-check-publish && composer install --prefer-dist --no-progress
 
-      - name: Zip artifact for deployment
-        run: zip release.zip ./* -r
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: php-app
-          path: release.zip
+          path: .
 
   deploy:
     runs-on: ubuntu-latest
@@ -54,13 +52,11 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: php-app
-
-      - name: Unzip artifact for deployment
-        run: unzip release.zip
       
       - name: Login to Azure
         uses: azure/login@v2
         with:
+<<<<<<< HEAD
           client-id: ${{ secrets.__clientidsecretname__ }}
           tenant-id: ${{ secrets.__tenantidsecretname__ }}
           subscription-id: ${{ secrets.__subscriptionidsecretname__ }}
@@ -72,3 +68,17 @@ jobs:
           app-name: 'coffee-by-bravo-server'
           slot-name: 'Production'
           package: .
+=======
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_804BEFFDA26F4A95A79ED5EFEF63E4CE }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_2591ACD04579494D9EFCC332F60DDE25 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_C1C873A9350646CEBC01396B4ECA83C1 }}
+
+      - name: 'Deploy to Azure Web App'
+        uses: azure/webapps-deploy@v3
+        id: deploy-to-webapp
+        with:
+          app-name: 'coffee-by-bravo'
+          slot-name: 'Production'
+          package: .
+          
+>>>>>>> 338e569c0d51c180a10a674290f599b0f83652be
