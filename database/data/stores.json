@@ -1,0 +1,1550 @@
+[
+    {
+        "name": "A.H Nasution",
+        "address": "Fore Coffee A.H Nasution - JL. AH.Nasution komp.griya milala mas ruko a4-a6, Pangkalan Masyhur, Kec. Medan Johor, Kota Medan, Sumatera Utara 20146",
+        "hours": "08:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "AEON Tanjung Barat",
+        "address": "Fore Coffee - AEON Mall Tanjung Barat G Floor Unit 058, Jl. Raya Tj. Barat No.163, RT.12/RW.4, West Tanjung, Jagakarsa, South Jakarta City, Jakarta 12530",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Adam Malik",
+        "address": "Fore Coffee - Jl. H Adam Malik, Kel. Silalas, Kec. Medan Barat, Kota Medan, Sumatera Utara",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "AEON Mall Sentul",
+        "address": "Fore Coffee Aeon Mall Sentul City, Jl. MH. Thamrin, Citaringgul, Kec. Babakan Madang, Kabupaten Bogor, Jawa Barat 16810",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Ahmad Yani Banjarmasin",
+        "address": "Fore Coffee Ahmad Yani Banjarmasin, Jl. Ahmad Yani No.3, Sungai Baru, Kec. Banjarmasin Tengah, Kota Banjarmasin, Kalimantan Selatan 70233",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Ahmad Yani Lampung",
+        "address": "Fore Coffee Ahmad Yani Lampung - Jl. Jenderal Ahmad Yani 31-53, kel. Gotong Royong, Kec. Tanjung Karang Pusat, Kota Bandar Lampung, Lampung 35213",
+        "hours": "07:00 - 23:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Alauddin Makassar",
+        "address": "Fore Alauddin Makassar - Sultan Alauddin, Gn. Sari, Kec. Rappocini, Kota Makassar, Sulawesi Selatan",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Alternative Cibubur",
+        "address": "Fore Coffee - Jl. Raya Cibubur, Kel. Harjamukti, Kec. Cimanggis, Kota Depok",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Anggrek Cakra",
+        "address": "Fore Coffee - Jl. Anggrek Cakra No 20, Kebon Jeruk, Jakarta Barat",
+        "hours": "07:00 - 21:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Anjasmoro, Semarang",
+        "address": "Fore Coffee Anjasmoro, semarang - Jl. Anjasmoro Raya, Tawangmas, Kec. Semarang Barat, Kota Semarang, Jawa Tengah (nomor bangunan TBC)",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Araya Plaza",
+        "address": "Fore Coffee - Jl. Blimbing Indah Megah No.2, Purwodadi, Kec. Blimbing, Kota Malang, Jawa Timur 65126",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Arteri Pondok Indah",
+        "address": "Fore Coffee Arteri Pondok Indah - Jl. Sultan Iskandar Muda No.7A, RT.3/RW.9, Kel. Kebayoran Lama Selatan, Kec. Kebayoran. Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12240 (Sebelah RPC)",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Baloi Batam",
+        "address": "Fore Coffee - Jl. Pembangunan Blok A No. 2,3,4, Batu Selicin, Kec. Lubuk Baja, Kota Batam, Kepulauan Riau 29444",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Bandung Indah Plaza",
+        "address": "Fore Coffee - Jl. Merdeka No.56, Citarum, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40115 (Lantai GF samping Starbucks)",
+        "hours": "09:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Banjarbaru",
+        "address": "Fore Coffee - Jalan Ahmad Yani Km 33 Loktabat Utara",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Baywalk Mall",
+        "address": "Fore Coffee BAYWALK MALL - Apartment Green Bay Pluit, RT.20/RW.2, Pluit, Kec. Penjaringan, Jkt Utara, Daerah Khusus Ibukota Jakarta 14450",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Bencoolen",
+        "address": "Fore Coffee Bencoolen - Jl. Pariwisata No.1, Penurunan, Kec. Ratu Samban, Kota Bengkulu, Bengkulu",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Bendungan Hilir",
+        "address": "Fore Coffee - Jl. Bendungan Hilir Blok Beringin No. 74 RT 01/RW 02, Kel. Bendungan Hilir, Kec. Tanah Abang, Kota Jakarta Pusat",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "BG Junction Mall, Surabaya",
+        "address": "Fore Coffee BG Junction Mall, Surabaya - Jl. Bubutan No.1-7, Bubutan, Kec. Bubutan, Surabaya, Jawa Timur 60174",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Big Mall",
+        "address": "Fore Coffee - Jl. Untung Suropati No.08, Karang Asam Ulu, Kec. Sungai Kunjang, Kota Samarinda, Kalimantan Timur 75243 (Lantai UG dekat dengan Giordana)",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Binjai Super Mall",
+        "address": "Fore Coffee - Binjai Super Mall, Jalan Soekarno Hatta No.14, Unit G-0140, kel. Timbang Langkat, kec. Binjai Timur, Kota Binjai, Sumatera Utara 20735",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Bintaro Exchange",
+        "address": "Fore Coffee Bintaro Exchange - CBD Bintaro Jaya, Jalan Sektor VII No.2, Pd. Jaya, Kec. Pd. Aren, Kota Tangerang, Banten 15227 (lantai LG unit 139)",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Bintaro Sektor 5",
+        "address": "Fore Coffee - Jl. Puter I Blok ED.1 No. 6, Bintaro Jaya Sektor V, Kel. Jurang Mangu Timur, Kec. Pondok Aren, Kota Tangerang Selatan",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Bintaro Sektor 9",
+        "address": "Fore Coffee - Bintaro Sektor 9, Jalan Utama Bintaro Sektor 9 Kasuari I No.16, Blok A6, Pondok Pucung, Pondok Aren, Tanggerang Selatan, Banten 15229",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Boarding Domestic I Gusti Ngurah Rai",
+        "address": "Fore Coffee Boarding Domestic I Gusti Ngurah Rai - Gate 2, Domestic Departure, Tuban, Kuta, Badung Regency, Bali 80361",
+        "hours": "05:00 - 21:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Buaran",
+        "address": "Fore Coffee Buaran - Jl. Radin Inten II No.6, RT.8/RW.15, Duren Sawit, Kec. Duren Sawit, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 15310",
+        "hours": "07:00 - 23:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Bung Karno, Lombok",
+        "address": "Fore Coffee Bung Karno, Lombok - Jl. Bung Karno, Pagesangan Tim., Kec. Mataram, Kota Mataram, Nusa Tenggara Barat (samping mie gacoan)",
+        "hours": "07:00 - 23:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Cempaka Putih",
+        "address": "Fore Coffee - Jl. Cempaka Putih Raya No.12B, RT.7/RW.8, Cemp. Putih Tim., Kec. Cemp. Putih, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10510",
+        "hours": "08:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Central Park",
+        "address": "Fore Coffee - Jl. Letjen S. Parman No. Kav.28, Tj. Duren Sel., Kec. Grogol petamburan, Kota Jakarta Barat, DKI Jakarta 11470 (Lantai 2 Dekat MINISO)",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Cibinong City Mall",
+        "address": "Fore Coffee - Cibinong City Mall, Jl. Tegar Beriman, Pakansari, Cibinong, Bogor Regency, West Java 16915",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Cibis",
+        "address": "Fore Coffee - Cilandak Business Square Jl. TB Simatupang No.2, Cilandak Tim, Pasar Minggu, Jakarta Selatan",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Cibubur Junction",
+        "address": "Fore Coffee - Jl. Jambore, Cibubur, Ciracas, Kota Jakarta Timur",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Cideng",
+        "address": "Fore Coffee - Jl. Cideng Timur No. 59, Jakarta Pusat . Suan Thai - lantai 1(lantai dasar), sebelah Fave Hotel",
+        "hours": "07:00 - 21:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Cihampelas Walk",
+        "address": "Fore Coffee - Jl. Cihampelas No. 160, Bandung 40131. GF - 15A, 16A / Ground Floor",
+        "hours": "08:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Cikini",
+        "address": "Fore Coffee - Unit GF-02 - 02A, Jalan Cikini Raya No.75 RT1/RW2 Cikini, Kecamatan Menteng, Jakarta Pusat, DKI Jakarta 10330",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Ciledug",
+        "address": "Fore coffee Ciledug - Jalan Hos Cokroaminoto Ciledug Raya No 30E, RT 003 RW 04, Kel. Larangan Indah, Kec. Larangan, Tangerang",
+        "hours": "07:00 - 23:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Cimahi, Bandung",
+        "address": "Fore Coffee - Jl. Jend. H. Amir Machmud No.429, Cigugur Tengah, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat 40523",
+        "hours": "07:00 - 23:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Cipete",
+        "address": "Fore Coffee - Jl. Cipete Raya No.2A, Cilandak, Jakarta Selatan",
+        "hours": "07:00 - 23:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Ciplaz Garut",
+        "address": "Fore Ciplaz Garut - Jl. Guntur, Pakuwon, Kec. Garut Kota, Kabupaten Garut, Jawa Barat 44118. Ground Floor, Unit GF - B012",
+        "hours": "09:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Cipondoh",
+        "address": "Fore Coffee Cipondoh - Jl. KH. Hasyim Ashari No.28f, RT.001/RW.005, Buaran Indah, Kec. Cipondoh, Kota Tangerang, Banten 15148",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Cirebon Super Block Mall",
+        "address": "Fore Coffee - Komp. Chelsea Blue Ruko 9 - 10, Jl. DR. Cipto Mangunkusumo No.26, Pekiringan, Kec. Kesambi, Kota Cirebon, Jawa Barat 45131",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Cirendeu",
+        "address": "Fore Coffee - Jl. Cireundeu Raya RT 001/RW 01, Kel. Cireundeu, Kec. Ciputat Timur, Kota Tangerang Selatan",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Citadel Square Ngaliyan",
+        "address": "Fore Coffee Citadel Ngaliyan, Semarang - Jl. Prof. Dr. Hamka No.105, Ngaliyan, Kec. Ngaliyan, Kota Semarang, Jawa Tengah 50181",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Citimall Bontang",
+        "address": "Fore Coffee - Jl. Jendral Soedirman, Kelurahan Tanjung Laut, Kecamatan Bontang Selatan, Kota Bontang, Kalimantan Timur 75325 (Unit G-0080 & G-0090)",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Citimall Sukabumi",
+        "address": "Fore Coffee - Jl. A. Yani No.121-127, Gunungparang, Kec. Cikole, Kota Sukabumi, Jawa Barat 43111",
+        "hours": "08:00 - 21:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Citra 6",
+        "address": "Fore Coffee - Jl. Citra Garden VI, RT.4/RW.15, Tegal Alur, Kec. Kalideres, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11820",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Citra Raya Cikupa",
+        "address": "Fore Coffee - Citra Raya, Jl Raya Serang KM 14,7, Kec. Cikupa, Kab. Tangerang, Banten.",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Citra Xperience",
+        "address": "Fore Coffee - Lower Ground Area Podium , Jalan Casa No.170, RT.13/RW.6, Kebon Kosong, Kemayoran, Kb. Kosong, Kemayoran, Kota Jakarta Pusat",
+        "hours": "07:30 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Citraland Celebes",
+        "address": "Fore Coffee - Citraland Celebes, Jl. Tun Abdul Razak, Perum Citraland Celebes Blok F No.2 dan No. 3, Kelurahan Tombolo, Kecamatan Somba Opu, Kabupaten Gowa, Provinsi Sulawesi Selatan.",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Citraland Helvetia",
+        "address": "Fore Citraland helvetia - Jalan Kapten Sumarsono Tanjung Gusta Kecamatan Sunggal, Medan Labuhan, Deli Serdang Regency, North Sumatra 20373",
+        "hours": "09:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Citraland Utara, Surabaya",
+        "address": "Fore Coffee Citraland Utara - Ruko Palma Galeria, Blok RB5 No 20-21 Citraland Utara, Surabaya (Jawa Timur)",
+        "hours": "07:00 - 21:30",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Citywalk Gajah Mada",
+        "address": "Fore Coffee - CITYWALK GAJAHMADA Groundfloor 8-9. Jl Gajahmada No. 211, Kota tua, glodok, Tamansari, kota Jakarta Barat",
+        "hours": "08:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Ciumbuleuit",
+        "address": "Fore Coffee - Jl. Ciumbuleuit No. 86, Hegarmanah, Kec. Cidadap, Kota Bandung, Jawa Barat 40141",
+        "hours": "08:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Condet",
+        "address": "Fore Coffee Condet - JI. Raya Condet No. 3 RT 005/RW 03, Kel. Balekambang, Kec. Kramat Jati, Jakarta Timur",
+        "hours": "07:00 - 23:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Daan Mogot",
+        "address": "Fore Coffee - Lantai 1 Lobby, Teras Barat Extension. Gedung CIMB NIAGA Daan Mogot, Jl. Daan Mogot Raya No. 95C, Jakarta Barat 11510",
+        "hours": "07:00 - 19:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Dbotanica Bandung",
+        "address": "Fore Coffee - Jl. Dr. Djunjunan No.143-149, Pajajaran, Kec. Cicendo, Kota Bandung, Jawa Barat 40173 (lantai LG, Blok A04T)",
+        "hours": "08:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "De Entrance Arkadia",
+        "address": "Fore De Entrance Arkadia - Jl. TB Simatupang No.Kav. 88, Kebagusan, Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12520. Unit GF - 04",
+        "hours": "07:00 - 21:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Delipark Medan",
+        "address": "Fore Coffee - Delipark Medan Jl. Putri Hijau/Guru Patimpus No.1 OPQ, Medan 20111, Indonesia. No. Unit Toko LG-32A",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Deltasari Sidoarjo",
+        "address": "Fore Deltasari Sidoarjo - KO Deltasari Indah AQ-05 RT 000/RW 00, Kel. Kureksari, Kec. Waru, Kab. Sidoarjo",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Dewi Sartika",
+        "address": "Fore Coffee Dewi Sartika - Jl. Dewi Sartika No.370, RT.02RW04/RW.4, Kel. Cawang, Kec. Kramat Jati, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13630",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Dewi Sri, Bali",
+        "address": "Fore Coffee - Dewi Sri, Jalan Dewi Sri No. 69 , Legian , Kuta - Badung , Bali. 80351",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Dipatiukur, Bandung",
+        "address": "Fore Coffee - Jl. Dipati Ukur No.71, Dago, Kecamatan Coblong, Kota Bandung, Jawa Barat 40132",
+        "hours": "07:00 - 23:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Diponegoro Palangkaraya",
+        "address": "Fore Coffee Diponegoro Palangkaraya - Jl. Diponegoro No. KSV 05 - 06, Langkai, Kec. Pahandut, Kota Palangka Raya, Kalimantan Tengah",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Djakarta Theater",
+        "address": "Fore Coffee - Gedung Djakarta Theater Lantai dasar, Koridor Unit A2a Jl. M.H. Thamrin No.9, RT.2/RW.1, Kb. Sirih, Menteng, Kota Jakarta Pusat",
+        "hours": "07:00 - 20:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "DMall Depok",
+        "address": "Fore Coffee - Jl. Margonda Raya Kav. 88, Kemiri Muka, Beji, Kemiri Muka, Beji, Kota Depok",
+        "hours": "09:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "DP Mall, Semarang",
+        "address": "Fore Coffee - Jl. Pemuda No.150, Sekayu, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah 50132 (Unit G01 dan G01 - A SO)",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Dramaga Bogor",
+        "address": "Fore Coffee Dramaga Bogor - Jl. Nasional 11 21-24, RT.03/RW.02, Margajaya, Kec. Bogor Bar., Kota Bogor, Jawa Barat 16116",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Duta Mall Banjarmasin",
+        "address": "Fore Coffee - Jl. A. Yani No.98, Melayu, Kec. Banjarmasin Tengah, Kota Banjarmasin, Kalimantan Selatan 70232 (Lt1 Bersebelahan dengan Resto AW, masuk dari Lobby Mall dekat Hotel Mercure)",
+        "hours": "09:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Elang Laut PIK",
+        "address": "Fore Coffee Elang Laut PIK - Jl. Pantai Indah Selatan 1 Pantai Indah Kapuk, Ruko Elang Laut Boulevard, Pantai Indah Kapuk Blok D No. 12, Jakarta Utara",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Epiwalk",
+        "address": "Fore Coffee - Epiwalk, Ground Floor, Unit GF-18, Jl. Epicentrum Boulevard Bar., RT.2/RW.5, Kel. Karet Kuningan, Kec. Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12940",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Gaia Bumi Raya City",
+        "address": "Fore Coffee - Jl. Arteri Supadio, Sungai Raya, Kec. Sungai Raya, Kabupaten Kubu Raya, Kalimantan Barat 78121 unit GF 17A",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Galuh Mas Karawang",
+        "address": "Fore Coffee - Galuh Mas Street Festival Blok III No. H-1, Kel. Sukaharja, Kec. Teluk Jambe Timur, Kab. Karawang, Jawa Barat",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Gama Tower",
+        "address": "Fore Coffee - Jl. H. R. Rasuna Said No.Kav. C-22,Karet Kuningan, Kecamatan Setiabudi, Jakarta Selatan",
+        "hours": "07:00 - 18:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Gandaria City",
+        "address": "Fore Coffee - Gandaria City Mall Lantai Upper Ground, Mainstreet Dining, Jl. Sultan Iskandar Muda, Kebayoran Lama, Jakarta Selatan (Di depan Tony Roma's)",
+        "hours": "08:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Gatot Subroto, Bali",
+        "address": "Fore Coffee - Gatot Subroto, Jl. Gatot Subroto Tengah No.309, Dangin Puri Kaja, Kec. Denpasar Utara, Kota Denpasar, Bali 80233",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Gayamsari, Semarang",
+        "address": "Fore Coffee Gayamsari, Semarang - Jl. Majapahit No. 127, Gayamsari, Kec. Gayamsari, Kota Semarang, Jawa Tengah 50248",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Godean",
+        "address": "Fore Coffee - Godean Km 1/Kv.1-6,Rt.001/Rw.005,Kelurahan Ngestiharjo ,Kecamatan Kasihan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55182",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Golden Vienna",
+        "address": "Fore Coffee - Ruko Golden Vienna Extension, Kelurahan Rawa Buntu, Kecamatan Serpong , Kota Tangerang Selatan, Banten 15310",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Graha Raya",
+        "address": "Fore Coffee - Ruko Melia Walk MDA No. 38, Jalan Graha Raya Bintaro, Paku Jaya, Serpont Utara, Tangerang Selatan – Banten",
+        "hours": "07:00 - 23:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Grand Depok City",
+        "address": "Fore Coffee Grand Depok City - Ruko Verbena Blok D/18, Kel. Tirtajaya, Kec. Sukmajaya, Kota Depok, Jawa Barat",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Grand Kota Bintang",
+        "address": "Fore Coffee Grand Kota Bintang - Jl. Kota Bintang Boulevard No.Kavling 1, Jakasampurna, Kec. Bekasi Bar., Kota Bks, Jawa Barat 17145",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Grand Wisata",
+        "address": "Fore Coffee - Jl. Festive Garden Blok AA.16/26, Kel. Lambangsari, Kec. Tambun Selatan, Kab. Bekasi, Jawa Barat",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Green Pramuka Square Mall",
+        "address": "Fore Coffee - Jl. Rw. Jaya No.49, RT.16/RW.9, Rawasari, Kec. Cemp. Putih, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 13120",
+        "hours": "09:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Greenlake Sunter",
+        "address": "Fore Coffee - Greenlake Sunter, Ruko Green lake, Jl. Danau Sunter Selatan, Sunter Agung, Kec. Tj. Priok, Jkt Utara, Daerah Khusus Ibukota Jakarta",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Greenville, Jakarta",
+        "address": "Fore Coffee - Jl. Tanjung duren barat, RT02/RW09, Duri Kepa, Kec. Kebon Jeruk, Kota Jakarta Barat, DKI Jakarta 11510",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Griya Buah Batu",
+        "address": "Fore Coffee - Jl. Buah Batu No.183-185, Turangga, Kec. Lengkong, Kota Bandung, Jawa Barat 40264",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Gwalk, Surabaya",
+        "address": "Fore Coffee - Jl. Raya Puri Widya Kencana K1-19 Lidah Kulon, Lakarsantri, Surabaya, East Java 60213",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Harapan Indah",
+        "address": "Fore Coffee - Ruko Sentra Niaga SN1 No 17, Jln Boulevard Hijau Raya, Kota Harapan Indah, Bekasi",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Hasan Basri Banjarmasin",
+        "address": "Fore Coffee Hasan Basri Banjarmasin - Jl. Hasan Basri No. 46B Kel. Sungai Niai, Kec. Banjar Utara, Kota Banjarmasin, Kalimantan Selatan",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Hayam Wuruk Kediri",
+        "address": "Fore Coffee - Jl. Hayam Wuruk No. 28, Kelurahan Dandangan, Kecamatan Kota Kediri, Kota Kediri, Propinsi Jawa Timur.",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Icon Bali",
+        "address": "Fore Coffee Icon Bali Jl. Danau Tamblingan No.27, Sanur, Denpasar Selatan, Kota Denpasar, Bali 80228, Indonesia. Unit BF 12",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Indragiri Surabaya",
+        "address": "Fore Coffee - Jl. Indragiri 9 RT 006/RW 01, Kel. Darmo, Kec. Wonokromo, Surabaya",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Iskandar Muda",
+        "address": "Fore Iskandar Muda - Jl. Iskandar Muda No. 20, Darat, Kec. Medan Baru, Kota Medan, Sumatera Utara 20222",
+        "hours": "08:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Jalan Sulawesi",
+        "address": "Fore Jalan Sulawesi - Jalan Sulawesi No. 54 RT 005/RW 004, Kel. Ngagel, Kec. Wonokromo, Kota Surabaya",
+        "hours": "07:00 - 23:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Jati Barat",
+        "address": "Jl. Taman Margasatwa Raya No.12, Jati Padang, Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12540",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Jatiasih",
+        "address": "Fore Coffee - Jl. Raya Jastiasih No. 64 RT 003 RW 005, Jatiasih, Kecamatan Jatiasih, Kota Bekasi, Jawa Barat 17423",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Jatimulya Bekasi",
+        "address": "Fore Jatimulya Bekasi - Jalan Raya Jatimulya No.10, Kel. Jatimulya, Kec. Tambun Selatan, Kota Bekasi",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Jatinangor Town Square",
+        "address": "Fore Coffee - Jl. Raya Jatinangor No.146, Cikeruh, Kec. Jatinangor, Kabupaten Sumedang, Jawa Barat 45363 (lantai GF, indoor: unit GFA-02A, outdoor: unit GFA-02AST)",
+        "hours": "07:00 - 23:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Jatiuwung",
+        "address": "Fore Coffee - Jl. Gatot Subroto Blok JS No. 10-11 RT 003/RW 01, Kel. Kroncong, Kec. Jatiuwung, Kota Tangerang",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Jatiwaringin",
+        "address": "Fore Coffee - Jl. Raya Jatiwaringin No.53, RT.002/RW.002, Jatiwaringin, Kec. Pondokgede, Kota Bks, Jawa Barat 17411",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Jatiwarna",
+        "address": "Fore Coffee Jatiwarna - Jl. Raya Hankam No.9, Kel. Jatimelati, Kec. Pondok Melati, Kota Bekasi, Jawa Barat 17415",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Jend. Sudirman, Pekanbaru",
+        "address": "Fore Coffee - Jl. Jend. Sudirman No.289-290, Sukaramai, Kec. Pekanbaru Kota, Kota Pekanbaru, Riau 28111",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Jimbaran, Bali",
+        "address": "Fore Coffee Jimbaran, Bali - Jl. Raya Kampus Unud No. 109, Kel. Jimbaran, Kec. Kuta Selatan, Kabupaten Badung, Provinsi Bali.",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Jl. Soekarno Hatta, Malang",
+        "address": "Fore Coffee Jl. Soekarno Hatta, Malang - Jl. Soekarno Hatta Blok D 402, 403, Kav. 4 Malang, Kel. Mojolangu, Kec. Lowokwaru, Malang, Jawa Timur",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Joglo Raya",
+        "address": "Fore Coffee - Jalan Raya Joglo no 14 kelurahan joglo kec. Kembangan Jakarta Barat",
+        "hours": "07:00 - 21:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "JTOWN Jatinegara",
+        "address": "Fore Coffee JTOWN Jatinegara - Jl. Jatinegara Timur No.60, Bali Mester, Kecamatan Jatinegara, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13310, Indonesia",
+        "hours": "07:00 - 23:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Kalibata City",
+        "address": "Fore Coffee - Apartement Kalibata City Tower Borneo, Lantai GF/AT-B CT B2 Rawajati, Pancoran, Kota Jakarta Selatan",
+        "hours": "07:00 - 23:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Kalimalang",
+        "address": "Fore Coffee Kalimalang - Jalan Raya Kalimalang No. 4, Pondok Kelapa, Jatinegara, RT.4/RW.10, Pondok Kelapa, RT.4/RW.10, Pd. Klp, Kec. Duren Sawit, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13450",
+        "hours": "07:00 - 23:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Kaliurang",
+        "address": "Fore Coffee - Kaliurang St No.KM 5, Karang Wuni, Caturtunggal, Depok Sub-District, Sleman Regency, Special Region of Yogyakarta 55153",
+        "hours": "07:00 - 23:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Karang Tengah Lebak Bulus",
+        "address": "Fore Coffee Karang Tengah Lebak Bulus - Jl. Karang Tengah Raya No.13 6, RT.6/RW.4, Lb. Bulus, Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12440",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Kartini, Jember",
+        "address": "Fore Coffee Kartini Jember - Jalan Kartini 70 Jember, Kelurahan Kepahitan, Kec.Kaliwates, Kabupaten Jember.",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Kebagusan",
+        "address": "Fore Coffee - Jl. Kebagusan 1 No 5, Pasar Minggu, Jakarta Selatan",
+        "hours": "07:00 - 19:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Kelapa Dua Depok",
+        "address": "Fore Coffee Kelapa Dua Depok - Jl. Kampus E Universitas Gunadarma, Tugu, Kec. Cimanggis, Kota Depok, Jawa Barat 16451",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Kemang Pratama Bekasi",
+        "address": "Fore Coffee Kemang Pratama - Near Vista Photo, Ruko Kemang Pratama, Jl. Kemang Pratama Raya AN No. 10, RT.004/RW.001, Bojong Rawalumbu, Kec. Rawalumbu Kota Bekasi, Jawa Barat 17116",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Kemang Raya",
+        "address": "Fore Coffee Kemang Raya - Jalan Kemang Raya No.20-A RT.011 RW 05, Kelurahan Bangka, Kecamatan Mampang Prapatan, Jakarta Selatan",
+        "hours": "07:00 - 23:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Kisamaun",
+        "address": "Fore Coffee Kisamaun - Daan Mogot Rd No.32D, RT.003/RW.004, Sukarasa, Tangerang, Tangerang City, Banten 15111",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Klatos",
+        "address": "Fore Klatos - Jl. Pemuda No. 75, Kel. Tonggalan, Kec. Klaten Tengah, Kab. Klaten. Lantai GF.01 dan Patio 01 Gedung Klatos.",
+        "hours": "08:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Kota Wisata, Cibubur",
+        "address": "Fore Coffee - Kota Wisata - Oregon Square TCR/11 RT 000/RW 00, Kel. Ciangsana, Kec. Gunung Putri, Kab Bogor",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Kuningan City",
+        "address": "Fore Coffee - Jl. Prof. Dr Satrio No.Kav. 18, Kuningan, Karet Kuningan, Kec. Setiabudi, Kota Jakarta Selatan, DKI Jakarta 12940",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Lap Tembak Arundina Cibubur",
+        "address": "Fore Coffee Lap Tembak Arundina Cibubur - Jl. Lap. Tembak, RT.2/RW.11, Cibubur, Kec. Ciracas, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13720",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Lebak Bulus",
+        "address": "Fore Coffee - Jl. Haji Baun No 46, Lebak Bulus, Cilandak, Jakarta Selatan",
+        "hours": "07:00 - 21:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Lippo Mall Nusantara",
+        "address": "Fore Coffee Lippo Mall Nusantara - Kawasan Bisnis Granadha, Lippo Mall Nusantara, Lower Ground Unit #031-032, Jl. Jend. Sudirman No.Kav. 50, Kel. Karet Semanggi, Kec. Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12930",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Lippo Mall Sidoarjo",
+        "address": "Fore Coffee Lippo Mall Sidoarjo - Jl. Jati Raya No.1, Jati, Kec. Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61226. Unit GF-27B",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Living World Alam Sutera",
+        "address": "Fore Coffee - level GF, Jalan Alam Sutera Boulevard Kav. 21, 2nd floor, Pakulonan, Serpong Utara, Kota Tangerang Selatan",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Living World Grand Wisata",
+        "address": "Fore Coffee - Living World Grandwisata, Esplanade Ave, Lambangjaya, Tambun Selatan, Bekasi Regency, West Java 17510 - Unit G-36, G-36T, G-36A",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Living World Kota Wisata Cibubur",
+        "address": "Fore Coffee Living World Kota Wisata Cibubur - Jl. Boulevard Kota Wisata, Ciangsana, Kec. Gn. Putri, Kabupaten Bogor, Jawa Barat 16968. Unit G-48 dan G 48T",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Living World, Pekanbaru",
+        "address": "Fore Coffee - Jl. Soekarno-Hatta, Tengkerang Bar., Kec. Marpoyan Damai, Kota Pekanbaru, Riau 28292 (Unit G-29 & G-29T)",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Lotte Bintaro",
+        "address": "Fore Coffee - GF, Bintaro Jaya, JL M.H. Thamrin CBD Area Kav. Blok B7 01-06, Jl. Moh. Husni Thamrin No.Kel, Pd. Jaya, Kec. Pd. Aren, Kota Tangerang Selatan",
+        "hours": "09:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "M. Kahfi",
+        "address": "Fore Coffee - Jalan M. Khafi 1 No. 123 RT 10 RW 2 Kelurahan Ciganjur, Kecamatan Jagakarsa, Kota Jakarta Selatan, DKI Jakarta 12620",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Magelang",
+        "address": "Fore Coffee Magelang - Jl. Jendral Sudirman No. 199, Trunan, Tidar Selatan, Magelang, Jawa Tengah",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Mahendradata, Padangsambian, Bali",
+        "address": "Fore Coffee - Jl. Teuku umar barat, Padangsambian, Kec. Denpasar Barat. Denpasar, Bali 80113",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Malang Town Square",
+        "address": "Fore Coffee - Malang town Square lantai GF Jl. Veteran No.2, Penanggungan, Kec. Klojen, Kota Malang, Jawa Timur 65111",
+        "hours": "09:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Mall Artha Gading",
+        "address": "Fore Coffee Mall Artha Gading - Jl. Artha Gading Sel. No.1, Klp. Gading Bar., Kec. Klp. Gading, Jkt Utara, Daerah Khusus Ibukota Jakarta 14240",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Mall Balikpapan Baru",
+        "address": "Fore Coffee - Jl. Belakang Mall BB, Damai, Kecamatan Balikpapan Selatan, Kota Balikpapan, Kalimantan Timur 76114 (Lantai GF)",
+        "hours": "08:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Mall Basura",
+        "address": "Fore Coffee - Jl. Jend. Basuki Rachmat No.1A, RW.10, Besar Selatan, Kecamatan Jatinegara, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13410. unit GF/RK/01",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Mall Boemi Kedaton",
+        "address": "Fore Coffee - Jl. Teuku Umar Jl. Sultan Agung No.1, Labuhan Ratu, Kec. Kedaton, Kota Bandar Lampung, Lampung 35132",
+        "hours": "09:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Mall Olympic Garden",
+        "address": "Fore Coffee - Mall Olympic Garden lantai GF Kawi St No.24, Kauman, Klojen, Malang City, East Java 65116",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Mall Panakkukang Makassar",
+        "address": "Fore Coffee - Mall Panakkukang Makassar, Jalan Boulevard, Komplek Panakkukang Mas, Makassar, Kota Makassar, Sulawesi Selatan (Lantai dasar dari pintu utama belok kanan sebelah Vivo)",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Mall Ratu Indah Makassar",
+        "address": "Fore Coffee - Mall Ratu Indah Makassar Jl. DR. Ratulangi No.35, Mamajang Luar, Kec. Mamajang, Kota Makassar, Sulawesi Selatan 90132",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Mampang Jakarta",
+        "address": "Fore Coffee - Jl. Warung Buncit Raya RT 001/RW 002, Duren Tiga, Pancoran, Jakarta Selatan, DKI Jakarta",
+        "hours": "07:00 - 23:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Margo City",
+        "address": "Fore Coffee - Jl. Margonda Raya No. 358, Kemiri Muka, Kec Beji, Kota Depok, Jawa Barat 16423 (Unit 1-01 02)",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Mega Bekasi Hypermall",
+        "address": "Fore Coffee - Jl. Jenderal Ahmad Yani No 1, Marga Jaya Bekasi, Jawa Barat. 17141 lantai UG",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Mega Mas Manado",
+        "address": "Fore Coffee - Jl. Laksda John Lie, Titiwungen Sel., Kec. Sario, Sulawesi Utara (Kavling No.2)",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Megamall Batam Center",
+        "address": "Fore Coffee - Unit GF 227, Jl. Engku Putri No. 1 Kelurahan Belian, Kecamatan Batam Kota, Kota Batam, Kepulauan Riau 29461",
+        "hours": "09:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Merr, Surabaya",
+        "address": "Fore Coffee Merr, Surabaya - Jl. Dr. Ir. H. Soekarno No.396, MERR, Kec. Rungkut, Surabaya, Jawa Timur",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Meruya Ilir",
+        "address": "Fore Cofee Meruya Ilir - Jl. Meruya Ilir Raya No.5, Srengseng, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11630",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Meruyung, Depok",
+        "address": "Fore coffee Meruyung, Depok. - Jl. Raya Sawangan No.69, Rangkapan Jaya Baru, Kec. Pancoran Mas, Kota Depok, Jawa Barat 16434",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Metropolitan Mall Bekasi",
+        "address": "Fore Coffee - Jl. KH. Noer Ali, Pekayon Jaya, Bekasi Selatan, Kota Bekasi , Jawa Barat. Pintu masuk Utara 1, Lt Dasar, dekat dengan GIORDANO",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Millennium Centennial Center",
+        "address": "Fore Coffee - Jl. Jend. Sudirman No.Kav 25, Kuningan, Kecamatan Setiabudi, Kota Jakarta Selatan",
+        "hours": "07:00 - 18:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Muara Karang",
+        "address": "Fore Coffee Muara Karang - Jalan Pluit Karang No. 52 Blok Z-3 Selatan Kav. No. 38, Kel. Pluit, Kec. Penjaringan, Jakarta Utara, DKI Jakarta",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Multatuli Medan",
+        "address": "Fore Coffee - Jl. Multatuli Blok FF 28-29 RT 000/RW 00, Kel. Hamdan, Kec. Medan Maimun, Kota Medan",
+        "hours": "07:00 - 23:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Mulyosari Surabaya",
+        "address": "Fore Coffee Mulyosari Surabaya - PQMW+5HG, Jl. Raya Mulyosari, Kalisari, Kec. Mulyorejo, Surabaya, Jawa Timur 60113",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Nani Wartabone",
+        "address": "Fore Coffee Nani Wartabone - Jl.Nani wartabone no.127 (Ex panorama tours) Heledulaa Sel., Kec. Kota Tim., Kota Gorontalo, Gorontalo 96134",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Nipah Mall",
+        "address": "Fore Coffee - Nipah Makassar Jl. Urip Sumoharjo Kel No.23C, Panaikang, Kec. Panakkukang, Kota Makassar, Sulawesi Selatan 90231",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "OCBC Ringroad Medan",
+        "address": "Fore Coffee - OCBC Ringroad Medan. Jl. GAGAK HITAM, Jl. Ring Road KOMP. OCBC No.73, Asam Kumbang, Kec. Medan Selayang, Kota Medan, Sumatera Utara 20117",
+        "hours": "09:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Opi Mall",
+        "address": "Fore Coffee Opi Mall - Lantai 1 Opi Mall, Jl. Gubernur H. A Bastari, Sungai Kedukan, Kec. Rambutan, Kab. Banyuasin, Sumatera Selatan 30257",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Pahlawan, Sidoarjo",
+        "address": "Fore Coffee - Pahlawan Sidoarjo, Jl. Pahlawan No. 6, Lemahputro, Kec. Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61213",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Pakuwon City Mall, Surabaya",
+        "address": "Fore Coffee - Pakuwon City, Jl. Raya Laguna KJW Putih Tambak No.2, Kejawaan Putih Tamba, Kec. Mulyorejo, Kota SBY, Jawa Timur 60112 (dekat Lobby, belakang Fish n Co)",
+        "hours": "09:30 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Pakuwon Mall, Surabaya",
+        "address": "Fore Coffee - Pakuwon mall Lantai 2 food Society. Jl. Puncak Indah Jl. Lontar No. 2 Lontar Kec. Sambikarep, Surabaya, Jawa Timur, Indonesia",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Pakuwon Mall, Yogyakarta",
+        "address": "Fore Coffee Pakuwon Mall, Yogyakarta - Lt.UG Jl. Ring Road Utara, Kaliwaru, Condongcatur, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Palembang Icon Mall",
+        "address": "Fore Coffee - Palembang Icon Unit G-66, Jl. POM IX, Kel. Lorok Pakjo, Kec. Ilir Barat 1, Kota Palembang, Sumatera Selatan 30137",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Palembang Square Mall",
+        "address": "Fore Coffee Palembang Square Mall - Jl. Angkatan 45, Lorok Pakjo, Kec. Ilir Bar. I, Kota Palembang, Sumatera Selatan 30137",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Palembang Trade Center",
+        "address": "Fore Coffee - PTC Mall, GF Area Selasar, 8 Ilir, Kec. Ilir Tim. II, Kota Palembang, Sumatera Selatan 30164",
+        "hours": "08:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Pamulang",
+        "address": "Fore Coffee - Pamulang, Ruko Pamulang Permai, SH. 12/07, Kel. Pamulang Barat, Kec.Pamulang, Kota Tangerang Selatan, Provinsi Banten",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Panam Pekanbaru",
+        "address": "Fore Panam Pekanbaru - Jl HR Soebrantas No. 83, 84 RT 005/RW 02, Kel. Delima, Kec. Binawidya, Kota Pekanbaru",
+        "hours": "08:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Panin Drive Thru",
+        "address": "Fore Coffee - Panin Drive Thru, Jl. Jend. Sudirman No.kav.1, Gelora, Jakarta Pusat",
+        "hours": "07:00 - 19:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Pantai Indah Kapuk",
+        "address": "Fore Coffee - Rukan Cordoba 2 Blok D2, Jl. Marina Raya Pantai Indah Kapuk Penjaringan, Jakarta Utara",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Paragon Semarang",
+        "address": "Fore Coffee Paragon Semarang - Jl. Pemuda No.118, Sekayu, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah 50132",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Paris Van Java",
+        "address": "Fore Coffee - JL. Sukajadi no.131-139, cipedes. Kec sukajadi, kota bandung jawa barat 40162 City: Bandung (Lantai RL)",
+        "hours": "09:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Paskal 23",
+        "address": "Fore Coffee Paskal 23 - Paskal 23 Hypersquare, Blok A no 5, Jl. Pasir Kaliki, Kel. Cijagra, Kec. Lengkong, Kota Bandung, Jawa Barat 40265",
+        "hours": "08:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Patimura Padang",
+        "address": "Fore Coffee - Jalan Pattimura No. 9, Kelurahan Kampung Jao, Kecamatan Padang Barat",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Paus Rawamangun",
+        "address": "Fore Coffee - Jl. Paus Raya Blok A No. 84D, RT 001/RW008, Kel. Jati, Kec. Pulo Gadung, Jakarta Timur",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Pentacity",
+        "address": "Fore Coffee - Pentacity Mall Balikpapan Superblock Jalan Jenderal Sudirman No.47 Gunung Bahagia Balikpapan Selatan, Gunung Bahagia, Superblock, Balikpapan City, East Kalimantan 76114",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Perintis Kemerdekaan",
+        "address": "Fore Coffee Perintis Kemerdekaan - Jl. Perintis Kemerdekaan, Kel. Tamalanrea Jaya, Kec. Tamalanrea, Kota Makassar, Sulawesi Selatan",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Pesanggrahan",
+        "address": "Fore Coffee - Pesanggrahan, Jl. Pesanggrahan no.168M, Kembangan, Jakarta Barat",
+        "hours": "07:00 - 23:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Petogogan",
+        "address": "Fore Coffee - Jl. Petogogan 1 no.21 Jakarta Selatan",
+        "hours": "07:00 - 21:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Plaza Ambarrukmo",
+        "address": "Fore Coffee Plaza Ambarrukmo - Jl. Laksda Adisucipto No.80, Ambarukmo, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Plaza Festival",
+        "address": "Fore Coffee - Epicentrum, Jl. H. R. Rasuna Said No.Kav. 22, Karet Kuningan, Kecamatan Setiabudi, Kota Jakarta Selatan",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Plaza Indonesia",
+        "address": "Fore Coffee - Plaza Indonesia L1 #E022, Jl. M.H. Thamrin No.Kav. 28-30, Jakarta Pusat",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Plaza Parahyangan",
+        "address": "Fore Coffee Plaza Parahyangan - Jl. Dalem Kaum No.54, Balonggede, Kec. Regol, Kota Bandung, Jawa Barat 40251. Lantai Dasar Unit B3",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Pollux Shopping Centre, Batam",
+        "address": "Fore Coffee - Jl. Laksamana Bintan, Kecamatan Batam Centre, Kota Batam (Unit GF-11)",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Pondok Bambu",
+        "address": "Fore Coffee - Jl. Pahlawan Revolusi No 14 RT 4 RW 3, Kel. Pondok Bambu, Kec. Duren Sawit, Jakarta Timur 13430",
+        "hours": "07:00 - 23:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Pondok Labu",
+        "address": "Fore Coffee - Jl. Margasatwa No.2 Cilandak, Pondok Labu, Jakarta Selatan",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Pucang Anom",
+        "address": "Fore Coffee - Jl Pucang anom timur no 25 - IV, kertajaya, kec gubeng, Kota Sby jawa timur 60282 , sebelah BNI",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Puri Kembangan",
+        "address": "Fore Coffee - Jl. Kembangan Raya No. 46 Kembangan Selatan, Kembangan, Jakarta Barat",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "QBig BSD City",
+        "address": "Fore Coffee - Jl. BSD Raya Utama, Lengkong Kulon, Kec. Pagedangan, Kabupaten Tangerang, Banten 15331",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Raden Saleh Ciledug",
+        "address": "Fore Coffee-Jl. Raden Saleh, RT.002/RW.004, Karang Tengah, Kec. Karang Tengah, Kota Tangerang, Banten 15157",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Rawamangun Muka Timur",
+        "address": "Fore Coffee - Jl. Rawamangun Muka Timur No.60 Rawamangun, Jakarta Timur",
+        "hours": "07:00 - 21:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "RDTX Square (Ex Menara Standard Chartered)",
+        "address": "Fore Coffee - RDTX Square, Jl. Prof. DR. Satrio No.164, RT.4/RW.4, Karet Semanggi, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12930",
+        "hours": "07:00 - 18:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Renon",
+        "address": "Fore Coffee Renon, Jl. Cok Agung Tresna No.37A, Dangin Puri Klod, Kec. Denpasar Tim., Kota Denpasar, Bali 80234 (bersebelahan dengan bendega restaurant)",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Resinda Park Karawang",
+        "address": "Fore Coffee - Jl. Interchange Karawang Barat, Purwadana, Kec. Telukjambe Tim., Kabupaten 8, Jawa Barat 41361. depan Foodcourt Yashinoya Lantai 2",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Rest Area KM 754 Surabaya - Gempol",
+        "address": "Fore Coffee Rest Area KM 754 Surabaya - Gempol, - Surabaya - Gempol Toll Rd No.26, Ngepung, Sidokepung, Buduran, Sidoarjo Regency, East Java 61252",
+        "hours": "06:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Royal Plaza Surabaya",
+        "address": "Fore Coffee Royal Plaza Lantai LG , Jl. Ahmad Yani no 16-18, Wonokromo, Kec. Wonokromo, Kota SBY, Jawa Timur 60243",
+        "hours": "10:00 - 21:30",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Ruko Kelapa Gading",
+        "address": "Fore Coffee Ruko Kelapa Gading Boulevard Barat, Blok LC6 no 43 . Sebrang emerald tower",
+        "hours": "07:00 - 21:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Ryacudu, Palembang",
+        "address": "Fore Coffee Ryacudu, palembang - Jl. Mayjen H. M. Ryacudu No. 14, 7 Ulu, Kec. Seberang Ulu 1, Kota Palembang, Sumatra Selatan.",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "S Parman Cilacap",
+        "address": "Fore Coffee S Parman Cilacap - Jl. S. Parman No.5, Cilacap, Sidanegara, Kec. Cilacap Tengah, Kabupaten Cilacap, Jawa Tengah 53211",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Samarinda City Centrum",
+        "address": "Fore Coffee - Jl. Mulawarman No.171, Karang Mumus, Kec. Samarinda Kota, Kota Samarinda, Kalimantan Timur 75242 (Unit L1-06)",
+        "hours": "08:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Sawangan",
+        "address": "Fore Coffee - Jl. Raya Sawangan, Ruko Gedong Prima No. 32B Kelurahan Mampang, Kecamatan Pancoran Mas, Kota Depok, Jawa Barat, 16433",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Sedayu City Cakung",
+        "address": "Fore Coffee Sedayu City Cakung - Sedayu City Boulevard Raya, Blok SCBRF No 65-66, Cakung Bar., Kec. Cakung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13910",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Semeru",
+        "address": "Fore Coffee - Jl. Semeru No.72, Oro-oro Dowo, Kec. Klojen, Kota Malang, Jawa Timur 65115",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Senopati",
+        "address": "Fore Coffee - Senopati, Jl. Senopati no.77 Kebayoran Baru, Jakarta Selatan",
+        "hours": "09:30 - 19:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Sesetan, Bali",
+        "address": "Fore Coffee Sesetan, Bali, Jl. Raya Sesetan No.210, Sesetan, Denpasar Selatan, Kota Denpasar, Bali 80223",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Setiabudi Bandung",
+        "address": "Fore Coffee Setiabudi Bandung - Jl. Dr. Setiabudi No. 119 Kel. Gegerkalong, Kec. Sukasari, Bandung, Jawa Barat",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Setiabudi Semarang",
+        "address": "Fore Coffee - Jalan Setiabudi No. 60 Kelurahan Sumurboto, Kecamatan Banyumanik, Kota Semarang, Jawa Tengah 50262",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Seturan Yogyakarta",
+        "address": "Fore Coffee - Depok Sports Center, Jl. Raya Seturan Kav.IV, Depok, Sleman, Yogyakarta",
+        "hours": "08:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Shila at Sawangan",
+        "address": "Fore Coffee Shila at sawangan - Jl. Raya Bojongsari, Sawangan, Depok City, West Java 16516. No. Unit D6, No. 12 dan 15.",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Simpang Enam, Teuku Umar, Bali",
+        "address": "Fore Coffee Simpang Enam, Teuku Umar, Bali - Jl. Teuku Umar, Dauh Puri Kauh, Kec. Denpasar Bar., Kota Denpasar, Bali 20112",
+        "hours": "07:00 - 22:30",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Sipin, Jambi",
+        "address": "Fore Coffee Sipin Jambi - Jl. Sumantri Brojonegoro No.23, Kel. Payo Lebar, Kec. Jelutung, Kota Jambi, Jambi 36135 (Sebelah PT. BHINNEKA LIFE INDONESIA)",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Smartfren BSD",
+        "address": "Fore Coffee - Smartfren Office and Galery BSD Jl. Pahlawan Seribu. CBD BSD Lot 12.A Serpong Utara, Lengkong Gudang, Tangerang, Kota Tangerang Selatan, Banten 15326 (021) 31922255",
+        "hours": "08:00 - 17:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Solo Paragon Mall",
+        "address": "Fore Coffee - Solo Paragon Mall Unit GFC-07C, Jl. Yosodipuro No. 133, Kel. Mangkubumen, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57139",
+        "hours": "09:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Sudirman Purwokerto",
+        "address": "Fore Coffee - Jl. Jenderal Sudirman, Purwokerto, Ruko Blok 1B",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Sultan Hasanuddin, Makassar",
+        "address": "Fore Coffee Hasanuddin, Jl. Sultan Hasanuddin Baru, Kec, Ujung Pandang . Kota Makassar, Sulawesi Selatan 90115",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Summarecon Mall Bandung",
+        "address": "Fore Summarecon Mall Bandung - Jalan Bulevar Barat No. 75-89, Summarecon Bandung, Kec. Gedebage, Kota Bandung, Jawa Barat 40295",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Summarecon Mall Bekasi",
+        "address": "Fore Coffee - Sentra Summarecon Bekasi, Jl. Boulevard Ahmad Yani, Marga Mulya, Kec. Bekasi Utara, Kota Bks, Jawa Barat 17142 (Unit DW-108), downtown - depan solaria",
+        "hours": "09:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Summarecon Mall Serpong",
+        "address": "Fore Coffee - Jl. Boulevard Raya Gading Serpong, Pakulonan Bar No unit DGF - IC 01., Kec. Klp. Dua, Tangerang, Banten 15810",
+        "hours": "09:00 - 23:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Sun Plaza Medan",
+        "address": "Fore Coffee - Jl. KH. Zainul Arifin No.7, Madras Hulu, Kec. Medan Polonia, Kota Medan, Sumatera Utara 202152 UNIT NO.C-32,33,35,36 LANTAI LG",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Sunter Mall",
+        "address": "Fore Coffee - Sunter Mall Lt Dasar unit 3, Jl. Danau Sunter Utara No.Kav. II, RW.13, Sunter Agung, Tj. Priok, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14350",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Superindo Kalijaga",
+        "address": "Fore Coffee Superindo Kalijaga - Super Indo Kalijaga, Lantai 1,Jl.Ciremai Raya No.6, Kalijaga, Harjamukti, Cirebon",
+        "hours": "08:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Superindo Pahlawan",
+        "address": "Fore Coffee Superindo Pahlawan - Jl. Pahlawan No.78, RT.01/RW.08, Empang, Kec. Bogor Sel., Kota Bogor, Jawa Barat 16132",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Superindo RE Martadinata",
+        "address": "Fore Coffee Superindo RE Martadinata - Jl. RE Martadinata No.1 5, Cipayung, Kec. Ciputat, Kota Tangerang Selatan, Banten 15411",
+        "hours": "07:00 - 21:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Supermal Karawaci",
+        "address": "Fore Coffee - Super Mal Lippo Karawaci LG 47B, JL. Diponegoro, Bencongan, Kec. Tangerang, Tangerang, Banten 15810",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Suzuya Merdeka Mall, Siantar",
+        "address": "Fore Coffee - Suzuya Merdeka Mall Siantar, Jl. Merdeka No. 375 Kel. Pardomuan, Kec. Siantar Timur, Kota Pematang Siantar, Sumatra Utara. Lantai Dasar Unit G2.",
+        "hours": "09:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "T3 Arrival Gate 4",
+        "address": "Fore Coffee T3 Arrival Gate 4, Gate 4 Lt. UG - Terminal 3, RT.001/RW.010, Pajang, Benda, Tangerang City, Banten 15126",
+        "hours": "06:00 - 23:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "T3 Domestic Boarding, Soekarno Hatta",
+        "address": "Fore Coffee T3 Domestic Boarding - Soekarno-Hatta Airport, Jl.P2, Domestic Gate RT.001/RW.010, Pajang, Kec. Benda, Kota Tangerang, Banten 151260",
+        "hours": "03:00 - 21:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "T3 Domestic Check-In",
+        "address": "Fore Coffee T3 Domestic Check-In - Check In Area Soekarno-Hatta International Airport, Ultimate Domestic Departure, 2nd floor, RT.001/RW.010, Pajang, Kota Tangerang, Banten 15126",
+        "hours": "03:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Taman Galaxy",
+        "address": "Fore Coffee - Jl. Galaxy Raya B/8, RT001/RW011, Kel. Jaka setia, Kec. Bekasi Selatan, Kota Bekasi",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Tanjung Duren",
+        "address": "Fore Coffee - Jl. Tanjung Duren Raya No 1-H Jakarta Barat",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Tebet",
+        "address": "Fore Coffee - Jl. Tebet Raya 38C RT 009/RW 04, Kel. Tebet Timur, Kec. Tebet, Jakarta Selatan",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Tegal Plaza",
+        "address": "Fore Coffee Tegal Plaza - Jl. Kapten Sudibyo No.84, Pekauman, Kec. Tegal Bar., Kota Tegal, Jawa Tengah 52133. Ground Floor Unit A",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Tenth Avenue, Bandung",
+        "address": "Fore Coffee Tenth Avenue - Unit GF-07, Jl. Soekarno-Hatta No.526, Kel. Cijaura, Kec. Buahbatu, Kota Bandung, Jawa Barat 40287",
+        "hours": "08:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Terminal 1A, Soekarno Hatta",
+        "address": "Fore Coffee - Jakarta International Soekarno-Hatta Airport Building 601, PO.BOX 1245 BUSH, Jakarta, 19101, Kab. Tangerang, Banten (Terminal 1A Keberangkatan lantai 2,sebelah store POLO)",
+        "hours": "03:00 - 21:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Terminal 1B Soekarno Hatta",
+        "address": "Fore Coffee Terminal 1B Keberangkatan, Bandara Soekarno-Hatta Tangerang, Banten, RT.001/RW.010, Pajang, Kec. Benda, Kota Tangerang, Banten 19120 (Ruangan nomor B9D.01A Area Shopping Arcade Terminal 1B Keberangkatan Bandar Udara Internasional Soekarno-Hatta)",
+        "hours": "03:00 - 21:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Terminal 2F Internasional, Soekarno Hatta",
+        "address": "Fore Terminal 2F Internasional - Jl. P21, RT.001/RW.010, Pajang, Kec. Benda, Kota Tangerang, Banten 15126",
+        "hours": "03:00 - 21:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Thamrin Plaza Medan Lt.2",
+        "address": "Fore Coffee Thamrin Plaza Medan - Thamrin Plaza, Jl. M.H Thamrin R No.75, Pandau Hulu I, Kec. Medan Kota, Kota Medan, Sumatera Utara 20214. Lantai 2, No. 11.",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Thamrin Residence",
+        "address": "Fore Coffee - Apartement Thamrin Residence , Jalan Kebon Kacang Raya, RT.3/RW.8, Kb. Melati, Tanahabang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10230",
+        "hours": "08:00 - 19:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "The Amboja, Jakarta",
+        "address": "Fore Coffee - Jl. Raya Mabes Hankam, RT.3/RW.2, Bambu Apus, Kec. Cipayung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13890 (unit GF No.8)",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "The Breeze",
+        "address": "Fore Coffee - BSD Green Office Park, Jl. BSD Grand Boulevard, Sampora, BSD, Tangerang, Banten 15345",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "The Hive Bekasi",
+        "address": "Fore Coffee The Hive Bekasi - HIVE - UNIQLO Neighborhood, Kota Harapan Indah Bekasi. Jl. Harapan Indah Boulevard, RT.10/RW.8, Pusaka Rakyat, Kec. Tarumajaya, Kabupaten Bekasi, Jawa Barat 17214",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "The Park Kendari",
+        "address": "Fore Coffee The Park Kendari - Jl. Brigjen M. Yoenoes, Bende, Kec. Kadia, Kota Kendari, Sulawesi Tenggara 93118. Unit G-1210 & G-1215, Lantai Dasar (GF).",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "The Park Solo",
+        "address": "Fore Coffee - Jalan Insinyur Sukarno, Dusun II, Madegondo, Kecamatan Grogol, Kabupaten Sukoharjo, Jawa Tengah 57552 (Unit G034-G0350)",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Tikala Manado",
+        "address": "Fore Coffee - Tikala Manado, Jl. Balaikota Raya No.25, Tikala Kumaraka, Kec. Wenang, Kota Manado, Sulawesi Utara",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "TIS Square",
+        "address": "Fore Coffee TIS Square - Jl. Letjen M.T. Haryono No.52-53 11, RT.11/RW.5, Tebet Bar., Kec. Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12810, Indonesia. Unit 1",
+        "hours": "07:00 - 21:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Trans Studio Mall Bandung",
+        "address": "Fore Coffee - Jl. Gatot Subroto No.289, Cibangkong, Kec. Batununggal, Kota Bandung, Jawa Barat",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "TSM Makassar",
+        "address": "Fore TSM Makassar - Jl. Metro Tj. Bunga, Maccini Sombala, Kec. Tamalate, Kota Makassar, Sulawesi Selatan 90224. Unit LG - 88 - 89",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Tunjungan Plaza 3",
+        "address": "Tunjungan Plaza 3 Lantai 3, Jl. Basuki Rahmat No.8-12, Kedungdoro, Tegalsari, Surabaya City, East Java 60261",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Tunjungan Plaza 6",
+        "address": "Fore Coffee - Jl.Basuki Rahmat No.8-12 Lantai 3,Kota Surabaya, Jawa timur,Indonesia",
+        "hours": "10:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Tuparev, Cirebon",
+        "address": "Fore Coffee - Jl. Tuparev No.54, Kertawinangun, Kec. Kedawung, Kabupaten Cirebon, Jawa Barat 45153",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Ubud, Bali",
+        "address": "Fore Coffee Ubud, Bali - Jl. Raya Pengosekan Ubud No. 88X, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Provinsi Bali",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Ungaran, Semarang",
+        "address": "Fore Coffee Ungaran Semarang - Jl Diponegoro no 222B-C, Ungaran, Genuk, Kec. Ungaran Bar, Kabupaten Semarang, Jawa Tengah 50512",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Veteran Raya",
+        "address": "Fore Coffee Veteran Raya - Veteran Raya Jalan RC Veteran No.4 RT/RW 003/001 Kel.Bintaro Kec.Pesanggrahan Jakarta Selatan",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Wisma Gading Permai",
+        "address": "Fore Coffee - Ruko Wisma Gading Permai Unit R01-32, Jl. Raya Boulevard Blok CN 1 Kelapa Gading, Jakarta Utara",
+        "hours": "07:00 - 21:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Wiyung",
+        "address": "Fore Coffee Wiyung - Jl. Raya Menganti No. 88, Babatan Pratama Ruko A9, kec. Wiyung, Surabaya, Jawa Timur 60227 ( Lantai 1 )",
+        "hours": "07:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Wolter Monginsidi",
+        "address": "Fore Coffee Wolter Monginsidi - Jl. Wolter Monginsidi No.59, RT.1/RW.1, Kel. Rawa Barat, Kec. Kebayoran Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12180",
+        "hours": "07:00 - 21:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "WTC Sudirman",
+        "address": "Fore Coffee - Jl. Jend. Sudirman No.kav 29, Kuningan, Karet, Kec. Setiabudi, Jakarta Selatan",
+        "hours": "07:00 - 18:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Yogya Bogor Junction",
+        "address": "Fore Coffee - Yogya Bogor Junction, Jl. Pabaton No.63, RT.02/RW.03, Sempur, Kecamatan Bogor Tengah, Kota Bogor, Jawa Barat 16121",
+        "hours": "08:00 - 21:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Yogya Mitra Batik",
+        "address": "Fore Coffee - Jl. R.E. Martadinata No.81-83, RT.04/RW.01, Cipedes, Kec. Cipedes, Kab. Tasikmalaya, Jawa Barat 46133",
+        "hours": "09:00 - 22:00",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Yogya Sumber Sari Junction",
+        "address": "Fore Coffee - Jl. Sumber Sari No.34, Babakan, Kec. Babakan Ciparay, Kota Bandung, Jawa Barat 40222",
+        "hours": "08:00 - 21:30",
+        "services": ["Pick Up"]
+    },
+    {
+        "name": "Yudanegara Tasikmalaya",
+        "address": "Fore - Coffee Yudanegara, Jl. Yudanegara No.16, Kel. Yudanagara, Kec. Cihideung, Kab. Tasikmalaya, Jawa Barat 46121 (Sebelah BTN Syariah)",
+        "hours": "07:00 - 23:00",
+        "services": ["Pick Up"]
+    }
+]

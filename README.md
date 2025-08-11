@@ -23,7 +23,7 @@ Proyek ini menunjukkan evolusi dari frontend statis menjadi aplikasi full-stack 
 * **Keranjang Belanja Server-Side:** Semua data keranjang disimpan dengan aman di dalam session server.
 * **Validasi Checkout:** Sistem validasi yang memastikan lokasi pickup dan nama pemesan wajib diisi sebelum melanjutkan pembayaran.
 * **Integrasi Pembayaran Midtrans:** Alur pembayaran yang aman menggunakan Midtrans Snap.js, lengkap dengan detail pesanan.
-* **Notifikasi Pesanan Otomatis:** Notifikasi email real-time dikirim ke admin setelah pembayaran berhasil, berisi detail lengkap pesanan untuk persiapan.
+* **Notifikasi Pesanan Otomatis:** Ringkasan pesanan dikirim ke pelanggan dan admin saat pesanan dibuat; setelah pembayaran terverifikasi, keduanya menerima email konfirmasi pembayaran.
 * **Halaman Admin (Dalam Pengembangan):** Fondasi untuk halaman admin guna melihat riwayat pesanan yang masuk.
 
 ---
@@ -34,7 +34,7 @@ Proyek ini menunjukkan evolusi dari frontend statis menjadi aplikasi full-stack 
 * **Frontend:** Blade, Vanilla JavaScript, [Vite](https://vitejs.dev/)
 * **Database:** MySQL
 * **Payment Gateway:** [Midtrans](https://midtrans.com/)
-* **Email Testing:** [Mailtrap.io](https://mailtrap.io/)
+* **Email Notifikasi:** SMTP Email Hosting
 
 ---
 
@@ -60,7 +60,7 @@ Untuk menjalankan proyek ini di lingkungan lokal Anda, ikuti langkah-langkah ber
 
 4.  **Konfigurasi Database & Layanan:**
     * Buka file `.env` dan atur koneksi database Anda (DB_DATABASE, DB_USERNAME, DB_PASSWORD).
-    * Isi kunci API dari Midtrans (Sandbox) dan kredensial Mailtrap Anda.
+    * Isi kunci API dari Midtrans.
 
 5.  **Jalankan Migrasi & Seeding:**
     * Perintah ini akan membuat semua tabel dan mengisinya dengan data produk, toko, dan opsi.
@@ -88,9 +88,3 @@ Untuk menjalankan proyek ini di lingkungan lokal Anda, ikuti langkah-langkah ber
 
 **Bravoduck**
 * GitHub: [@bravoduck](https://github.com/bravoduck)
-
----
-
-## 📜 Lisensi
-
-Proyek ini dilisensikan di bawah Lisensi MIT - lihat file `LICENSE.md` untuk detailnya.

@@ -1,0 +1,676 @@
+[
+  {
+    "category": "Fore Junior",
+    "slug": "fore-junior",
+    "enabled": true,
+    "items": [
+      {
+        "name": "Choco Cookie Shake",
+        "price": 18500,
+        "description": "Rasa cokelat istimewa untuk momen manis dan penuh petualangan.",
+        "image": "https://static.fore.coffee/product/Choco%20Cookie%20Shake.jpg",
+        "options_config": {
+          "Sweetness": ["Normal Sweet", "Less Sweet"],
+          "Ice Cube": ["Normal Ice", "Less Ice", "More Ice"],
+          "Dairy": ["Milk", "Soy Multigrain", "Oat Milk", "Almond Milk"],
+          "Topping": ["Caramel Sauce", "Crumble", "Oreo Crumbs", "Milo Powder", "Sea Salt Cream", "Coffee Cream", "Tiramisu Cream"]
+        }
+      },
+      {
+        "name": "Butterscotch Milk Crumble",
+        "price": 18000,
+        "description": "Butterscotch dengan paduan caramel, susu dengan sea salt cream dan caramel crumble sebagai topping.",
+        "image": "https://static.fore.coffee/product/Butterscotch%20Milk%20Crumble.jpg",
+        "options_config": {
+          "Sweetness": ["Normal Sweet", "Less Sweet"],
+          "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+          "Dairy": ["Milk", "Soy Multigrain", "Oat Milk", "Almond Milk"],
+          "Topping": ["Caramel Sauce", "Crumble", "Oreo Crumbs", "Milo Powder", "Sea Salt Cream", "Coffee Cream", "Tiramisu Cream"]
+        }
+      },
+      {
+        "name": "Vanilla O' Crumbs",
+        "price": 18000,
+        "description": "Perpaduan vanilla, butterscotch dan susu dilengkapi dengan saus karamel juga topping oreo yang gurih.",
+        "image": "https://static.fore.coffee/product/Vanilla%20O%20Crumbs.jpg",
+        "options_config": {
+          "Sweetness": ["Normal Sweet", "Less Sweet"],
+          "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+          "Dairy": ["Milk", "Soy Multigrain", "Oat Milk", "Almond Milk"],
+          "Topping": ["Caramel Sauce", "Crumble", "Oreo Crumbs", "Milo Powder", "Sea Salt Cream", "Coffee Cream", "Tiramisu Cream"]
+        }
+      },
+      {
+        "name": "Choco Caramel Cloud",
+        "price": 18000,
+        "description": "Nikmatnya cream salted caramel dengan paduan dark chocolate yang cocok untuk ceriakan hari.",
+        "image": "https://static.fore.coffee/product/Choco%20Caramel%20Cloud.jpg",
+        "options_config": {
+          "Sweetness": ["Normal Sweet", "Less Sweet"],
+          "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+          "Dairy": ["Milk", "Soy Multigrain", "Oat Milk", "Almond Milk"],
+          "Topping": ["Caramel Sauce", "Crumble", "Oreo Crumbs", "Milo Powder", "Sea Salt Cream", "Coffee Cream", "Tiramisu Cream"]
+        }
+      }
+    ]
+  },
+  {
+    "category": "Fore Signature",
+    "slug": "fore-signature",
+    "enabled": true,
+    "items": [
+      {
+        "name": "Kopi Dari Tani",
+        "price": 14500,
+        "description": "Paduan rasa dan aroma kopi Indonesia yang kuat bercampur dengan gula aren khas nusantara.",
+        "image": "https://static.fore.coffee/product/Kopi%20dari%20Tani.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice"],
+            "Espresso": ["Normal Shot", "+1 Shot", "+2 Shot"],
+            "Dairy": ["Milk", "Oat Milk", "Almond Milk"],
+            "Syrup": ["Aren", "Hazelnut", "Pandan", "Manuka", "Vanilla", "Salted Caramel"],
+            "Topping": ["Caramel Sauce", "Crumble", "Milo Powder", "Oreo Crumbs"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Butterscotch Sea Salt Latte",
+        "price": 20000,
+        "description": "Perpaduan butterscotch dan espresso house blend dengan topping cream sea salt yang lembut di atasnya.",
+        "image": "https://static.fore.coffee/product/Butterscoth%20Iced.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+            "Espresso": ["Normal Shot", "+1 Shot", "+2 Shot"],
+            "Dairy": ["Milk", "Oat Milk", "Almond Milk", "Soy Multigrain"],
+            "Syrup": ["Pandan", "Aren", "Hazelnut", "Vanilla", "Salted Caramel"],
+            "Topping": ["Milo Powder", "Caramel Sauce", "Crumble", "Sea Salt Cream", "Oreo Crumbs"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Buttercream Latte",
+        "price": 19000,
+        "description": "Nikmatnya Buttercream Coffee sebagai topping kopi susu karamel.",
+        "image": "https://static.fore.coffee/product/Buttercream%20Latte%20(1).jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+            "Espresso": ["Normal Shot", "+1 Shot", "+2 Shot"],
+            "Dairy": ["Milk", "Oat Milk", "Almond Milk"],
+            "Syrup": ["Aren", "Hazelnut", "Vanilla", "Salted Caramel"],
+            "Topping": ["Caramel Sauce", "Crumble", "Milo Powder", "Oreo Crumbs", "Coffee Cream"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Aren Latte",
+        "price": 17500,
+        "description": "Rasa alami gula aren berpadu sempurna dengan espresso premium. Menu terlaris Fore Coffee.",
+        "image": "https://static.fore.coffee/product/Aren%20Latte%20Ice.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+            "Espresso": ["Normal Shot", "+1 Shot", "+2 Shot", "+3 Shot"],
+            "Dairy": ["Milk", "Oat Milk", "Almond Milk", "Soy Multigrain"],
+            "Syrup": ["Aren", "Hazelnut", "Manuka", "Pandan", "Vanilla", "Salted Caramel"],
+            "Topping": ["Milo Powder", "Caramel Sauce", "Crumble", "Sea Salt Cream", "Oreo Crumbs", "Coffee Cream", "Tiramisu Cream"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Pandan Latte",
+        "price": 17500,
+        "description": "Latte dengan rasa dan aroma unik dari ekstrak pandan alami khas Fore Coffee.",
+        "image": "https://static.fore.coffee/product/Pandan%20Latte%20Iced.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+            "Espresso": ["Normal Shot", "+1 Shot", "+2 Shot", "+3 Shot"],
+            "Dairy": ["Milk", "Oat Milk", "Almond Milk", "Soy Multigrain"],
+            "Syrup": ["Aren", "Hazelnut", "Manuka", "Pandan", "Vanilla", "Salted Caramel"],
+            "Topping": ["Milo Powder", "Caramel Sauce", "Crumble", "Sea Salt Cream", "Oreo Crumbs", "Coffee Cream", "Tiramisu Cream"]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Coffee",
+    "slug": "coffee",
+    "enabled": true,
+    "items": [
+      {
+        "name": "Malty Latte",
+        "price": 16500,
+        "description": "Sang legenda Traditional Latte berpadu dengan manisnya karamel, menambah pengalaman rasa creamy dan nutty.",
+        "image": "https://static.fore.coffee/product/Malty%20Latte%20(1).jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+            "Espresso": ["Normal Shot", "+1 Shot", "+2 Shot"],
+            "Dairy": ["Milk", "Soy Multigrain", "Oat Milk", "Almond Milk"],
+            "Syrup": ["Aren", "Pecan Praline", "Hazelnut", "Pandan", "Manuka", "Vanilla", "Salted Caramel"],
+            "Topping": ["Caramel Sauce", "Crumble", "Oreo Crumbs", "Milo Powder", "Sea Salt Cream", "Coffee Cream", "Tiramisu Cream"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Bumi Latte",
+        "price": 14500,
+        "description": "Sensasi lembut dan legit dari saus karamel dan butterscotch yang khas berpadu dengan kopi autentik Indonesia.",
+        "image": "https://static.fore.coffee/product/Bumi%20Latte.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice"],
+            "Espresso": ["Normal Shot", "+1 Shot", "+2 Shot"],
+            "Dairy": ["Milk", "Oat Milk", "Almond Milk"],
+            "Syrup": ["Aren", "Hazelnut", "Pandan", "Manuka", "Vanilla", "Salted Caramel"],
+            "Topping": ["Caramel Sauce", "Crumble", "Sea Salt Cream", "Milo Powder", "Oreo Crumbs", "Coffee Cream", "Coffee Cream", "Tiramisu Cream"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Cappuccino",
+        "price": 17500,
+        "description": "Paduan Espresso, susu hangat, dan lapisan foam tebal di atasnya tanpa gula tambahan.",
+        "image": "https://static.fore.coffee/product/Capucino%20Iced%20(1).jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+            "Espresso": ["Normal Shot", "+1 Shot", "+2 Shot", "+3 Shot"],
+            "Dairy": ["Milk", "Soy Multigrain", "Oat Milk", "Almond Milk"],
+            "Syrup": ["Pecan Praline", "Aren", "Hazelnut", "Pandan", "Manuka", "Vanilla", "Salted Caramel"],
+            "Topping": ["Oreo Crumbs", "Crumble", "Sea Salt Cream", "Milo Powder", "Caramel Sauce"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Double Ice Shaken Latte",
+        "price": 20000,
+        "description": "Paduan klasik 2 shot espresso dengan susu dan krim.",
+        "image": "https://static.fore.coffee/product/Double%20Iced%20Shaken%20Latte%20(1).jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice"],
+            "Espresso": ["Normal Shot", "+1 Shot", "+2 Shot", "+3 Shot"],
+            "Dairy": ["Milk", "Soy Multigrain", "Oat Milk", "Almond Milk"],
+            "Syrup": ["Vanilla", "Aren", "Hazelnut", "Pandan", "Manuka", "Salted Caramel"],
+            "Topping": ["Crumble", "Sea Salt Cream", "Milo Powder", "Caramel Sauce"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Café Latte",
+        "price": 17500,
+        "description": "Paduan espresso dengan susu sapi pilihan dan sedikit foam tanpa gula tambahan.",
+        "image": "https://static.fore.coffee/product/Capucino%20Iced%20(1).jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+            "Espresso": ["Normal Shot", "+1 Shot", "+2 Shot", "+3 Shot"],
+            "Dairy": ["Milk", "Soy Multigrain", "Oat Milk", "Almond Milk"],
+            "Syrup": ["Aren", "Hazelnut", "Pandan", "Manuka", "Vanilla", "Salted Caramel"],
+            "Topping": ["Crumble", "Milo Powder", "Caramel Sauce", "Sea Salt Cream", "Oreo Crumbs", "Coffee Cream", "Tiramisu Cream"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Nutty Oat Latte",
+        "price": 23500,
+        "description": "Espresso dari biji kopi khas nusantara dipadukan susu oat gluten-free dan sensasi nutty dari hazelnut.",
+        "image": "https://static.fore.coffee/product/Nutty%20Oat%20Latte%20Iced.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+            "Espresso": ["Normal Shot", "+1 Shot", "+2 Shot", "+3 Shot"],
+            "Dairy": ["Milk", "Soy Multigrain", "Almond Milk"],
+            "Syrup": ["Aren", "Hazelnut", "Pandan", "Vanilla", "Manuka", "Salted Caramel"],
+            "Topping": ["Crumble", "Sea Salt Cream", "Milo Powder", "Caramel Sauce", "Oreo Crumbs", "Coffee Cream", "Tiramisu Cream"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Buttercream Tiramisu Latte",
+        "price": 20000,
+        "description": "Lembutnya Buttercream Tiramisu sebagai topping kopi susu praline.",
+        "image": "https://static.fore.coffee/product/Buttercream%20Tiramisu%20Latte.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+            "Espresso": ["Normal Shot", "+1 Shot", "+2 Shot"],
+            "Dairy": ["Milk", "Oat Milk", "Almond Milk"],
+            "Syrup": ["Aren", "Hazelnut", "Vanilla", "Salted Caramel"],
+            "Topping": ["Milo Powder", "Caramel Sauce", "Crumble", "Oreo Crumbs", "Tiramisu Cream"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Espresso",
+        "price": 11500,
+        "description": "Ekstrak biji kopi Arabika murni tanpa campuran.",
+        "image": "https://static.fore.coffee/product/espresso173.jpg",
+        "variants": [
+          { "name": "Hot", "options_config": {
+            "Ukuran Cup": ["Regular Hot"],
+            "Espresso": ["Normal Shot", "+1 Shot", "+2 Shot", "+3 Shot"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Caramel Praline Machchiato",
+        "price": 20000,
+        "description": "Latte dengan saus Praline dan karamel dengan rasa dan aroma manis.",
+        "image": "https://static.fore.coffee/product/Caramel%20Praline%20Macchiato%20Iced%20(1).jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+            "Espresso": ["Normal Shot", "+1 Shot", "+2 Shot", "+3 Shot"],
+            "Dairy": ["Milk", "Soy Multigrain", "Oat Milk", "Almond Milk"],
+            "Syrup": ["Pecan Praline", "Aren", "Hazelnut", "Pandan", "Vanilla", "Manuka", "Salted Caramel"],
+            "Topping": ["Crumble", "Milo Powder", "Caramel Sauce", "Sea Salt Cream", "Oreo Crumbs", "Coffee Cream", "Tiramisu Cream"]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Americano Series",
+    "slug": "americano-series",
+    "enabled": true,
+    "items": [
+      {
+        "name": "Americano",
+        "price": 14000,
+        "description": "Espresso shoot yang dicampur dengan segelas air.",
+        "image": "https://static.fore.coffee/product/Americano%20Iced.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+            "Espresso": ["Normal Shot", "+1 Shot", "+2 Shot", "+3 Shot"],
+            "Dairy": ["No Milk", "Soy Multigrain", "Oat Milk", "Almond Milk", "Fresh Milk", "UHT Milk"],
+            "Syrup": ["Pecan Praline", "Aren", "Hazelnut", "Manuka", "Pandan", "Vanilla", "Salted Caramel"],
+            "Topping": ["Caramel Sauce"]
+            }
+          },
+          { "name": "Hot", "options_config": {
+            "Ukuran Cup": ["Regular Hot", "Large Hot"],
+            "Espresso": ["Normal Shot", "+1 Shot", "+2 Shot", "+3 Shot"],
+            "Dairy": ["No Milk", "Soy Multigrain", "Oat Milk", "Almond Milk", "Fresh Milk", "UHT Milk"],
+            "Syrup": ["Pecan Praline", "Aren", "Hazelnut", "Manuka", "Pandan", "Vanilla", "Salted Caramel"],
+            "Topping": ["Caramel Sauce"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Manuka Americano",
+        "price": 17500,
+        "description": "Americano dengan madu Manuka yang pas untuk jadi energy booster.",
+        "image": "https://static.fore.coffee/product/Manuka%20Americano%20Iced.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+            "Espresso": ["Normal Shot", "+1 Shot", "+2 Shot"],
+            "Syrup": ["Aren", "Hazelnut", "Pandan", "Manuka", "Vanilla", "Salted Caramel"],
+            "Topping": ["Caramel Sauce"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Berry Manuka Americano",
+        "price": 17500,
+        "description": "Perpaduan rasa Stroberi dan Manuka dengan Classic Blend Fore yang menyegarkan.",
+        "image": "https://static.fore.coffee/product/Berry%20Manuka%20Americano%20(3).jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice"],
+            "Espresso": ["Normal Shot", "+1 Shot", "+2 Shot", "+3 Shot"],
+            "Syrup": ["Vanilla", "Manuka"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Triple Peach Americano",
+        "price": 19000,
+        "description": "Peach coffee perpaduan rasa kopi, tiga jenis buah peach dan aroma elderflower.",
+        "image": "https://static.fore.coffee/product/Triple%20Peach%20Americano%20(1).jpg",
+        "soldOut": true,
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice"],
+            "Espresso": ["Normal Shot", "+1 Shot", "+2 Shot", "+3 Shot"],
+            "Syrup": ["Vanilla", "Manuka"]
+          }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Non Coffee",
+    "slug": "non-coffee",
+    "enabled": true,
+    "items": [
+      {
+        "name": "Dark Chocolate",
+        "price": 21000,
+        "description": "Made from 100% dark chocolate and milk.",
+        "image": "https://static.fore.coffee/product/darkchocolate-01.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+            "Espresso": ["Normal Shot", "+1 Shot"],
+            "Dairy":["Milk", "Oat Milk", "Almond Milk", "Soy Multigrain"],
+            "Syrup": ["Aren", "Hazelnut", "Manuka", "Pandan", "Vanilla", "Salted Caramel"],
+            "Topping":["Caramel Sauce", "Milo Powder", "Crumble", "Sea Salt Cream", "Oreo Crumbs", "Coffee Cream", "Tiramisu Cream"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Almond Choco",
+        "price": 23500,
+        "description": "Cokelat klasik dari Fore Coffee yang dipadu dengan susu almond.",
+        "image": "https://static.fore.coffee/product/almondchocoiced173.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+            "Espresso": ["Normal Shot", "+1 Shot"],
+            "Dairy":["Milk", "Oat Milk", "Almond Milk", "Soy Multigrain"],
+            "Syrup": ["Aren", "Hazelnut", "Manuka", "Pandan", "Vanilla", "Salted Caramel"],
+            "Topping":["Crumble", "Milo Powder", "Caramel Sauce", "Sea Salt Cream", "Oreo Crumbs", "Coffee Cream", "Tiramisu Cream"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Matcha Green Tea",
+        "price": 20500,
+        "description": "Bubuk matcha spesial Fore yang lembut dan creamy berpadu dengan susu segar.",
+        "image": "https://static.fore.coffee/product/matchagreentealatte173.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+            "Espresso": ["Normal Shot", "+1 Shot"],
+            "Dairy":["Milk", "Oat Milk", "Almond Milk", "Soy Multigrain"],
+            "Syrup": ["Pecan Praline", "Aren", "Hazelnut", "Manuka", "Pandan", "Vanilla", "Salted Caramel"],
+            "Topping":["Milo Powder", "Caramel Sauce", "Crumble", "Sea Salt Cream", "Oreo Crumbs", "Coffee Cream", "Tiramisu Cream"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Classic Milo",
+        "price": 15000,
+        "description": "Minuman klasik cokelat dengan rasa malt dengan saus creamy dan susu creamy.",
+        "image": "https://static.fore.coffee/product/classicmiloiced173.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+            "Dairy":["Milk", "Soy Multigrain", "Oat Milk", "Almond Milk"],
+            "Syrup": ["Aren", "Hazelnut", "Pandan", "Vanilla", "Salted Caramel"],
+            "Topping":["Crumble", "Milo Powder", "Caramel Sauce", "Sea Salt Cream", "Oreo Crumbs", "Coffee Cream", "Tiramisu Cream"]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Refresher",
+    "slug": "refresher",
+    "enabled": true,
+    "items": [
+      {
+        "name": "Hibiscus Lychee Peach Yakult",
+        "price": 17500,
+        "description": "Kebaikan buah berry, hibiscus, dan yakult yang memberi kesegaran sepanjang hari.",
+        "image": "https://static.fore.coffee/product/hibiscuslychee173.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+            "Syrup": ["Manuka"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sunny Citrus Jasmine",
+        "price": 19000,
+        "description": "Campuran spesial dari rasa buah tropikal, madu Manuka, dan teh jasmine.",
+        "image": "https://static.fore.coffee/product/sunnycitrus173.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Coco Peach Fusion",
+        "price": 17500,
+        "description": "Rasa segar dari peach, lychee, orange citrus, dan air kelapa.",
+        "image": "https://static.fore.coffee/product/Coco%20Peach%20Fusion%20(3).jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Ice Blended",
+    "slug": "ice-blended",
+    "enabled": true,
+    "items": [
+      {
+        "name": "Caramel Praline Coffee Ice Blended",
+        "price": 20000,
+        "description": "Ice blended latte dengan saus Praline dan karamel.",
+        "image": "https://static.fore.coffee/product/caramelpralinecoffee173.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice"],
+            "Espresso": ["Normal Shot", "+1 Shot"],
+            "Dairy":["Milk", "Soy Multigrain", "Oat Milk", "Almond Milk"],
+            "Syrup": ["Aren", "Pecan Praline", "Hazelnut", "Pandan", "Manuka", "Vanilla", "Salted Caramel"],
+            "Topping":["Sea Salt Cream", "Caramel Sauce", "Crumble", "Oreo Crumbs", "Milo Powder"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Matcha Ice Blended",
+        "price": 20000,
+        "description": "Paduan Creamy Matcha khas Fore Coffee, susu segar, dengan es.",
+        "image": "https://static.fore.coffee/product/matchablended173.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice"],
+            "Dairy":["Milk", "Soy Multigrain", "Oat Milk", "Almond Milk"],
+            "Syrup": ["Salted Caramel", "Aren", "Hazelnut", "Pandan", "Manuka", "Vanilla"],
+            "Topping":["Crumble", "Milo Powder", "Caramel Sauce", "Oreo Crumbs"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Strawberry Ice Blended",
+        "price": 20000,
+        "description": "Manisnya strawberry bertemu dengan susu dan es dilapisi dengan strawberry puree.",
+        "image": "https://static.fore.coffee/product/strawberryblend173.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice"],
+            "Dairy":["Milk", "Soy Multigrain", "Oat Milk", "Almond Milk"],
+            "Syrup": ["Aren", "Hazelnut", "Pandan", "Manuka", "Vanilla"],
+            "Topping":["Crumble", "Milo Powder", "Caramel Sauce", "Oreo Crumbs"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Chocolate Ice Blended",
+        "price": 22000,
+        "description": "Ice blended cokelat spesial dengan susu pilihan.",
+        "image": "https://static.fore.coffee/product/chocolateblend173.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Sweetness": ["Normal Sweet", "Less Sweet"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice"],
+            "Espresso": ["Normal Shot", "+1 Shot"],
+            "Dairy":["Milk", "Soy Multigrain", "Oat Milk", "Almond Milk"],
+            "Syrup": ["Aren", "Hazelnut", "Pandan", "Pecan Praline", "Manuka", "Vanilla"],
+            "Topping":["Crumble", "Milo Powder", "Caramel Sauce", "Oreo Crumbs"]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Tea",
+    "slug": "tea",
+    "enabled": true,
+    "items": [
+      {
+        "name": "English Breakfast",
+        "price": 17500,
+        "description": "Teh hitam klasik harum yang legendaris.",
+        "image": "https://static.fore.coffee/product/englishbreakfasticed173.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+            "Dairy":["No Milk", "Soy Multigrain", "Oat Milk", "Almond Milk", "Fresh Milk", "UHT Milk"],
+            "Syrup": ["Aren", "Hazelnut", "Pandan", "Pecan Praline", "Manuka", "Vanilla"],
+            "Topping":["Crumble", "Sea Salt Cream", "Milo Powder", "Caramel Sauce"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Green Tea Jasmine",
+        "price": 17500,
+        "description": "Teh hijau dengan sentuhan rasa melati.",
+        "image": "https://static.fore.coffee/product/greenteajasmineiced173.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+            "Dairy":["No Milk", "Soy Multigrain", "Oat Milk", "Almond Milk", "Fresh Milk", "UHT Milk"],
+            "Syrup": ["Aren", "Hazelnut", "Pandan", "Pecan Praline", "Manuka", "Vanilla"],
+            "Topping":["Crumble", "Sea Salt Cream", "Milo Powder", "Caramel Sauce"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Pure Chamomile",
+        "price": 17500,
+        "description": "Teh bunga chamomile memiliki aroma madu yang kaya dan menghasilkan warna emas.",
+        "image": "https://static.fore.coffee/product/purechamomileiced173.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+            "Dairy":["No Milk", "Soy Multigrain", "Oat Milk", "Almond Milk", "Fresh Milk", "UHT Milk"],
+            "Syrup": ["Aren", "Hazelnut", "Pandan", "Pecan Praline", "Manuka", "Vanilla"],
+            "Topping":["Crumble", "Sea Salt Cream", "Milo Powder", "Caramel Sauce"]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Green Tea Mint",
+        "price": 17500,
+        "description": "Teh merah halus dari Afrika Selatan dengan campuran rempah-rempah Perancis yang manis.",
+        "image": "https://static.fore.coffee/product/greenteaminticed173.jpg",
+        "variants": [
+          { "name": "Iced", "options_config": {
+            "Ukuran Cup": ["Regular Ice", "Large Ice"],
+            "Ice Cube": ["Normal Ice", "Less Ice", "More Ice", "No Ice"],
+            "Dairy":["No Milk", "Soy Multigrain", "Oat Milk", "Almond Milk", "Fresh Milk", "UHT Milk"],
+            "Syrup": ["Aren", "Hazelnut", "Pandan", "Pecan Praline", "Manuka", "Vanilla"],
+            "Topping":["Crumble", "Sea Salt Cream", "Milo Powder", "Caramel Sauce"]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
