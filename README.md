@@ -44,7 +44,7 @@ Untuk menjalankan proyek ini di lingkungan lokal Anda, ikuti langkah-langkah ber
 
 1.  **Clone repositori ini:**
     ```bash
-    git clone [https://github.com/bravoduck/coffee-by-bravo.git](https://github.com/bravoduck/coffee-by-bravo.git)
+    git clone https://github.com/bravoduck/coffee-by-bravo.git
     cd coffee-by-bravo
     ```
 
